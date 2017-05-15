@@ -2,7 +2,4 @@ Variables, Clauses, Longest Derived Clause, longest Chain, k, success, time, nam
 If 'name' is in the column for success, the program timed out. 
 
 V       C       LD      LC      S       T       N
-7       10      1       5       1       0       madeup2
-100     160     4       9       1       0       aim-100-1_6-no-1
-100     200     2       6       1       0       aim-100-2_0-no-1
-100     200     5       12      
+
