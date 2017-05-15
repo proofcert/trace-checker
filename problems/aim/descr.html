@@ -1,0 +1,103 @@
+<HTML>
+<HEAD>
+<TITLE>SATLIB - Benchmark Problems</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="white" TEXT="black" LINK="#0000FF" VLINK="#551A8B" ALINK="#FF0000">
+
+<h1>AIM Instances</h1>
+
+
+The following description is based on the original description from
+Kazuo Iwama, Eiji Miyano and Yuichi Asahiro which is available <A
+HREF="ftp://dimacs.rutgers.edu/pub/challenge/satisfiability/contributed/iwama/README.instances">here</a>
+from the DIMACS ftp-site.<br><br>
+
+The AIM instance are all generated with a particular Random-3-SAT
+instance generator [AIM96]. The particularity is that the generator
+yes-instances and no-instances independently for wide ranges. So its
+primary role is to provide such instances that the conventional random
+generation can hardly generate. The generator runs in a randomized
+fashion, so that it essentially different from those generated in some
+deterministic fashion or those translated from other problems.<br><br>
+
+As a result, the following set of instances includes 
+<UL>
+<LI>(i) no-instances at low clause/variable ratios</LI>
+<LI>(ii) yes-instances at low and high clause/variable ratios that however have
+only one solution</LI>
+</UL>
+
+
+The instances are named as <i>aim-xxx-y_y-zzzz-j</i> where
+<UL>
+<LI><i>(i)</i> all the names have "aim" at the beginning (stands for Asahiro, Iwama
+    and Miyano)</LI>
+<LI><i>(ii)</i> next xxx shows the number of variables, one of 50, 100 and 200</LI>
+<LI><i>(iii)</i> y_y shows the clause/variable ratio y.y, including 1.6, 2.0 for
+      no-instances and 1.6, 2.0, 3.4 and 6.0 for single-solution yes-
+      instances</LI>
+<LI><i>(iv)</i> zzzz is "no" or "yes1", the former denoting a no-instance and the
+     latter a single-solution yes-instance</LI>
+<LI><i>(v)</i> the last j means simply the j-th instance at that parameter.</LI>
+</UL>
+
+For each parameter, four instances are included in the benchmark
+set. for example, aim-100-2_0-no-1 through aim-100-2_0-no-4, are four
+no-instances with 100 variables and 2.0 clause/variable ratio. In
+total, there are 18 sets of instances with n = 50, 100, 200; for the
+yes instances clause / variable ratios are taken from 1.6, 2.0, 3.4,
+and 6.0; for the no instances they are taken from 1.6 and 2.0.<br><br>
+
+
+<h4>Instance hardness</h4>
+
+It should be noted that all the instances can be solved with
+polynomial preprocessing (using binary failed literals). Therefore,
+these instances cannot be considered as intrinsically hard and appear
+not to be very good benchmark instances.<br><br>
+
+Complete algorithms appear to perform very well on these instances. For
+example, SATZ (version 41 from SATLIB) solves all the instances in at
+most 2 backtracks. Nevertheless, some local search algorithms like the
+algorithms based on the WalkSAT family and the GSAT variants, show a
+very poor performance on the instances with low clause / variable
+ratio; in particular for ratios 1.6 and 2.0. Yet, local search
+algorithms using clause weighting schemes appear to solve these
+instances quite easily [CI95]. Therefore, it would be interesting to
+investigate the reasons for these facts. Possibly, it is due to very
+large plateaus in the search space of the problems at low clause /
+variable ratios. 
+<br><br>
+
+
+<h4>Acknowledgements</h4>
+
+The instances have originally been contributed to the DIMACS benchmark
+set by Kazuo Iwama, Eiji Miyano and Yuichi Asahiro.<br>
+
+
+<p><br>
+<h4>Bibliography</h4>
+
+<table>
+<tr>
+<td valign=top><small>[AIM96]
+<td><small> <I>Y. Asahiro, K.~Iwama, and E.~Miyano</I>
+<STRONG>Random Generation of Test Instanzes with Controlled Attributes.</STRONG>
+In D.S.Johnson and M.A.Trick, editors, <CITE>Cliques, Coloring, and Satisfiability: 
+The Second DIMACS Implementation Challenge.</CITE> Vol. 26  of
+<i>DIMACS Series on Discrete Mathematics and Theoretical Computer Science</i>, pages 377--394. American Mathematical Society, 1996.pages 127-154, 1996<br>
+</tr>
+<tr>
+<td valign=top><small>[CI95]
+<td><small> <I>B. Cha and K. Iwama.</I> <STRONG>Adding New Clauses for
+Faster Local Search.</STRONG> In <CITE>Proceedings of
+AAAI'96}</CITE>, pages 332--337. MIT Press, 1996.
+</small>
+</tr>
+</table>
+
+</body>
+</html>
+
