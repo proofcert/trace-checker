@@ -1,5 +1,5 @@
 #!/bin/sh 
-FILES=../problems/aim/goInReport/*
+FILES=$1
 echo ${#FILES[@]}
 for f in $FILES
 do
