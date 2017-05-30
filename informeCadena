@@ -1,0 +1,49 @@
+success; time
+
+
+ timed out 
+ timed out 
+ timed out 
+ timed out 
+ timed out 
+ timed out 
+ timed out 
+ timed out 
+ timed out 
+ timed out 
+
+
+ %%% PROBLEM: comp; longest chain length: 4; average chain length: 2.66666666667  
+0; trying with Chain: [1, 3, 8, 9]
+1; trying with Chain: [1, 3, 9, 8]
+2; trying with Chain: [1, 8, 3, 9]
+3; trying with Chain: [1, 8, 9, 3]
+4; trying with Chain: [1, 9, 3, 8]
+5; trying with Chain: [1, 9, 8, 3]
+6; trying with Chain: [3, 1, 8, 9]
+7; trying with Chain: [3, 1, 9, 8]
+8; trying with Chain: [3, 8, 1, 9]
+9; trying with Chain: [3, 8, 9, 1]
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+
+
+ %%% PROBLEM: comp; longest chain length: 4; average chain length: 2.66666666667  
+0; trying with Chain: [1, 3, 8, 9]
+1; trying with Chain: [1, 3, 9, 8]
+2; trying with Chain: [1, 8, 3, 9]
+3; trying with Chain: [1, 8, 9, 3]
+4; trying with Chain: [1, 9, 3, 8]
+5; trying with Chain: [1, 9, 8, 3]
+6; trying with Chain: [3, 1, 8, 9]
+7; trying with Chain: [3, 1, 9, 8]
+8; trying with Chain: [3, 8, 1, 9]
+9; trying with Chain: [3, 8, 9, 1]
