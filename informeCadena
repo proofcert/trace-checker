@@ -47,3 +47,309 @@ success; time
 7; trying with Chain: [3, 1, 9, 8]
 8; trying with Chain: [3, 8, 1, 9]
 9; trying with Chain: [3, 8, 9, 1]
+
+
+ %%% PROBLEM: rksat13; longest chain length: 8; average chain length: 3.26315789474  
+0; trying with Chain: [1, 52, 49, 66, 60, 69, 75, 80]
+1; trying with Chain: [1, 52, 49, 66, 60, 69, 80, 75]
+2; trying with Chain: [1, 52, 49, 66, 60, 75, 69, 80]
+3; trying with Chain: [1, 52, 49, 66, 60, 75, 80, 69]
+4; trying with Chain: [1, 52, 49, 66, 60, 80, 69, 75]
+5; trying with Chain: [1, 52, 49, 66, 60, 80, 75, 69]
+6; trying with Chain: [1, 52, 49, 66, 69, 60, 75, 80]
+7; trying with Chain: [1, 52, 49, 66, 69, 60, 80, 75]
+8; trying with Chain: [1, 52, 49, 66, 69, 75, 60, 80]
+9; trying with Chain: [1, 52, 49, 66, 69, 75, 80, 60]
+10; trying with Chain: [1, 52, 49, 66, 69, 80, 60, 75]
+11; trying with Chain: [1, 52, 49, 66, 69, 80, 75, 60]
+12; trying with Chain: [1, 52, 49, 66, 75, 60, 69, 80]
+13; trying with Chain: [1, 52, 49, 66, 75, 60, 80, 69]
+14; trying with Chain: [1, 52, 49, 66, 75, 69, 60, 80]
+15; trying with Chain: [1, 52, 49, 66, 75, 69, 80, 60]
+16; trying with Chain: [1, 52, 49, 66, 75, 80, 60, 69]
+17; trying with Chain: [1, 52, 49, 66, 75, 80, 69, 60]
+18; trying with Chain: [1, 52, 49, 66, 80, 60, 69, 75]
+19; trying with Chain: [1, 52, 49, 66, 80, 60, 75, 69]
+20; trying with Chain: [1, 52, 49, 66, 80, 69, 60, 75]
+21; trying with Chain: [1, 52, 49, 66, 80, 69, 75, 60]
+22; trying with Chain: [1, 52, 49, 66, 80, 75, 60, 69]
+23; trying with Chain: [1, 52, 49, 66, 80, 75, 69, 60]
+24; trying with Chain: [1, 52, 49, 69, 60, 66, 75, 80]
+25; trying with Chain: [1, 52, 49, 69, 60, 66, 80, 75]
+26; trying with Chain: [1, 52, 49, 69, 60, 75, 66, 80]
+27; trying with Chain: [1, 52, 49, 69, 60, 75, 80, 66]
+28; trying with Chain: [1, 52, 49, 69, 60, 80, 66, 75]
+29; trying with Chain: [1, 52, 49, 69, 60, 80, 75, 66]
+30; trying with Chain: [1, 52, 49, 69, 66, 60, 75, 80]
+31; trying with Chain: [1, 52, 49, 69, 66, 60, 80, 75]
+32; trying with Chain: [1, 52, 49, 69, 66, 75, 60, 80]
+33; trying with Chain: [1, 52, 49, 69, 66, 75, 80, 60]
+34; trying with Chain: [1, 52, 49, 69, 66, 80, 60, 75]
+35; trying with Chain: [1, 52, 49, 69, 66, 80, 75, 60]
+36; trying with Chain: [1, 52, 49, 69, 75, 60, 66, 80]
+37; trying with Chain: [1, 52, 49, 69, 75, 60, 80, 66]
+38; trying with Chain: [1, 52, 49, 69, 75, 66, 60, 80]
+39; trying with Chain: [1, 52, 49, 69, 75, 66, 80, 60]
+40; trying with Chain: [1, 52, 49, 69, 75, 80, 60, 66]
+41; trying with Chain: [1, 52, 49, 69, 75, 80, 66, 60]
+42; trying with Chain: [1, 52, 49, 69, 80, 60, 66, 75]
+43; trying with Chain: [1, 52, 49, 69, 80, 60, 75, 66]
+44; trying with Chain: [1, 52, 49, 69, 80, 66, 60, 75]
+45; trying with Chain: [1, 52, 49, 69, 80, 66, 75, 60]
+46; trying with Chain: [1, 52, 49, 69, 80, 75, 60, 66]
+47; trying with Chain: [1, 52, 49, 69, 80, 75, 66, 60]
+48; trying with Chain: [1, 52, 49, 75, 60, 66, 69, 80]
+49; trying with Chain: [1, 52, 49, 75, 60, 66, 80, 69]
+50; trying with Chain: [1, 52, 49, 75, 60, 69, 66, 80]
+51; trying with Chain: [1, 52, 49, 75, 60, 69, 80, 66]
+52; trying with Chain: [1, 52, 49, 75, 60, 80, 66, 69]
+53; trying with Chain: [1, 52, 49, 75, 60, 80, 69, 66]
+54; trying with Chain: [1, 52, 49, 75, 66, 60, 69, 80]
+55; trying with Chain: [1, 52, 49, 75, 66, 60, 80, 69]
+56; trying with Chain: [1, 52, 49, 75, 66, 69, 60, 80]
+57; trying with Chain: [1, 52, 49, 75, 66, 69, 80, 60]
+58; trying with Chain: [1, 52, 49, 75, 66, 80, 60, 69]
+59; trying with Chain: [1, 52, 49, 75, 66, 80, 69, 60]
+60; trying with Chain: [1, 52, 49, 75, 69, 60, 66, 80]
+61; trying with Chain: [1, 52, 49, 75, 69, 60, 80, 66]
+62; trying with Chain: [1, 52, 49, 75, 69, 66, 60, 80]
+63; trying with Chain: [1, 52, 49, 75, 69, 66, 80, 60]
+64; trying with Chain: [1, 52, 49, 75, 69, 80, 60, 66]
+65; trying with Chain: [1, 52, 49, 75, 69, 80, 66, 60]
+66; trying with Chain: [1, 52, 49, 75, 80, 60, 66, 69]
+67; trying with Chain: [1, 52, 49, 75, 80, 60, 69, 66]
+68; trying with Chain: [1, 52, 49, 75, 80, 66, 60, 69]
+69; trying with Chain: [1, 52, 49, 75, 80, 66, 69, 60]
+70; trying with Chain: [1, 52, 49, 75, 80, 69, 60, 66]
+71; trying with Chain: [1, 52, 49, 75, 80, 69, 66, 60]
+72; trying with Chain: [1, 52, 49, 80, 60, 66, 69, 75]
+73; trying with Chain: [1, 52, 49, 80, 60, 66, 75, 69]
+74; trying with Chain: [1, 52, 49, 80, 60, 69, 66, 75]
+75; trying with Chain: [1, 52, 49, 80, 60, 69, 75, 66]
+76; trying with Chain: [1, 52, 49, 80, 60, 75, 66, 69]
+77; trying with Chain: [1, 52, 49, 80, 60, 75, 69, 66]
+78; trying with Chain: [1, 52, 49, 80, 66, 60, 69, 75]
+79; trying with Chain: [1, 52, 49, 80, 66, 60, 75, 69]
+80; trying with Chain: [1, 52, 49, 80, 66, 69, 60, 75]
+81; trying with Chain: [1, 52, 49, 80, 66, 69, 75, 60]
+82; trying with Chain: [1, 52, 49, 80, 66, 75, 60, 69]
+83; trying with Chain: [1, 52, 49, 80, 66, 75, 69, 60]
+84; trying with Chain: [1, 52, 49, 80, 69, 60, 66, 75]
+85; trying with Chain: [1, 52, 49, 80, 69, 60, 75, 66]
+86; trying with Chain: [1, 52, 49, 80, 69, 66, 60, 75]
+87; trying with Chain: [1, 52, 49, 80, 69, 66, 75, 60]
+88; trying with Chain: [1, 52, 49, 80, 69, 75, 60, 66]
+89; trying with Chain: [1, 52, 49, 80, 69, 75, 66, 60]
+90; trying with Chain: [1, 52, 49, 80, 75, 60, 66, 69]
+91; trying with Chain: [1, 52, 49, 80, 75, 60, 69, 66]
+92; trying with Chain: [1, 52, 49, 80, 75, 66, 60, 69]
+93; trying with Chain: [1, 52, 49, 80, 75, 66, 69, 60]
+94; trying with Chain: [1, 52, 49, 80, 75, 69, 60, 66]
+95; trying with Chain: [1, 52, 49, 80, 75, 69, 66, 60]
+96; trying with Chain: [1, 52, 60, 49, 66, 69, 75, 80]
+97; trying with Chain: [1, 52, 60, 49, 66, 69, 80, 75]
+98; trying with Chain: [1, 52, 60, 49, 66, 75, 69, 80]
+99; trying with Chain: [1, 52, 60, 49, 66, 75, 80, 69]
+1       1        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       1        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       1        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       1        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       1        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       1        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       1        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       1        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       1        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       1        timed out 
+1       0        timed out 
+
+
+ %%% PROBLEM: rksat13; longest chain length: 8; average chain length: 3.26315789474  
+0; trying with Chain: [1, 52, 49, 66, 60, 69, 75, 80]
+1; trying with Chain: [1, 52, 49, 66, 60, 69, 80, 75]
+2; trying with Chain: [1, 52, 49, 66, 60, 75, 69, 80]
+3; trying with Chain: [1, 52, 49, 66, 60, 75, 80, 69]
+4; trying with Chain: [1, 52, 49, 66, 60, 80, 69, 75]
+5; trying with Chain: [1, 52, 49, 66, 60, 80, 75, 69]
+6; trying with Chain: [1, 52, 49, 66, 69, 60, 75, 80]
+7; trying with Chain: [1, 52, 49, 66, 69, 60, 80, 75]
+8; trying with Chain: [1, 52, 49, 66, 69, 75, 60, 80]
+9; trying with Chain: [1, 52, 49, 66, 69, 75, 80, 60]
+10; trying with Chain: [1, 52, 49, 66, 69, 80, 60, 75]
+11; trying with Chain: [1, 52, 49, 66, 69, 80, 75, 60]
+12; trying with Chain: [1, 52, 49, 66, 75, 60, 69, 80]
+13; trying with Chain: [1, 52, 49, 66, 75, 60, 80, 69]
+14; trying with Chain: [1, 52, 49, 66, 75, 69, 60, 80]
+15; trying with Chain: [1, 52, 49, 66, 75, 69, 80, 60]
+16; trying with Chain: [1, 52, 49, 66, 75, 80, 60, 69]
+17; trying with Chain: [1, 52, 49, 66, 75, 80, 69, 60]
+18; trying with Chain: [1, 52, 49, 66, 80, 60, 69, 75]
+19; trying with Chain: [1, 52, 49, 66, 80, 60, 75, 69]
+20; trying with Chain: [1, 52, 49, 66, 80, 69, 60, 75]
+21; trying with Chain: [1, 52, 49, 66, 80, 69, 75, 60]
+22; trying with Chain: [1, 52, 49, 66, 80, 75, 60, 69]
+23; trying with Chain: [1, 52, 49, 66, 80, 75, 69, 60]
+24; trying with Chain: [1, 52, 49, 69, 60, 66, 75, 80]
+25; trying with Chain: [1, 52, 49, 69, 60, 66, 80, 75]
+26; trying with Chain: [1, 52, 49, 69, 60, 75, 66, 80]
+27; trying with Chain: [1, 52, 49, 69, 60, 75, 80, 66]
+28; trying with Chain: [1, 52, 49, 69, 60, 80, 66, 75]
+29; trying with Chain: [1, 52, 49, 69, 60, 80, 75, 66]
+30; trying with Chain: [1, 52, 49, 69, 66, 60, 75, 80]
+31; trying with Chain: [1, 52, 49, 69, 66, 60, 80, 75]
+32; trying with Chain: [1, 52, 49, 69, 66, 75, 60, 80]
+33; trying with Chain: [1, 52, 49, 69, 66, 75, 80, 60]
+34; trying with Chain: [1, 52, 49, 69, 66, 80, 60, 75]
+35; trying with Chain: [1, 52, 49, 69, 66, 80, 75, 60]
+36; trying with Chain: [1, 52, 49, 69, 75, 60, 66, 80]
+37; trying with Chain: [1, 52, 49, 69, 75, 60, 80, 66]
+38; trying with Chain: [1, 52, 49, 69, 75, 66, 60, 80]
+39; trying with Chain: [1, 52, 49, 69, 75, 66, 80, 60]
+40; trying with Chain: [1, 52, 49, 69, 75, 80, 60, 66]
+41; trying with Chain: [1, 52, 49, 69, 75, 80, 66, 60]
+42; trying with Chain: [1, 52, 49, 69, 80, 60, 66, 75]
+43; trying with Chain: [1, 52, 49, 69, 80, 60, 75, 66]
+44; trying with Chain: [1, 52, 49, 69, 80, 66, 60, 75]
+45; trying with Chain: [1, 52, 49, 69, 80, 66, 75, 60]
+46; trying with Chain: [1, 52, 49, 69, 80, 75, 60, 66]
+47; trying with Chain: [1, 52, 49, 69, 80, 75, 66, 60]
+48; trying with Chain: [1, 52, 49, 75, 60, 66, 69, 80]
+49; trying with Chain: [1, 52, 49, 75, 60, 66, 80, 69]
+50; trying with Chain: [1, 52, 49, 75, 60, 69, 66, 80]
+51; trying with Chain: [1, 52, 49, 75, 60, 69, 80, 66]
+52; trying with Chain: [1, 52, 49, 75, 60, 80, 66, 69]
+53; trying with Chain: [1, 52, 49, 75, 60, 80, 69, 66]
+54; trying with Chain: [1, 52, 49, 75, 66, 60, 69, 80]
+55; trying with Chain: [1, 52, 49, 75, 66, 60, 80, 69]
+56; trying with Chain: [1, 52, 49, 75, 66, 69, 60, 80]
+57; trying with Chain: [1, 52, 49, 75, 66, 69, 80, 60]
+58; trying with Chain: [1, 52, 49, 75, 66, 80, 60, 69]
+59; trying with Chain: [1, 52, 49, 75, 66, 80, 69, 60]
+60; trying with Chain: [1, 52, 49, 75, 69, 60, 66, 80]
+61; trying with Chain: [1, 52, 49, 75, 69, 60, 80, 66]
+62; trying with Chain: [1, 52, 49, 75, 69, 66, 60, 80]
+63; trying with Chain: [1, 52, 49, 75, 69, 66, 80, 60]
+64; trying with Chain: [1, 52, 49, 75, 69, 80, 60, 66]
+65; trying with Chain: [1, 52, 49, 75, 69, 80, 66, 60]
+66; trying with Chain: [1, 52, 49, 75, 80, 60, 66, 69]
+67; trying with Chain: [1, 52, 49, 75, 80, 60, 69, 66]
+68; trying with Chain: [1, 52, 49, 75, 80, 66, 60, 69]
+69; trying with Chain: [1, 52, 49, 75, 80, 66, 69, 60]
+70; trying with Chain: [1, 52, 49, 75, 80, 69, 60, 66]
+71; trying with Chain: [1, 52, 49, 75, 80, 69, 66, 60]
+72; trying with Chain: [1, 52, 49, 80, 60, 66, 69, 75]
+73;1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       1        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       1        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       1        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       1        timed out 
+1       0        timed out 
+1       0        timed out 
+ trying with Chain: [1, 52, 49, 80, 60, 66, 75, 69]
+74; trying with Chain: [1, 52, 49, 80, 60, 69, 66, 75]
+75; trying with Chain: [1, 52, 49, 80, 60, 69, 75, 66]
+76; trying with Chain: [1, 52, 49, 80, 60, 75, 66, 69]
+77; trying with Chain: [1, 52, 49, 80, 60, 75, 69, 66]
+78; trying with Chain: [1, 52, 49, 80, 66, 60, 69, 75]
+79; trying with Chain: [1, 52, 49, 80, 66, 60, 75, 69]
+80; trying with Chain: [1, 52, 49, 80, 66, 69, 60, 75]
+81; trying with Chain: [1, 52, 49, 80, 66, 69, 75, 60]
+82; trying with Chain: [1, 52, 49, 80, 66, 75, 60, 69]
+83; trying with Chain: [1, 52, 49, 80, 66, 75, 69, 60]
+84; trying with Chain: [1, 52, 49, 80, 69, 60, 66, 75]
+85; trying with Chain: [1, 52, 49, 80, 69, 60, 75, 66]
+86; trying with Chain: [1, 52, 49, 80, 69, 66, 60, 75]
+87; trying with Chain: [1, 52, 49, 80, 69, 66, 75, 60]
+88; trying with Chain: [1, 52, 49, 80, 69, 75, 60, 66]
+89; trying with Chain: [1, 52, 49, 80, 69, 75, 66, 60]
+90; trying with Chain: [1, 52, 49, 80, 75, 60, 66, 69]
+91; trying with Chain: [1, 52, 49, 80, 75, 60, 69, 66]
+92; trying with Chain: [1, 52, 49, 80, 75, 66, 60, 69]
+93; trying with Chain: [1, 52, 49, 80, 75, 66, 69, 60]
+94; trying with Chain: [1, 52, 49, 80, 75, 69, 60, 66]
+95; trying with Chain: [1, 52, 49, 80, 75, 69, 66, 60]
+96; trying with Chain: [1, 52, 60, 49, 66, 69, 75, 80]
+97; trying with Chain: [1, 52, 60, 49, 66, 69, 80, 75]
+98; trying with Chain: [1, 52, 60, 49, 66, 75, 69, 80]
+99; trying with Chain: [1, 52, 60, 49, 66, 75, 80, 69]
