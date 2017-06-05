@@ -101,14 +101,14 @@ def genEach(L):
         
 def shuffleUnique(L,prevPermu=[]):
     while len(prevPermu)<=ma.factorial(len(L)):
-        L1 = tuple(shuffle(L))
-        if L1 not in prevPermu:
-            prevPermu.append(L1)
-            yield L1
+        L1 = shuffle(L)
+        if tuple(L1) not in prevPermu:
+            prevPermu.append(tuple(L1))
+            yield L1 #it's awkward that I'm yielding a list but storing tuples internally (so that python doesn't mess with list order)
+            #could just make everything a tuple from the start, but at this point there
+            #are a bunch of dependencies in other files so I'd rather do this for now. 
+ 
 
-testShuffle = shuffleUnique([1,2,3])
-for x in range(10):
-    print next(testShuffle)
 
 # SYNTAX; ESO FUNCIONA
 '''pruebaChain = cvT.Trace(root+problemDict[4])

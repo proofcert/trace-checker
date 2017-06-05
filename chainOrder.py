@@ -6,12 +6,23 @@ from shutil import copyfile
 template = "template.pl"
 root = "../booleforce-1.2/traces/"
 
-traceName, prologName, numPermutations, timeOut = sys.argv[1], sys.argv[2], int(sys.argv[3]), sys.argv[4]
+traceName, prologName, numPermutations, timeOut, methodString = sys.argv[1], sys.argv[2], int(sys.argv[3]), sys.argv[4], sys.argv[5]
 #assume timeOut to be an integer in seconds
-
-informeFile = open("informeCadena",'a')
-
-command = "bash timeout.sh "+prologName+" "+str(timeOut)+"s"
+#assume method to be a string beginning with 'lex', meaning lexicographic. default, therefore, is random shuffle
+def Lexicographic(string):
+    string = string.strip().lower()
+    if string[:3] is "lex":
+        return True
+    else:
+        return False
+method_is_lex = Lexicographic(methodString)
+print "LEX IS "+str(method_is_lex)
+if method_is_lex:
+    informeFileName = "informeCadena"
+elif not method_is_lex:
+    informeFileName = 'informeCadenaRandom'
+informeFile = open(informeFileName,'a')
+command = "bash timeout.sh "+prologName+" "+str(timeOut)+"s "+informeFileName
 
 
 
@@ -22,7 +33,12 @@ infoString = "\n\n %%% PROBLEM: {0}; longest chain length: {1}; average chain le
 informeFile.write(infoString)
 chains = trace.getChain(chainDex)
 sortedChain = permu.mergeSort(chains)
-chainPermu = permu.genPerm(sortedChain)
+if method_is_lex:
+    chainPermu = permu.genPerm(sortedChain)
+elif not method_is_lex:
+    chainPermu = permu.shuffleUnique(chains)
+else:
+    print("method should've defaulted to randomShuffle, but somehow hasn't been assigned yet.")
 
 #the above is only run when first opening the problem
 #the below is run for each permutation attempted
