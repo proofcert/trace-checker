@@ -38,7 +38,16 @@ def merge(a,b):
             first = [b[0],a[0]]
         first.extend(merge(a[1:],b[1:]))
         return first
-    
+        
+def shuffle(L):
+    for i in range(0,len(L)-1):
+        j = ra.randrange(i,len(L))
+        #print "swapping {0} and {1}".format(L[i],L[j])
+        L[i], L[j] = L[j], L[i]
+        #print "in loop list now "+str(L)
+    #print "out look returning "+str(L)
+    return L
+
     
 def onePerm(L):
     I = None
@@ -63,9 +72,44 @@ def genPerm(L):
     while new != None:
         yield new
         new = onePerm(new)
- 
- 
-          
+
+'''def shuffleEach(L,n,pL=[]):
+    if n == 0:
+        print "returning pL "+str(pL)
+        return pL
+    else:
+        L1 = shuffle(L)
+        pL.append(L1)
+        print "adding {0} to pl. pL is now {1}".format(L1,pL)
+        shuffleEach(L,n-1,pL)
+#this is so weird! returns none. also when I have a list [[1,2],[1,2]], adding [2,1] changes all the elements in the list to match??  
+print shuffleEach([1,2],20)
+ok there is something about it reordering the sublists. if theyre tuples then this doesnt happen'''
+
+def shuffleEach(L,n):
+    pL = []
+    for i in range(n):
+        pL.append(tuple(shuffle(L)))
+    return (pL)
+
+def genEach(L):
+    permList = [] 
+    perms = genPerm(L)
+    for i in range(ma.factorial(len(L))):
+        permList.append(tuple(next(perms)))
+    return permList
+        
+def shuffleUnique(L,prevPermu=[]):
+    while len(prevPermu)<=ma.factorial(len(L)):
+        L1 = tuple(shuffle(L))
+        if L1 not in prevPermu:
+            prevPermu.append(L1)
+            yield L1
+
+testShuffle = shuffleUnique([1,2,3])
+for x in range(10):
+    print next(testShuffle)
+
 # SYNTAX; ESO FUNCIONA
 '''pruebaChain = cvT.Trace(root+problemDict[4])
 print pruebaChain.avgChain()
