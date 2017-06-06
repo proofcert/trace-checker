@@ -11,7 +11,7 @@ traceName, prologName, numPermutations, timeOut, methodString = sys.argv[1], sys
 #assume method to be a string beginning with 'lex', meaning lexicographic. default, therefore, is random shuffle
 def Lexicographic(string):
     string = string.strip().lower()
-    if string[:3] is "lex":
+    if string[:3] == "lex":
         return True
     else:
         return False
@@ -29,9 +29,12 @@ command = "bash timeout.sh "+prologName+" "+str(timeOut)+"s "+informeFileName
 trace = cvTrace.Trace(root+traceName)
 longestChain, chainDex = trace.longestChain()
 averageChain = trace.avgChain() 
-infoString = "\n\n %%% PROBLEM: {0}; longest chain length: {1}; average chain length: {2}  \n".format(traceName,longestChain,averageChain)
+infoString = "\n\n %%% PROBLEM: {0}; longest chain length: {1}; average chain length: {2}; timeout: {3} \n".format(traceName,longestChain,averageChain,str(timeOut))
 informeFile.write(infoString)
+informeFile.flush()
 chains = trace.getChain(chainDex)
+informeFile.write("original chain with index {0}: {1}".format(chainDex,chains))
+informeFile.flush()
 sortedChain = permu.mergeSort(chains)
 if method_is_lex:
     chainPermu = permu.genPerm(sortedChain)
@@ -45,6 +48,7 @@ else:
 for n in range(numPermutations):
     trying = next(chainPermu)
     informeFile.write(str(n)+'; trying with Chain: '+str(trying)+"\n")
+    informeFile.flush()
     trace.replaceChain(trying,chainDex)
     copyfile(template,prologName)
     trace.writeProlog2(prologName)

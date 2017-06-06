@@ -557,3 +557,89 @@ ith Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 179, 180, 101, 172, 178]
 98; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 180, 101, 178, 172, 179]
 99; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 180, 101, 178, 179, 172]
 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       1        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       1        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+1       0        timed out 
+
+
+ %%% PROBLEM: aim100-2no4; longest chain length: 10; average chain length: 3.78947368421  
+0; trying with Chain: [18, 22, 19, 27, 21, 209, 26, 219, 220, 222]
+1; trying with Chain: [18, 22, 19, 27, 21, 209, 26, 219, 222, 220]
+2; trying with Chain: [18, 22, 19, 27, 21, 209, 26, 220, 219, 222]
+3; trying with Chain: [18, 22, 19, 27, 21, 209, 26, 220, 222, 219]
+4; trying with Chain: [18, 22, 19, 27, 21, 209, 26, 222, 219, 220]
+5; trying with Chain: [18, 22, 19, 27, 21, 209, 26, 222, 220, 219]
+6; trying with Chain: [18, 22, 19, 27, 21, 209, 219, 26, 220, 222]
+7; trying with Chain: [18, 22, 19, 27, 21, 209, 219, 26, 222, 220]
+8; trying with Chain: [18, 22, 19, 27, 21, 209, 219, 220, 26, 222]
+9; trying with Chain: [18, 22, 19, 27, 21, 209, 219, 220, 222, 26]
+10; trying with Chain: [18, 22, 19, 27, 21, 209, 219, 222, 26, 220]
+11; trying with Chain: [18, 22, 19, 27, 21, 209, 219, 222, 220, 26]
+12; trying with Chain: [18, 22, 19, 27, 21, 209, 220, 26, 219, 222]
+13; trying with Chain: [18, 22, 19, 27, 21, 209, 220, 26, 222, 219]
+14; trying with Chain: [18, 22, 19, 27, 21, 209, 220, 219, 26, 222]
+15; trying with Chain: [18, 22, 19, 27, 21, 209, 220, 219, 222, 26]
+16; trying with Chain: [18, 22, 19, 27, 21, 209, 220, 222, 26, 219]
+17; trying with Chain: [18, 22, 19, 27, 21, 209, 220, 222, 219, 26]
+18; trying with Chain: [18, 22, 19, 27, 21, 209, 222, 26, 219, 220]
+19; trying with Chain: [18, 22, 19, 27, 21, 209, 222, 26, 220, 219]
+
+
+ %%% PROBLEM: aim100-2no4; longest chain length: 10; average chain length: 3.78947368421; timeout: 7 
+0; trying with Chain: [18, 22, 19, 27, 21, 209, 26, 219, 220, 222]
+1       0        timed out 
+1; trying with Chain: [18, 22, 19, 27, 21, 209, 26, 219, 222, 220]
+1       0        timed out 
+2; trying with Chain: [18, 22, 19, 27, 21, 209, 26, 220, 219, 222]
+1       0        timed out 
+3; trying with Chain: [18, 22, 19, 27, 21, 209, 26, 220, 222, 219]
+1       0        timed out 
+4; trying with Chain: [18, 22, 19, 27, 21, 209, 26, 222, 219, 220]
+1       0        timed out 
+5; trying with Chain: [18, 22, 19, 27, 21, 209, 26, 222, 220, 219]
+1       0        timed out 
+6; trying with Chain: [18, 22, 19, 27, 21, 209, 219, 26, 220, 222]
+1       0        timed out 
+7; trying with Chain: [18, 22, 19, 27, 21, 209, 219, 26, 222, 220]
+1       0        timed out 
+8; trying with Chain: [18, 22, 19, 27, 21, 209, 219, 220, 26, 222]
+1       0        timed out 
+9; trying with Chain: [18, 22, 19, 27, 21, 209, 219, 220, 222, 26]
+1       0        timed out 
+10; trying with Chain: [18, 22, 19, 27, 21, 209, 219, 222, 26, 220]
+1       0        timed out 
+11; trying with Chain: [18, 22, 19, 27, 21, 209, 219, 222, 220, 26]
+1       0        timed out 
+12; trying with Chain: [18, 22, 19, 27, 21, 209, 220, 26, 219, 222]
+1       0        timed out 
+13; trying with Chain: [18, 22, 19, 27, 21, 209, 220, 26, 222, 219]
+1       0        timed out 
+14; trying with Chain: [18, 22, 19, 27, 21, 209, 220, 219, 26, 222]
+1       0        timed out 
+15; trying with Chain: [18, 22, 19, 27, 21, 209, 220, 219, 222, 26]
+1       0        timed out 
+16; trying with Chain: [18, 22, 19, 27, 21, 209, 220, 222, 26, 219]
+1       0        timed out 
+17; trying with Chain: [18, 22, 19, 27, 21, 209, 220, 222, 219, 26]
+1       1        timed out 
+18; trying with Chain: [18, 22, 19, 27, 21, 209, 222, 26, 219, 220]
+1       0        timed out 
+19; trying with Chain: [18, 22, 19, 27, 21, 209, 222, 26, 220, 219]
+1       0        timed out 
