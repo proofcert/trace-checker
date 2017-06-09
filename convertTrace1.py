@@ -127,6 +127,7 @@ class Trace(object):
                     chainString += ",\n"
         chainString += "])), \n store([],[]), \n  unfk(["+self.getPrologTheorem()+"])), print(1), nl ;  \n "
         chainString += "print(0),nl, fail. \n" 
+        #chainString += "])), \n store([],[]), \n  unfk(["+self.getPrologTheorem()+"])). \n" without the printed 1 or 0
         writeFile.write(string)
         writeFile.write(chainString)
         writeFile.close()

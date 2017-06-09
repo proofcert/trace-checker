@@ -23,14 +23,23 @@ def continueLine(file,success,time): #info should be time and success, but just 
 def continueLine1(file,name):
     file.write(name+'\n')
 
-#cases
-#0 input: prolog timed out 
-#two inputs: prolog result (0 or 1), runtime
 
-if len(sys.argv) == 4:
+def formatNum(digits):
+    counter = 0
+    digits = list(str(digits))
+    originalLen = len(digits)
+    for index in range(originalLen-1,0,-1):
+        counter += 1
+        if counter == 3:
+            digits.insert(index,",")
+            counter = 0
+    return ''.join(digits)
+
+if len(sys.argv) == 4: #prolog did not time out. now returning success (1,0) and time
     file = open(sys.argv[3],'a')
-    continueLine(file,sys.argv[1],sys.argv[2])
-elif len(sys.argv) == 2:
+    timeFormat = formatNum(sys.argv[2])
+    continueLine(file,sys.argv[1],timeFormat)
+elif len(sys.argv) == 2: #prolog timed out
     file = open(sys.argv[1],'a')
     file.write(" timed out \n") 
 else:

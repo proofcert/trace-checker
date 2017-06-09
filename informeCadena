@@ -643,3 +643,2229 @@ ith Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 179, 180, 101, 172, 178]
 1       0        timed out 
 19; trying with Chain: [18, 22, 19, 27, 21, 209, 222, 26, 220, 219]
 1       0        timed out 
+
+
+ %%% PROBLEM: comp; longest chain length: 4; average chain length: 2.66666666667; timeout: 120 
+original chain with index 9: [3, 9, 8, 1] 
+0; trying with Chain: [1, 3, 8, 9]
+1       0        timed out 
+1; trying with Chain: [1, 3, 9, 8]
+1       0        timed out 
+2; trying with Chain: [1, 8, 3, 9]
+1       0        timed out 
+3; trying with Chain: [1, 8, 9, 3]
+1       0        timed out 
+4; trying with Chain: [1, 9, 3, 8]
+1       0        timed out 
+5; trying with Chain: [1, 9, 8, 3]
+1       1        timed out 
+6; trying with Chain: [3, 1, 8, 9]
+1       0        timed out 
+7; trying with Chain: [3, 1, 9, 8]
+1       0        timed out 
+8; trying with Chain: [3, 8, 1, 9]
+1       0        timed out 
+9; trying with Chain: [3, 8, 9, 1]
+1       0        timed out 
+10; trying with Chain: [3, 9, 1, 8]
+1       0        timed out 
+11; trying with Chain: [3, 9, 8, 1]
+1       0        timed out 
+12; trying with Chain: [8, 1, 3, 9]
+1       0        timed out 
+13; trying with Chain: [8, 1, 9, 3]
+1       0        timed out 
+14; trying with Chain: [8, 3, 1, 9]
+1       0        timed out 
+15; trying with Chain: [8, 3, 9, 1]
+1       0        timed out 
+16; trying with Chain: [8, 9, 1, 3]
+1       1        timed out 
+17; trying with Chain: [8, 9, 3, 1]
+1       0        timed out 
+18; trying with Chain: [9, 1, 3, 8]
+1       0        timed out 
+19; trying with Chain: [9, 1, 8, 3]
+1       0        timed out 
+
+
+ %%% PROBLEM: dubois20; longest chain length: 15; average chain length: 5.95512820513; timeout: 120 
+original chain with index 179: [91, 96, 72, 179, 67, 175, 180, 75, 64, 88, 172, 178, 99, 58, 101] 
+0; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 172, 178, 179, 180]
+ timed out 
+1; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 172, 178, 180, 179]
+ timed out 
+2; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 172, 179, 178, 180]
+ timed out 
+3; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 172, 179, 180, 178]
+ timed out 
+4; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 172, 180, 178, 179]
+ timed out 
+5; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 172, 180, 179, 178]
+ timed out 
+6; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 178, 172, 179, 180]
+ timed out 
+7; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 178, 172, 180, 179]
+ timed out 
+8; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 178, 179, 172, 180]
+ timed out 
+9; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 178, 179, 180, 172]
+ timed out 
+10; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 178, 180, 172, 179]
+ timed out 
+11; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 178, 180, 179, 172]
+ timed out 
+12; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 179, 172, 178, 180]
+ timed out 
+13; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 179, 172, 180, 178]
+ timed out 
+14; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 179, 178, 172, 180]
+ timed out 
+15; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 179, 178, 180, 172]
+ timed out 
+16; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 179, 180, 172, 178]
+
+
+ %%% PROBLEM: comp; longest chain length: 4; average chain length: 2.66666666667; timeout: 7 
+original chain with index 9: [3, 9, 8, 1] 
+0; trying with Chain: [1, 3, 8, 9]
+1       0        timed out 
+1; trying with Chain: [1, 3, 9, 8]
+1       1        timed out 
+2; trying with Chain: [1, 8, 3, 9]
+1       0        timed out 
+3; trying with Chain: [1, 8, 9, 3]
+1       0        timed out 
+4; trying with Chain: [1, 9, 3, 8]
+1       0        timed out 
+5; trying with Chain: [1, 9, 8, 3]
+1       0        timed out 
+6; trying with Chain: [3, 1, 8, 9]
+1       0        timed out 
+7; trying with Chain: [3, 1, 9, 8]
+1       0        timed out 
+8; trying with Chain: [3, 8, 1, 9]
+1       1        timed out 
+9; trying with Chain: [3, 8, 9, 1]
+1       0        timed out 
+10; trying with Chain: [3, 9, 1, 8]
+1       0        timed out 
+11; trying with Chain: [3, 9, 8, 1]
+1       0        timed out 
+12; trying with Chain: [8, 1, 3, 9]
+1       0        timed out 
+13; trying with Chain: [8, 1, 9, 3]
+1       1        timed out 
+14; trying with Chain: [8, 3, 1, 9]
+1       0        timed out 
+15; trying with Chain: [8, 3, 9, 1]
+1       0        timed out 
+16; trying with Chain: [8, 9, 1, 3]
+1       0        timed out 
+17; trying with Chain: [8, 9, 3, 1]
+1       0        timed out 
+18; trying with Chain: [9, 1, 3, 8]
+1       1        timed out 
+19; trying with Chain: [9, 1, 8, 3]
+1       0        timed out 
+
+
+ %%% PROBLEM: dubois20; longest chain length: 15; average chain length: 5.95512820513; timeout: 7 
+original chain with index 179: [91, 96, 72, 179, 67, 175, 180, 75, 64, 88, 172, 178, 99, 58, 101] 
+0; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 172, 178, 179, 180]
+ timed out 
+1; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 172, 178, 180, 179]
+ timed out 
+2; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 172, 179, 178, 180]
+ timed out 
+3; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 172, 179, 180, 178]
+ timed out 
+4; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 172, 180, 178, 179]
+ timed out 
+5; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 172, 180, 179, 178]
+ timed out 
+6; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 178, 172, 179, 180]
+ timed out 
+7; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 178, 172, 180, 179]
+ timed out 
+8; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 178, 179, 172, 180]
+ timed out 
+9; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 178, 179, 180, 172]
+ timed out 
+10; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 178, 180, 172, 179]
+ timed out 
+11; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 178, 180, 179, 172]
+ timed out 
+12; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 179, 172, 178, 180]
+ timed out 
+13; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 179, 172, 180, 178]
+ timed out 
+14; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 179, 178, 172, 180]
+ timed out 
+15; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 179, 178, 180, 172]
+ timed out 
+16; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 179, 180, 172, 178]
+ timed out 
+17; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 179, 180, 178, 172]
+ timed out 
+18; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 180, 172, 178, 179]
+ timed out 
+19; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 180, 172, 179, 178]
+ timed out 
+
+
+ %%% PROBLEM: rksat10; longest chain length: 6; average chain length: 3.27272727273; timeout: 7 
+original chain with index 17: [14, 10, 92, 63, 60, 21] 
+0; trying with Chain: [10, 21, 14, 60, 63, 92]
+1       0        timed out 
+1; trying with Chain: [10, 21, 14, 60, 92, 63]
+1       0        timed out 
+2; trying with Chain: [10, 21, 14, 63, 60, 92]
+1       0        timed out 
+3; trying with Chain: [10, 21, 14, 63, 92, 60]
+1       0        timed out 
+4; trying with Chain: [10, 21, 14, 92, 60, 63]
+1       0        timed out 
+5; trying with Chain: [10, 21, 14, 92, 63, 60]
+1       0        timed out 
+6; trying with Chain: [10, 21, 60, 14, 63, 92]
+1       0        timed out 
+7; trying with Chain: [10, 21, 60, 14, 92, 63]
+1       0        timed out 
+8; trying with Chain: [10, 21, 60, 63, 14, 92]
+1       0        timed out 
+9; trying with Chain: [10, 21, 60, 63, 92, 14]
+1       0        timed out 
+10; trying with Chain: [10, 21, 60, 92, 14, 63]
+1       1        timed out 
+11; trying with Chain: [10, 21, 60, 92, 63, 14]
+1       0        timed out 
+12; trying with Chain: [10, 21, 63, 14, 60, 92]
+1       0        timed out 
+13; trying with Chain: [10, 21, 63, 14, 92, 60]
+1       0        timed out 
+14; trying with Chain: [10, 21, 63, 60, 14, 92]
+1       0        timed out 
+15; trying with Chain: [10, 21, 63, 60, 92, 14]
+1       0        timed out 
+16; trying with Chain: [10, 21, 63, 92, 14, 60]
+1       0        timed out 
+17; trying with Chain: [10, 21, 63, 92, 60, 14]
+1       0        timed out 
+18; trying with Chain: [10, 21, 92, 14, 60, 63]
+1       0        timed out 
+19; trying with Chain: [10, 21, 92, 14, 63, 60]
+1       0        timed out 
+
+
+ %%% PROBLEM: rksat12; longest chain length: 6; average chain length: 3.0; timeout: 7 
+original chain with index 18: [24, 81, 12, 100, 15, 11] 
+0; trying with Chain: [11, 12, 15, 24, 81, 100]
+1       1        timed out 
+1; trying with Chain: [11, 12, 15, 24, 100, 81]
+1       0        timed out 
+2; trying with Chain: [11, 12, 15, 81, 24, 100]
+1       0        timed out 
+3; trying with Chain: [11, 12, 15, 81, 100, 24]
+1       0        timed out 
+4; trying with Chain: [11, 12, 15, 100, 24, 81]
+1       0        timed out 
+5; trying with Chain: [11, 12, 15, 100, 81, 24]
+1       0        timed out 
+6; trying with Chain: [11, 12, 24, 15, 81, 100]
+1       0        timed out 
+7; trying with Chain: [11, 12, 24, 15, 100, 81]
+1       0        timed out 
+8; trying with Chain: [11, 12, 24, 81, 15, 100]
+1       0        timed out 
+9; trying with Chain: [11, 12, 24, 81, 100, 15]
+1       0        timed out 
+10; trying with Chain: [11, 12, 24, 100, 15, 81]
+1       0        timed out 
+11; trying with Chain: [11, 12, 24, 100, 81, 15]
+1       0        timed out 
+12; trying with Chain: [11, 12, 81, 15, 24, 100]
+1       0        timed out 
+13; trying with Chain: [11, 12, 81, 15, 100, 24]
+1       0        timed out 
+14; trying with Chain: [11, 12, 81, 24, 15, 100]
+1       0        timed out 
+15; trying with Chain: [11, 12, 81, 24, 100, 15]
+1       0        timed out 
+16; trying with Chain: [11, 12, 81, 100, 15, 24]
+1       1        timed out 
+17; trying with Chain: [11, 12, 81, 100, 24, 15]
+1       0        timed out 
+18; trying with Chain: [11, 12, 100, 15, 24, 81]
+1       0        timed out 
+19; trying with Chain: [11, 12, 100, 15, 81, 24]
+1       0        timed out 
+
+
+ %%% PROBLEM: rksat13; longest chain length: 8; average chain length: 3.26315789474; timeout: 7 
+original chain with index 31: [69, 66, 75, 52, 49, 80, 1, 60] 
+0; trying with Chain: [1, 52, 49, 66, 60, 69, 75, 80]
+1       1        timed out 
+1; trying with Chain: [1, 52, 49, 66, 60, 69, 80, 75]
+1       1        timed out 
+2; trying with Chain: [1, 52, 49, 66, 60, 75, 69, 80]
+1       0        timed out 
+3; trying with Chain: [1, 52, 49, 66, 60, 75, 80, 69]
+1       1        timed out 
+4; trying with Chain: [1, 52, 49, 66, 60, 80, 69, 75]
+1       1        timed out 
+5; trying with Chain: [1, 52, 49, 66, 60, 80, 75, 69]
+1       0        timed out 
+6; trying with Chain: [1, 52, 49, 66, 69, 60, 75, 80]
+1       0        timed out 
+7; trying with Chain: [1, 52, 49, 66, 69, 60, 80, 75]
+1       0        timed out 
+8; trying with Chain: [1, 52, 49, 66, 69, 75, 60, 80]
+1       1        timed out 
+9; trying with Chain: [1, 52, 49, 66, 69, 75, 80, 60]
+1       1        timed out 
+10; trying with Chain: [1, 52, 49, 66, 69, 80, 60, 75]
+1       1        timed out 
+11; trying with Chain: [1, 52, 49, 66, 69, 80, 75, 60]
+1       0        timed out 
+12; trying with Chain: [1, 52, 49, 66, 75, 60, 69, 80]
+1       0        timed out 
+13; trying with Chain: [1, 52, 49, 66, 75, 60, 80, 69]
+1       1        timed out 
+14; trying with Chain: [1, 52, 49, 66, 75, 69, 60, 80]
+1       1        timed out 
+15; trying with Chain: [1, 52, 49, 66, 75, 69, 80, 60]
+1       1        timed out 
+16; trying with Chain: [1, 52, 49, 66, 75, 80, 60, 69]
+1       1        timed out 
+17; trying with Chain: [1, 52, 49, 66, 75, 80, 69, 60]
+1       0        timed out 
+18; trying with Chain: [1, 52, 49, 66, 80, 60, 69, 75]
+1       1        timed out 
+19; trying with Chain: [1, 52, 49, 66, 80, 60, 75, 69]
+1       1        timed out 
+
+
+ %%% PROBLEM: rksat4; longest chain length: 5; average chain length: 3.28571428571; timeout: 7 
+original chain with index 11: [21, 31, 32, 34, 6] 
+0; trying with Chain: [6, 21, 31, 32, 34]
+1       0        timed out 
+1; trying with Chain: [6, 21, 31, 34, 32]
+1       0        timed out 
+2; trying with Chain: [6, 21, 32, 31, 34]
+1       0        timed out 
+3; trying with Chain: [6, 21, 32, 34, 31]
+1       0        timed out 
+4; trying with Chain: [6, 21, 34, 31, 32]
+1       0        timed out 
+5; trying with Chain: [6, 21, 34, 32, 31]
+1       0        timed out 
+6; trying with Chain: [6, 31, 21, 32, 34]
+1       0        timed out 
+7; trying with Chain: [6, 31, 21, 34, 32]
+1       0        timed out 
+8; trying with Chain: [6, 31, 32, 21, 34]
+1       0        timed out 
+9; trying with Chain: [6, 31, 32, 34, 21]
+1       0        timed out 
+10; trying with Chain: [6, 31, 34, 21, 32]
+1       0        timed out 
+11; trying with Chain: [6, 31, 34, 32, 21]
+1       0        timed out 
+12; trying with Chain: [6, 32, 21, 31, 34]
+1       1        timed out 
+13; trying with Chain: [6, 32, 21, 34, 31]
+1       0        timed out 
+14; trying with Chain: [6, 32, 31, 21, 34]
+1       0        timed out 
+15; trying with Chain: [6, 32, 31, 34, 21]
+1       0        timed out 
+16; trying with Chain: [6, 32, 34, 21, 31]
+1       0        timed out 
+17; trying with Chain: [6, 32, 34, 31, 21]
+1       0        timed out 
+18; trying with Chain: [6, 34, 21, 31, 32]
+1       0        timed out 
+19; trying with Chain: [6, 34, 21, 32, 31]
+1       0        timed out 
+
+
+ %%% PROBLEM: rksat5; longest chain length: 7; average chain length: 2.625; timeout: 7 
+original chain with index 18: [44, 27, 100, 72, 15, 79, 99] 
+0; trying with Chain: [15, 27, 44, 72, 79, 99, 100]
+1       0        timed out 
+1; trying with Chain: [15, 27, 44, 72, 79, 100, 99]
+1       0        timed out 
+2; trying with Chain: [15, 27, 44, 72, 99, 79, 100]
+1       0        timed out 
+3; trying with Chain: [15, 27, 44, 72, 99, 100, 79]
+1       0        timed out 
+4; trying with Chain: [15, 27, 44, 72, 100, 79, 99]
+1       0        timed out 
+5; trying with Chain: [15, 27, 44, 72, 100, 99, 79]
+1       0        timed out 
+6; trying with Chain: [15, 27, 44, 79, 72, 99, 100]
+1       0        timed out 
+7; trying with Chain: [15, 27, 44, 79, 72, 100, 99]
+1       0        timed out 
+8; trying with Chain: [15, 27, 44, 79, 99, 72, 100]
+1       1        timed out 
+9; trying with Chain: [15, 27, 44, 79, 99, 100, 72]
+1       0        timed out 
+10; trying with Chain: [15, 27, 44, 79, 100, 72, 99]
+1       0        timed out 
+11; trying with Chain: [15, 27, 44, 79, 100, 99, 72]
+1       0        timed out 
+12; trying with Chain: [15, 27, 44, 99, 72, 79, 100]
+1       0        timed out 
+13; trying with Chain: [15, 27, 44, 99, 72, 100, 79]
+1       0        timed out 
+14; trying with Chain: [15, 27, 44, 99, 79, 72, 100]
+1       0        timed out 
+15; trying with Chain: [15, 27, 44, 99, 79, 100, 72]
+1       0        timed out 
+16; trying with Chain: [15, 27, 44, 99, 100, 72, 79]
+1       0        timed out 
+17; trying with Chain: [15, 27, 44, 99, 100, 79, 72]
+1       1        timed out 
+18; trying with Chain: [15, 27, 44, 100, 72, 79, 99]
+1       0        timed out 
+19; trying with Chain: [15, 27, 44, 100, 72, 99, 79]
+1       0        timed out 
+
+
+ %%% PROBLEM: rksat7; longest chain length: 5; average chain length: 2.83333333333; timeout: 7 
+original chain with index 15: [41, 21, 34, 10, 26] 
+0; trying with Chain: [10, 21, 26, 34, 41]
+1       0        timed out 
+1; trying with Chain: [10, 21, 26, 41, 34]
+1       0        timed out 
+2; trying with Chain: [10, 21, 34, 26, 41]
+1       0        timed out 
+3; trying with Chain: [10, 21, 34, 41, 26]
+1       0        timed out 
+4; trying with Chain: [10, 21, 41, 26, 34]
+1       0        timed out 
+5; trying with Chain: [10, 21, 41, 34, 26]
+1       1        timed out 
+6; trying with Chain: [10, 26, 21, 34, 41]
+1       0        timed out 
+7; trying with Chain: [10, 26, 21, 41, 34]
+1       0        timed out 
+8; trying with Chain: [10, 26, 34, 21, 41]
+1       0        timed out 
+9; trying with Chain: [10, 26, 34, 41, 21]
+1       1        timed out 
+10; trying with Chain: [10, 26, 41, 21, 34]
+1       0        timed out 
+11; trying with Chain: [10, 26, 41, 34, 21]
+1       0        timed out 
+12; trying with Chain: [10, 34, 21, 26, 41]
+1       0        timed out 
+13; trying with Chain: [10, 34, 21, 41, 26]
+1       0        timed out 
+14; trying with Chain: [10, 34, 26, 21, 41]
+1       1        timed out 
+15; trying with Chain: [10, 34, 26, 41, 21]
+1       0        timed out 
+16; trying with Chain: [10, 34, 41, 21, 26]
+1       0        timed out 
+17; trying with Chain: [10, 34, 41, 26, 21]
+1       0        timed out 
+18; trying with Chain: [10, 41, 21, 26, 34]
+1       0        timed out 
+19; trying with Chain: [10, 41, 21, 34, 26]
+1       0        timed out 
+
+
+ %%% PROBLEM: rksat9; longest chain length: 4; average chain length: 2.54545454545; timeout: 7 
+original chain with index 12: [29, 72, 33, 20] 
+0; trying with Chain: [20, 29, 33, 72]
+1       0        timed out 
+1; trying with Chain: [20, 29, 72, 33]
+1       0        timed out 
+2; trying with Chain: [20, 33, 29, 72]
+1       0        timed out 
+3; trying with Chain: [20, 33, 72, 29]
+1       0        timed out 
+4; trying with Chain: [20, 72, 29, 33]
+1       0        timed out 
+5; trying with Chain: [20, 72, 33, 29]
+1       0        timed out 
+6; trying with Chain: [29, 20, 33, 72]
+1       0        timed out 
+7; trying with Chain: [29, 20, 72, 33]
+1       0        timed out 
+8; trying with Chain: [29, 33, 20, 72]
+1       0        timed out 
+9; trying with Chain: [29, 33, 72, 20]
+1       1        timed out 
+10; trying with Chain: [29, 72, 20, 33]
+1       0        timed out 
+11; trying with Chain: [29, 72, 33, 20]
+1       0        timed out 
+12; trying with Chain: [33, 20, 29, 72]
+1       0        timed out 
+13; trying with Chain: [33, 20, 72, 29]
+1       0        timed out 
+14; trying with Chain: [33, 29, 20, 72]
+1       0        timed out 
+15; trying with Chain: [33, 29, 72, 20]
+1       0        timed out 
+16; trying with Chain: [33, 72, 20, 29]
+1       0        timed out 
+17; trying with Chain: [33, 72, 29, 20]
+1       0        timed out 
+18; trying with Chain: [72, 20, 29, 33]
+1       0        timed out 
+19; trying with Chain: [72, 20, 33, 29]
+1       0        timed out 
+
+
+ %%% PROBLEM: comp; longest chain length: 4; average chain length: 2.66666666667; timeout: 7 
+original chain with index 9: [3, 9, 8, 1] 
+0; trying with Chain: [1, 3, 8, 9]
+1       0        timed out 
+1; trying with Chain: [1, 3, 9, 8]
+1       0        timed out 
+2; trying with Chain: [1, 8, 3, 9]
+1       0        timed out 
+3; trying with Chain: [1, 8, 9, 3]
+1       0        timed out 
+4; trying with Chain: [1, 9, 3, 8]
+1       0        timed out 
+5; trying with Chain: [1, 9, 8, 3]
+1       0        timed out 
+6; trying with Chain: [3, 1, 8, 9]
+1       0        timed out 
+7; trying with Chain: [3, 1, 9, 8]
+1       0        timed out 
+8; trying with Chain: [3, 8, 1, 9]
+1       1        timed out 
+9; trying with Chain: [3, 8, 9, 1]
+1       0        timed out 
+10; trying with Chain: [3, 9, 1, 8]
+1       0        timed out 
+11; trying with Chain: [3, 9, 8, 1]
+1       0        timed out 
+12; trying with Chain: [8, 1, 3, 9]
+1       0        timed out 
+13; trying with Chain: [8, 1, 9, 3]
+1       0        timed out 
+14; trying with Chain: [8, 3, 1, 9]
+1       0        timed out 
+15; trying with Chain: [8, 3, 9, 1]
+1       0        timed out 
+16; trying with Chain: [8, 9, 1, 3]
+1       0        timed out 
+17; trying with Chain: [8, 9, 3, 1]
+1       0        timed out 
+18; trying with Chain: [9, 1, 3, 8]
+1       0        timed out 
+19; trying with Chain: [9, 1, 8, 3]
+1       0        timed out 
+
+
+ %%% PROBLEM: dubois20; longest chain length: 15; average chain length: 5.95512820513; timeout: 7 
+original chain with index 179: [91, 96, 72, 179, 67, 175, 180, 75, 64, 88, 172, 178, 99, 58, 101] 
+0; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 172, 178, 179, 180]
+ timed out 
+1; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 172, 178, 180, 179]
+ timed out 
+2; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 172, 179, 178, 180]
+ timed out 
+3; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 172, 179, 180, 178]
+ timed out 
+4; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 172, 180, 178, 179]
+ timed out 
+5; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 172, 180, 179, 178]
+ timed out 
+6; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 178, 172, 179, 180]
+ timed out 
+7; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 178, 172, 180, 179]
+ timed out 
+8; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 178, 179, 172, 180]
+ timed out 
+9; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 178, 179, 180, 172]
+ timed out 
+10; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 178, 180, 172, 179]
+ timed out 
+11; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 178, 180, 179, 172]
+ timed out 
+12; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 179, 172, 178, 180]
+ timed out 
+13; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 179, 172, 180, 178]
+ timed out 
+14; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 179, 178, 172, 180]
+ timed out 
+15; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 179, 178, 180, 172]
+ timed out 
+16; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 179, 180, 172, 178]
+ timed out 
+17; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 179, 180, 178, 172]
+ timed out 
+18; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 180, 172, 178, 179]
+ timed out 
+19; trying with Chain: [58, 67, 64, 72, 75, 91, 96, 99, 88, 175, 101, 180, 172, 179, 178]
+ timed out 
+
+
+ %%% PROBLEM: dubois21; longest chain length: 17; average chain length: 5.87234042553; timeout: 7 
+original chain with index 316: [31, 28, 337, 340, 348, 131, 347, 40, 265, 143, 321, 345, 343, 140, 316, 35, 136] 
+0; trying with Chain: [28, 35, 40, 143, 31, 140, 131, 265, 136, 337, 321, 340, 316, 343, 345, 347, 348]
+ timed out 
+1; trying with Chain: [28, 35, 40, 143, 31, 140, 131, 265, 136, 337, 321, 340, 316, 343, 345, 348, 347]
+ timed out 
+2; trying with Chain: [28, 35, 40, 143, 31, 140, 131, 265, 136, 337, 321, 340, 316, 343, 347, 345, 348]
+ timed out 
+3; trying with Chain: [28, 35, 40, 143, 31, 140, 131, 265, 136, 337, 321, 340, 316, 343, 347, 348, 345]
+ timed out 
+4; trying with Chain: [28, 35, 40, 143, 31, 140, 131, 265, 136, 337, 321, 340, 316, 343, 348, 345, 347]
+ timed out 
+5; trying with Chain: [28, 35, 40, 143, 31, 140, 131, 265, 136, 337, 321, 340, 316, 343, 348, 347, 345]
+ timed out 
+6; trying with Chain: [28, 35, 40, 143, 31, 140, 131, 265, 136, 337, 321, 340, 316, 345, 343, 347, 348]
+ timed out 
+7; trying with Chain: [28, 35, 40, 143, 31, 140, 131, 265, 136, 337, 321, 340, 316, 345, 343, 348, 347]
+ timed out 
+8; trying with Chain: [28, 35, 40, 143, 31, 140, 131, 265, 136, 337, 321, 340, 316, 345, 347, 343, 348]
+ timed out 
+9; trying with Chain: [28, 35, 40, 143, 31, 140, 131, 265, 136, 337, 321, 340, 316, 345, 347, 348, 343]
+ timed out 
+10; trying with Chain: [28, 35, 40, 143, 31, 140, 131, 265, 136, 337, 321, 340, 316, 345, 348, 343, 347]
+ timed out 
+11; trying with Chain: [28, 35, 40, 143, 31, 140, 131, 265, 136, 337, 321, 340, 316, 345, 348, 347, 343]
+ timed out 
+12; trying with Chain: [28, 35, 40, 143, 31, 140, 131, 265, 136, 337, 321, 340, 316, 347, 343, 345, 348]
+ timed out 
+13; trying with Chain: [28, 35, 40, 143, 31, 140, 131, 265, 136, 337, 321, 340, 316, 347, 343, 348, 345]
+ timed out 
+14; trying with Chain: [28, 35, 40, 143, 31, 140, 131, 265, 136, 337, 321, 340, 316, 347, 345, 343, 348]
+ timed out 
+15; trying with Chain: [28, 35, 40, 143, 31, 140, 131, 265, 136, 337, 321, 340, 316, 347, 345, 348, 343]
+ timed out 
+16; trying with Chain: [28, 35, 40, 143, 31, 140, 131, 265, 136, 337, 321, 340, 316, 347, 348, 343, 345]
+ timed out 
+17; trying with Chain: [28, 35, 40, 143, 31, 140, 131, 265, 136, 337, 321, 340, 316, 347, 348, 345, 343]
+ timed out 
+18; trying with Chain: [28, 35, 40, 143, 31, 140, 131, 265, 136, 337, 321, 340, 316, 348, 343, 345, 347]
+ timed out 
+19; trying with Chain: [28, 35, 40, 143, 31, 140, 131, 265, 136, 337, 321, 340, 316, 348, 343, 347, 345]
+ timed out 
+
+
+ %%% PROBLEM: hole6; longest chain length: 30; average chain length: 10.2422451994; timeout: 7 
+original chain with index 670: [34, 129, 131, 4, 72, 62, 124, 100, 2, 119, 57, 70, 96, 127, 304, 87, 48, 64, 110, 675, 53, 92, 115, 668, 672, 60, 122, 640, 661, 610] 
+0; trying with Chain: [2, 48, 4, 60, 34, 53, 70, 122, 57, 64, 62, 115, 72, 87, 96, 100, 124, 119, 129, 127, 131, 304, 610, 92, 640, 110, 661, 668, 672, 675]
+ timed out 
+1; trying with Chain: [2, 48, 4, 60, 34, 53, 70, 122, 57, 64, 62, 115, 72, 87, 96, 100, 124, 119, 129, 127, 131, 304, 610, 92, 640, 110, 661, 668, 675, 672]
+ timed out 
+2; trying with Chain: [2, 48, 4, 60, 34, 53, 70, 122, 57, 64, 62, 115, 72, 87, 96, 100, 124, 119, 129, 127, 131, 304, 610, 92, 640, 110, 661, 672, 668, 675]
+ timed out 
+3; trying with Chain: [2, 48, 4, 60, 34, 53, 70, 122, 57, 64, 62, 115, 72, 87, 96, 100, 124, 119, 129, 127, 131, 304, 610, 92, 640, 110, 661, 672, 675, 668]
+ timed out 
+4; trying with Chain: [2, 48, 4, 60, 34, 53, 70, 122, 57, 64, 62, 115, 72, 87, 96, 100, 124, 119, 129, 127, 131, 304, 610, 92, 640, 110, 661, 675, 668, 672]
+ timed out 
+5; trying with Chain: [2, 48, 4, 60, 34, 53, 70, 122, 57, 64, 62, 115, 72, 87, 96, 100, 124, 119, 129, 127, 131, 304, 610, 92, 640, 110, 661, 675, 672, 668]
+ timed out 
+6; trying with Chain: [2, 48, 4, 60, 34, 53, 70, 122, 57, 64, 62, 115, 72, 87, 96, 100, 124, 119, 129, 127, 131, 304, 610, 92, 640, 110, 668, 661, 672, 675]
+ timed out 
+7; trying with Chain: [2, 48, 4, 60, 34, 53, 70, 122, 57, 64, 62, 115, 72, 87, 96, 100, 124, 119, 129, 127, 131, 304, 610, 92, 640, 110, 668, 661, 675, 672]
+ timed out 
+8; trying with Chain: [2, 48, 4, 60, 34, 53, 70, 122, 57, 64, 62, 115, 72, 87, 96, 100, 124, 119, 129, 127, 131, 304, 610, 92, 640, 110, 668, 672, 661, 675]
+ timed out 
+9; trying with Chain: [2, 48, 4, 60, 34, 53, 70, 122, 57, 64, 62, 115, 72, 87, 96, 100, 124, 119, 129, 127, 131, 304, 610, 92, 640, 110, 668, 672, 675, 661]
+ timed out 
+10; trying with Chain: [2, 48, 4, 60, 34, 53, 70, 122, 57, 64, 62, 115, 72, 87, 96, 100, 124, 119, 129, 127, 131, 304, 610, 92, 640, 110, 668, 675, 661, 672]
+ timed out 
+11; trying with Chain: [2, 48, 4, 60, 34, 53, 70, 122, 57, 64, 62, 115, 72, 87, 96, 100, 124, 119, 129, 127, 131, 304, 610, 92, 640, 110, 668, 675, 672, 661]
+ timed out 
+12; trying with Chain: [2, 48, 4, 60, 34, 53, 70, 122, 57, 64, 62, 115, 72, 87, 96, 100, 124, 119, 129, 127, 131, 304, 610, 92, 640, 110, 672, 661, 668, 675]
+ timed out 
+13; trying with Chain: [2, 48, 4, 60, 34, 53, 70, 122, 57, 64, 62, 115, 72, 87, 96, 100, 124, 119, 129, 127, 131, 304, 610, 92, 640, 110, 672, 661, 675, 668]
+ timed out 
+14; trying with Chain: [2, 48, 4, 60, 34, 53, 70, 122, 57, 64, 62, 115, 72, 87, 96, 100, 124, 119, 129, 127, 131, 304, 610, 92, 640, 110, 672, 668, 661, 675]
+ timed out 
+15; trying with Chain: [2, 48, 4, 60, 34, 53, 70, 122, 57, 64, 62, 115, 72, 87, 96, 100, 124, 119, 129, 127, 131, 304, 610, 92, 640, 110, 672, 668, 675, 661]
+ timed out 
+16; trying with Chain: [2, 48, 4, 60, 34, 53, 70, 122, 57, 64, 62, 115, 72, 87, 96, 100, 124, 119, 129, 127, 131, 304, 610, 92, 640, 110, 672, 675, 661, 668]
+ timed out 
+17; trying with Chain: [2, 48, 4, 60, 34, 53, 70, 122, 57, 64, 62, 115, 72, 87, 96, 100, 124, 119, 129, 127, 131, 304, 610, 92, 640, 110, 672, 675, 668, 661]
+ timed out 
+18; trying with Chain: [2, 48, 4, 60, 34, 53, 70, 122, 57, 64, 62, 115, 72, 87, 96, 100, 124, 119, 129, 127, 131, 304, 610, 92, 640, 110, 675, 661, 668, 672]
+ timed out 
+19; trying with Chain: [2, 48, 4, 60, 34, 53, 70, 122, 57, 64, 62, 115, 72, 87, 96, 100, 124, 119, 129, 127, 131, 304, 610, 92, 640, 110, 675, 661, 672, 668]
+ timed out 
+
+
+ %%% PROBLEM: madeUp; longest chain length: 3; average chain length: 2.66666666667; timeout: 7 
+original chain with index 5: [4, 3, 5] 
+0; trying with Chain: [3, 4, 5]
+1       0        timed out 
+1; trying with Chain: [3, 5, 4]
+1       0        timed out 
+2; trying with Chain: [4, 3, 5]
+1       0        timed out 
+3; trying with Chain: [4, 5, 3]
+1       0        timed out 
+4; trying with Chain: [5, 3, 4]
+1       1        timed out 
+5; trying with Chain: [5, 4, 3]
+1       0        timed out 
+
+
+ %%% PROBLEM: madeup2; longest chain length: 5; average chain length: 3.33333333333; timeout: 7 
+original chain with index 7: [2, 6, 10, 11, 12] 
+0; trying with Chain: [2, 6, 10, 11, 12]
+1       0        timed out 
+1; trying with Chain: [2, 6, 10, 12, 11]
+1       0        timed out 
+2; trying with Chain: [2, 6, 11, 10, 12]
+1       0        timed out 
+3; trying with Chain: [2, 6, 11, 12, 10]
+1       0        timed out 
+4; trying with Chain: [2, 6, 12, 10, 11]
+1       0        timed out 
+5; trying with Chain: [2, 6, 12, 11, 10]
+1       0        timed out 
+6; trying with Chain: [2, 10, 6, 11, 12]
+1       0        timed out 
+7; trying with Chain: [2, 10, 6, 12, 11]
+1       0        timed out 
+8; trying with Chain: [2, 10, 11, 6, 12]
+1       0        timed out 
+9; trying with Chain: [2, 10, 11, 12, 6]
+1       0        timed out 
+10; trying with Chain: [2, 10, 12, 6, 11]
+1       0        timed out 
+11; trying with Chain: [2, 10, 12, 11, 6]
+1       0        timed out 
+12; trying with Chain: [2, 11, 6, 10, 12]
+1       0        timed out 
+13; trying with Chain: [2, 11, 6, 12, 10]
+1       0        timed out 
+14; trying with Chain: [2, 11, 10, 6, 12]
+1       0        timed out 
+15; trying with Chain: [2, 11, 10, 12, 6]
+1       0        timed out 
+16; trying with Chain: [2, 11, 12, 6, 10]
+1       0        timed out 
+17; trying with Chain: [2, 11, 12, 10, 6]
+1       0        timed out 
+18; trying with Chain: [2, 12, 6, 10, 11]
+1       0        timed out 
+19; trying with Chain: [2, 12, 6, 11, 10]
+1       0        timed out 
+
+
+ %%% PROBLEM: pret60_25; longest chain length: 18; average chain length: 4.70443349754; timeout: 7 
+original chain with index 264: [100, 468, 11, 679, 118, 181, 101, 37, 113, 680, 677, 653, 674, 664, 668, 652, 310, 645] 
+0; trying with Chain: [11, 310, 37, 653, 100, 645, 101, 652, 113, 664, 118, 668, 181, 674, 468, 677, 679, 680]
+ timed out 
+1; trying with Chain: [11, 310, 37, 653, 100, 645, 101, 652, 113, 664, 118, 668, 181, 674, 468, 677, 680, 679]
+ timed out 
+2; trying with Chain: [11, 310, 37, 653, 100, 645, 101, 652, 113, 664, 118, 668, 181, 674, 468, 679, 677, 680]
+ timed out 
+3; trying with Chain: [11, 310, 37, 653, 100, 645, 101, 652, 113, 664, 118, 668, 181, 674, 468, 679, 680, 677]
+ timed out 
+4; trying with Chain: [11, 310, 37, 653, 100, 645, 101, 652, 113, 664, 118, 668, 181, 674, 468, 680, 677, 679]
+ timed out 
+5; trying with Chain: [11, 310, 37, 653, 100, 645, 101, 652, 113, 664, 118, 668, 181, 674, 468, 680, 679, 677]
+ timed out 
+6; trying with Chain: [11, 310, 37, 653, 100, 645, 101, 652, 113, 664, 118, 668, 181, 674, 677, 468, 679, 680]
+ timed out 
+7; trying with Chain: [11, 310, 37, 653, 100, 645, 101, 652, 113, 664, 118, 668, 181, 674, 677, 468, 680, 679]
+ timed out 
+8; trying with Chain: [11, 310, 37, 653, 100, 645, 101, 652, 113, 664, 118, 668, 181, 674, 677, 679, 468, 680]
+ timed out 
+9; trying with Chain: [11, 310, 37, 653, 100, 645, 101, 652, 113, 664, 118, 668, 181, 674, 677, 679, 680, 468]
+ timed out 
+10; trying with Chain: [11, 310, 37, 653, 100, 645, 101, 652, 113, 664, 118, 668, 181, 674, 677, 680, 468, 679]
+ timed out 
+11; trying with Chain: [11, 310, 37, 653, 100, 645, 101, 652, 113, 664, 118, 668, 181, 674, 677, 680, 679, 468]
+ timed out 
+12; trying with Chain: [11, 310, 37, 653, 100, 645, 101, 652, 113, 664, 118, 668, 181, 674, 679, 468, 677, 680]
+ timed out 
+13; trying with Chain: [11, 310, 37, 653, 100, 645, 101, 652, 113, 664, 118, 668, 181, 674, 679, 468, 680, 677]
+ timed out 
+14; trying with Chain: [11, 310, 37, 653, 100, 645, 101, 652, 113, 664, 118, 668, 181, 674, 679, 677, 468, 680]
+
+
+ %%% PROBLEM: aim-100-1_6-no-1; longest chain length: 9; average chain length: 3.13953488372; timeout: 120 
+original chain with index 63: [11, 12, 182, 13, 192, 18, 7, 181, 191] 
+0; trying with Chain: [7, 11, 12, 18, 13, 181, 182, 191, 192]
+1       0        timed out 
+1; trying with Chain: [7, 11, 12, 18, 13, 181, 182, 192, 191]
+1       0        timed out 
+2; trying with Chain: [7, 11, 12, 18, 13, 181, 191, 182, 192]
+1       0        timed out 
+3; trying with Chain: [7, 11, 12, 18, 13, 181, 191, 192, 182]
+1       0        timed out 
+4; trying with Chain: [7, 11, 12, 18, 13, 181, 192, 182, 191]
+1       0        timed out 
+5; trying with Chain: [7, 11, 12, 18, 13, 181, 192, 191, 182]
+1       0        timed out 
+6; trying with Chain: [7, 11, 12, 18, 13, 182, 181, 191, 192]
+1       0        timed out 
+7; trying with Chain: [7, 11, 12, 18, 13, 182, 181, 192, 191]
+1       0        timed out 
+8; trying with Chain: [7, 11, 12, 18, 13, 182, 191, 181, 192]
+1       0        timed out 
+9; trying with Chain: [7, 11, 12, 18, 13, 182, 191, 192, 181]
+1       0        timed out 
+10; trying with Chain: [7, 11, 12, 18, 13, 182, 192, 181, 191]
+1       1        timed out 
+11; trying with Chain: [7, 11, 12, 18, 13, 182, 192, 191, 181]
+1       0        timed out 
+12; trying with Chain: [7, 11, 12, 18, 13, 191, 181, 182, 192]
+1       0        timed out 
+13; trying with Chain: [7, 11, 12, 18, 13, 191, 181, 192, 182]
+1       0        timed out 
+14; trying with Chain: [7, 11, 12, 18, 13, 191, 182, 181, 192]
+1       0        timed out 
+15; trying with Chain: [7, 11, 12, 18, 13, 191, 182, 192, 181]
+1       0        timed out 
+16; trying with Chain: [7, 11, 12, 18, 13, 191, 192, 181, 182]
+1       0        timed out 
+17; trying with Chain: [7, 11, 12, 18, 13, 191, 192, 182, 181]
+1       0        timed out 
+18; trying with Chain: [7, 11, 12, 18, 13, 192, 181, 182, 191]
+1       0        timed out 
+19; trying with Chain: [7, 11, 12, 18, 13, 192, 181, 191, 182]
+1       0        timed out 
+
+
+ %%% PROBLEM: aim-100-2_0-no-1; longest chain length: 6; average chain length: 3.14285714286; timeout: 120 
+original chain with index 23: [11, 208, 207, 201, 16, 12] 
+0; trying with Chain: [11, 12, 16, 201, 207, 208]
+1       0        timed out 
+1; trying with Chain: [11, 12, 16, 201, 208, 207]
+1       0        timed out 
+2; trying with Chain: [11, 12, 16, 207, 201, 208]
+1       0        timed out 
+3; trying with Chain: [11, 12, 16, 207, 208, 201]
+1       0        timed out 
+4; trying with Chain: [11, 12, 16, 208, 201, 207]
+1       0        timed out 
+5; trying with Chain: [11, 12, 16, 208, 207, 201]
+1       0        timed out 
+6; trying with Chain: [11, 12, 201, 16, 207, 208]
+1       0        timed out 
+7; trying with Chain: [11, 12, 201, 16, 208, 207]
+1       0        timed out 
+8; trying with Chain: [11, 12, 201, 207, 16, 208]
+1       0        timed out 
+9; trying with Chain: [11, 12, 201, 207, 208, 16]
+1       1        timed out 
+10; trying with Chain: [11, 12, 201, 208, 16, 207]
+1       0        timed out 
+11; trying with Chain: [11, 12, 201, 208, 207, 16]
+1       0        timed out 
+12; trying with Chain: [11, 12, 207, 16, 201, 208]
+1       0        timed out 
+13; trying with Chain: [11, 12, 207, 16, 208, 201]
+1       0        timed out 
+14; trying with Chain: [11, 12, 207, 201, 16, 208]
+1       0        timed out 
+15; trying with Chain: [11, 12, 207, 201, 208, 16]
+1       0        timed out 
+16; trying with Chain: [11, 12, 207, 208, 16, 201]
+1       0        timed out 
+17; trying with Chain: [11, 12, 207, 208, 201, 16]
+1       0        timed out 
+18; trying with Chain: [11, 12, 208, 16, 201, 207]
+1       0        timed out 
+19; trying with Chain: [11, 12, 208, 16, 207, 201]
+1       0        timed out 
+
+
+ %%% PROBLEM: aim-100-2_0-no-2; longest chain length: 12; average chain length: 4.72972972973; timeout: 120 
+original chain with index 64: [16, 9, 225, 224, 223, 8, 15, 14, 211, 22, 201, 219] 
+0; trying with Chain: [8, 14, 9, 22, 15, 16, 201, 211, 219, 223, 224, 225]
+ timed out 
+1; trying with Chain: [8, 14, 9, 22, 15, 16, 201, 211, 219, 223, 225, 224]
+ timed out 
+2; trying with Chain: [8, 14, 9, 22, 15, 16, 201, 211, 219, 224, 223, 225]
+ timed out 
+3; trying with Chain: [8, 14, 9, 22, 15, 16, 201, 211, 219, 224, 225, 223]
+ timed out 
+4; trying with Chain: [8, 14, 9, 22, 15, 16, 201, 211, 219, 225, 223, 224]
+ timed out 
+5; trying with Chain: [8, 14, 9, 22, 15, 16, 201, 211, 219, 225, 224, 223]
+ timed out 
+6; trying with Chain: [8, 14, 9, 22, 15, 16, 201, 211, 223, 219, 224, 225]
+ timed out 
+7; trying with Chain: [8, 14, 9, 22, 15, 16, 201, 211, 223, 219, 225, 224]
+ timed out 
+8; trying with Chain: [8, 14, 9, 22, 15, 16, 201, 211, 223, 224, 219, 225]
+ timed out 
+9; trying with Chain: [8, 14, 9, 22, 15, 16, 201, 211, 223, 224, 225, 219]
+ timed out 
+10; trying with Chain: [8, 14, 9, 22, 15, 16, 201, 211, 223, 225, 219, 224]
+ timed out 
+11; trying with Chain: [8, 14, 9, 22, 15, 16, 201, 211, 223, 225, 224, 219]
+ timed out 
+12; trying with Chain: [8, 14, 9, 22, 15, 16, 201, 211, 224, 219, 223, 225]
+ timed out 
+13; trying with Chain: [8, 14, 9, 22, 15, 16, 201, 211, 224, 219, 225, 223]
+ timed out 
+14; trying with Chain: [8, 14, 9, 22, 15, 16, 201, 211, 224, 223, 219, 225]
+ timed out 
+15; trying with Chain: [8, 14, 9, 22, 15, 16, 201, 211, 224, 223, 225, 219]
+ timed out 
+16; trying with Chain: [8, 14, 9, 22, 15, 16, 201, 211, 224, 225, 219, 223]
+ timed out 
+17; trying with Chain: [8, 14, 9, 22, 15, 16, 201, 211, 224, 225, 223, 219]
+ timed out 
+18; trying with Chain: [8, 14, 9, 22, 15, 16, 201, 211, 225, 219, 223, 224]
+ timed out 
+19; trying with Chain: [8, 14, 9, 22, 15, 16, 201, 211, 225, 219, 224, 223]
+ timed out 
+
+
+ %%% PROBLEM: aim-100-2_0-no-3; longest chain length: 7; average chain length: 3.27777777778; timeout: 120 
+original chain with index 30: [7, 6, 9, 5, 8, 12, 207] 
+0; trying with Chain: [5, 6, 7, 8, 9, 12, 207]
+1       0        timed out 
+1; trying with Chain: [5, 6, 7, 8, 9, 207, 12]
+1       0        timed out 
+2; trying with Chain: [5, 6, 7, 8, 12, 9, 207]
+1       0        timed out 
+3; trying with Chain: [5, 6, 7, 8, 12, 207, 9]
+1       0        timed out 
+4; trying with Chain: [5, 6, 7, 8, 207, 9, 12]
+1       0        timed out 
+5; trying with Chain: [5, 6, 7, 8, 207, 12, 9]
+1       1        timed out 
+6; trying with Chain: [5, 6, 7, 9, 8, 12, 207]
+1       0        timed out 
+7; trying with Chain: [5, 6, 7, 9, 8, 207, 12]
+1       0        timed out 
+8; trying with Chain: [5, 6, 7, 9, 12, 8, 207]
+1       0        timed out 
+9; trying with Chain: [5, 6, 7, 9, 12, 207, 8]
+1       0        timed out 
+10; trying with Chain: [5, 6, 7, 9, 207, 8, 12]
+1       1        timed out 
+11; trying with Chain: [5, 6, 7, 9, 207, 12, 8]
+1       0        timed out 
+12; trying with Chain: [5, 6, 7, 12, 8, 9, 207]
+1       0        timed out 
+13; trying with Chain: [5, 6, 7, 12, 8, 207, 9]
+1       0        timed out 
+14; trying with Chain: [5, 6, 7, 12, 9, 8, 207]
+1       0        timed out 
+15; trying with Chain: [5, 6, 7, 12, 9, 207, 8]
+1       1        timed out 
+16; trying with Chain: [5, 6, 7, 12, 207, 8, 9]
+1       0        timed out 
+17; trying with Chain: [5, 6, 7, 12, 207, 9, 8]
+1       0        timed out 
+18; trying with Chain: [5, 6, 7, 207, 8, 9, 12]
+1       0        timed out 
+19; trying with Chain: [5, 6, 7, 207, 8, 12, 9]
+1       0        timed out 
+
+
+ %%% PROBLEM: aim-100-2_0-no-4; longest chain length: 10; average chain length: 3.78947368421; timeout: 120 
+original chain with index 42: [21, 19, 18, 219, 26, 22, 222, 209, 220, 27] 
+0; trying with Chain: [18, 22, 19, 27, 21, 209, 26, 219, 220, 222]
+1       1        timed out 
+1; trying with Chain: [18, 22, 19, 27, 21, 209, 26, 219, 222, 220]
+1       0        timed out 
+2; trying with Chain: [18, 22, 19, 27, 21, 209, 26, 220, 219, 222]
+1       0        timed out 
+3; trying with Chain: [18, 22, 19, 27, 21, 209, 26, 220, 222, 219]
+1       0        timed out 
+4; trying with Chain: [18, 22, 19, 27, 21, 209, 26, 222, 219, 220]
+1       1        timed out 
+5; trying with Chain: [18, 22, 19, 27, 21, 209, 26, 222, 220, 219]
+1       0        timed out 
+6; trying with Chain: [18, 22, 19, 27, 21, 209, 219, 26, 220, 222]
+1       0        timed out 
+7; trying with Chain: [18, 22, 19, 27, 21, 209, 219, 26, 222, 220]
+1       0        timed out 
+8; trying with Chain: [18, 22, 19, 27, 21, 209, 219, 220, 26, 222]
+1       0        timed out 
+9; trying with Chain: [18, 22, 19, 27, 21, 209, 219, 220, 222, 26]
+1       0        timed out 
+10; trying with Chain: [18, 22, 19, 27, 21, 209, 219, 222, 26, 220]
+1       0        timed out 
+11; trying with Chain: [18, 22, 19, 27, 21, 209, 219, 222, 220, 26]
+1       0        timed out 
+12; trying with Chain: [18, 22, 19, 27, 21, 209, 220, 26, 219, 222]
+1       1        timed out 
+13; trying with Chain: [18, 22, 19, 27, 21, 209, 220, 26, 222, 219]
+1       0        timed out 
+14; trying with Chain: [18, 22, 19, 27, 21, 209, 220, 219, 26, 222]
+1       0        timed out 
+15; trying with Chain: [18, 22, 19, 27, 21, 209, 220, 219, 222, 26]
+1       0        timed out 
+16; trying with Chain: [18, 22, 19, 27, 21, 209, 220, 222, 26, 219]
+1       1        timed out 
+17; trying with Chain: [18, 22, 19, 27, 21, 209, 220, 222, 219, 26]
+1       0        timed out 
+18; trying with Chain: [18, 22, 19, 27, 21, 209, 222, 26, 219, 220]
+1       0        timed out 
+19; trying with Chain: [18, 22, 19, 27, 21, 209, 222, 26, 220, 219]
+1       0        timed out 
+
+
+ %%% PROBLEM: aim-200-1_6-no-1; longest chain length: 15; average chain length: 3.76923076923; timeout: 120 
+original chain with index 87: [56, 347, 349, 59, 326, 343, 345, 339, 340, 328, 342, 350, 351, 58, 57] 
+0; trying with Chain: [56, 57, 59, 328, 58, 326, 339, 343, 340, 345, 342, 347, 349, 350, 351]
+ timed out 
+1; trying with Chain: [56, 57, 59, 328, 58, 326, 339, 343, 340, 345, 342, 347, 349, 351, 350]
+ timed out 
+2; trying with Chain: [56, 57, 59, 328, 58, 326, 339, 343, 340, 345, 342, 347, 350, 349, 351]
+ timed out 
+3; trying with Chain: [56, 57, 59, 328, 58, 326, 339, 343, 340, 345, 342, 347, 350, 351, 349]
+ timed out 
+4; trying with Chain: [56, 57, 59, 328, 58, 326, 339, 343, 340, 345, 342, 347, 351, 349, 350]
+ timed out 
+5; trying with Chain: [56, 57, 59, 328, 58, 326, 339, 343, 340, 345, 342, 347, 351, 350, 349]
+ timed out 
+6; trying with Chain: [56, 57, 59, 328, 58, 326, 339, 343, 340, 345, 342, 349, 347, 350, 351]
+ timed out 
+7; trying with Chain: [56, 57, 59, 328, 58, 326, 339, 343, 340, 345, 342, 349, 347, 351, 350]
+ timed out 
+8; trying with Chain: [56, 57, 59, 328, 58, 326, 339, 343, 340, 345, 342, 349, 350, 347, 351]
+ timed out 
+9; trying with Chain: [56, 57, 59, 328, 58, 326, 339, 343, 340, 345, 342, 349, 350, 351, 347]
+ timed out 
+10; trying with Chain: [56, 57, 59, 328, 58, 326, 339, 343, 340, 345, 342, 349, 351, 347, 350]
+ timed out 
+11; trying with Chain: [56, 57, 59, 328, 58, 326, 339, 343, 340, 345, 342, 349, 351, 350, 347]
+ timed out 
+12; trying with Chain: [56, 57, 59, 328, 58, 326, 339, 343, 340, 345, 342, 350, 347, 349, 351]
+ timed out 
+13; trying with Chain: [56, 57, 59, 328, 58, 326, 339, 343, 340, 345, 342, 350, 347, 351, 349]
+ timed out 
+14; trying with Chain: [56, 57, 59, 328, 58, 326, 339, 343, 340, 345, 342, 350, 349, 347, 351]
+ timed out 
+15; trying with Chain: [56, 57, 59, 328, 58, 326, 339, 343, 340, 345, 342, 350, 349, 351, 347]
+ timed out 
+16; trying with Chain: [56, 57, 59, 328, 58, 326, 339, 343, 340, 345, 342, 350, 351, 347, 349]
+ timed out 
+17; trying with Chain: [56, 57, 59, 328, 58, 326, 339, 343, 340, 345, 342, 350, 351, 349, 347]
+ timed out 
+18; trying with Chain: [56, 57, 59, 328, 58, 326, 339, 343, 340, 345, 342, 351, 347, 349, 350]
+ timed out 
+19; trying with Chain: [56, 57, 59, 328, 58, 326, 339, 343, 340, 345, 342, 351, 347, 350, 349]
+ timed out 
+
+
+ %%% PROBLEM: aim-200-1_6-no-2; longest chain length: 6; average chain length: 2.55072463768; timeout: 120 
+original chain with index 93: [72, 71, 62, 15, 63, 320] 
+0; trying with Chain: [15, 62, 63, 71, 72, 320]
+1       0        timed out 
+1; trying with Chain: [15, 62, 63, 71, 320, 72]
+1       1        timed out 
+2; trying with Chain: [15, 62, 63, 72, 71, 320]
+1       0        timed out 
+3; trying with Chain: [15, 62, 63, 72, 320, 71]
+1       0        timed out 
+4; trying with Chain: [15, 62, 63, 320, 71, 72]
+1       1        timed out 
+5; trying with Chain: [15, 62, 63, 320, 72, 71]
+1       0        timed out 
+6; trying with Chain: [15, 62, 71, 63, 72, 320]
+1       1        timed out 
+7; trying with Chain: [15, 62, 71, 63, 320, 72]
+1       0        timed out 
+8; trying with Chain: [15, 62, 71, 72, 63, 320]
+1       0        timed out 
+9; trying with Chain: [15, 62, 71, 72, 320, 63]
+1       1        timed out 
+10; trying with Chain: [15, 62, 71, 320, 63, 72]
+1       0        timed out 
+11; trying with Chain: [15, 62, 71, 320, 72, 63]
+1       0        timed out 
+12; trying with Chain: [15, 62, 72, 63, 71, 320]
+1       1        timed out 
+13; trying with Chain: [15, 62, 72, 63, 320, 71]
+1       0        timed out 
+14; trying with Chain: [15, 62, 72, 71, 63, 320]
+1       0        timed out 
+15; trying with Chain: [15, 62, 72, 71, 320, 63]
+1       1        timed out 
+16; trying with Chain: [15, 62, 72, 320, 63, 71]
+1       0        timed out 
+17; trying with Chain: [15, 62, 72, 320, 71, 63]
+1       0        timed out 
+18; trying with Chain: [15, 62, 320, 63, 71, 72]
+1       1        timed out 
+19; trying with Chain: [15, 62, 320, 63, 72, 71]
+1       0        timed out 
+
+
+ %%% PROBLEM: aim-200-1_6-no-3; longest chain length: 21; average chain length: 3.85714285714; timeout: 120 
+original chain with index 115: [55, 57, 332, 330, 344, 339, 340, 350, 346, 326, 360, 367, 328, 322, 365, 364, 38, 327, 323, 54, 56] 
+0; trying with Chain: [38, 55, 322, 326, 54, 57, 339, 330, 340, 332, 344, 346, 350, 360, 56, 328, 323, 327, 364, 365, 367]
+ timed out 
+1; trying with Chain: [38, 55, 322, 326, 54, 57, 339, 330, 340, 332, 344, 346, 350, 360, 56, 328, 323, 327, 364, 367, 365]
+ timed out 
+2; trying with Chain: [38, 55, 322, 326, 54, 57, 339, 330, 340, 332, 344, 346, 350, 360, 56, 328, 323, 327, 365, 364, 367]
+ timed out 
+3; trying with Chain: [38, 55, 322, 326, 54, 57, 339, 330, 340, 332, 344, 346, 350, 360, 56, 328, 323, 327, 365, 367, 364]
+ timed out 
+4; trying with Chain: [38, 55, 322, 326, 54, 57, 339, 330, 340, 332, 344, 346, 350, 360, 56, 328, 323, 327, 367, 364, 365]
+ timed out 
+5; trying with Chain: [38, 55, 322, 326, 54, 57, 339, 330, 340, 332, 344, 346, 350, 360, 56, 328, 323, 327, 367, 365, 364]
+ timed out 
+6; trying with Chain: [38, 55, 322, 326, 54, 57, 339, 330, 340, 332, 344, 346, 350, 360, 56, 328, 323, 364, 327, 365, 367]
+ timed out 
+7; trying with Chain: [38, 55, 322, 326, 54, 57, 339, 330, 340, 332, 344, 346, 350, 360, 56, 328, 323, 364, 327, 367, 365]
+ timed out 
+8; trying with Chain: [38, 55, 322, 326, 54, 57, 339, 330, 340, 332, 344, 346, 350, 360, 56, 328, 323, 364, 365, 327, 367]
+ timed out 
+9; trying with Chain: [38, 55, 322, 326, 54, 57, 339, 330, 340, 332, 344, 346, 350, 360, 56, 328, 323, 364, 365, 367, 327]
+ timed out 
+10; trying with Chain: [38, 55, 322, 326, 54, 57, 339, 330, 340, 332, 344, 346, 350, 360, 56, 328, 323, 364, 367, 327, 365]
+ timed out 
+11; trying with Chain: [38, 55, 322, 326, 54, 57, 339, 330, 340, 332, 344, 346, 350, 360, 56, 328, 323, 364, 367, 365, 327]
+ timed out 
+12; trying with Chain: [38, 55, 322, 326, 54, 57, 339, 330, 340, 332, 344, 346, 350, 360, 56, 328, 323, 365, 327, 364, 367]
+ timed out 
+13; trying with Chain: [38, 55, 322, 326, 54, 57, 339, 330, 340, 332, 344, 346, 350, 360, 56, 328, 323, 365, 327, 367, 364]
+ timed out 
+14; trying with Chain: [38, 55, 322, 326, 54, 57, 339, 330, 340, 332, 344, 346, 350, 360, 56, 328, 323, 365, 364, 327, 367]
+ timed out 
+15; trying with Chain: [38, 55, 322, 326, 54, 57, 339, 330, 340, 332, 344, 346, 350, 360, 56, 328, 323, 365, 364, 367, 327]
+ timed out 
+16; trying with Chain: [38, 55, 322, 326, 54, 57, 339, 330, 340, 332, 344, 346, 350, 360, 56, 328, 323, 365, 367, 327, 364]
+ timed out 
+17; trying with Chain: [38, 55, 322, 326, 54, 57, 339, 330, 340, 332, 344, 346, 350, 360, 56, 328, 323, 365, 367, 364, 327]
+ timed out 
+18; trying with Chain: [38, 55, 322, 326, 54, 57, 339, 330, 340, 332, 344, 346, 350, 360, 56, 328, 323, 367, 327, 364, 365]
+ timed out 
+19; trying with Chain: [38, 55, 322, 326, 54, 57, 339, 330, 340, 332, 344, 346, 350, 360, 56, 328, 323, 367, 327, 365, 364]
+ timed out 
+
+
+ %%% PROBLEM: aim-200-1_6-no-4; longest chain length: 14; average chain length: 3.72916666667; timeout: 120 
+original chain with index 66: [45, 44, 47, 49, 46, 39, 50, 341, 38, 31, 27, 28, 26, 342] 
+0; trying with Chain: [26, 39, 31, 44, 27, 45, 38, 46, 28, 47, 49, 50, 341, 342]
+ timed out 
+1; trying with Chain: [26, 39, 31, 44, 27, 45, 38, 46, 28, 47, 49, 50, 342, 341]
+ timed out 
+2; trying with Chain: [26, 39, 31, 44, 27, 45, 38, 46, 28, 47, 49, 341, 50, 342]
+ timed out 
+3; trying with Chain: [26, 39, 31, 44, 27, 45, 38, 46, 28, 47, 49, 341, 342, 50]
+ timed out 
+4; trying with Chain: [26, 39, 31, 44, 27, 45, 38, 46, 28, 47, 49, 342, 50, 341]
+ timed out 
+5; trying with Chain: [26, 39, 31, 44, 27, 45, 38, 46, 28, 47, 49, 342, 341, 50]
+ timed out 
+6; trying with Chain: [26, 39, 31, 44, 27, 45, 38, 46, 28, 47, 50, 49, 341, 342]
+ timed out 
+7; trying with Chain: [26, 39, 31, 44, 27, 45, 38, 46, 28, 47, 50, 49, 342, 341]
+ timed out 
+8; trying with Chain: [26, 39, 31, 44, 27, 45, 38, 46, 28, 47, 50, 341, 49, 342]
+ timed out 
+9; trying with Chain: [26, 39, 31, 44, 27, 45, 38, 46, 28, 47, 50, 341, 342, 49]
+ timed out 
+10; trying with Chain: [26, 39, 31, 44, 27, 45, 38, 46, 28, 47, 50, 342, 49, 341]
+ timed out 
+11; trying with Chain: [26, 39, 31, 44, 27, 45, 38, 46, 28, 47, 50, 342, 341, 49]
+ timed out 
+12; trying with Chain: [26, 39, 31, 44, 27, 45, 38, 46, 28, 47, 341, 49, 50, 342]
+ timed out 
+13; trying with Chain: [26, 39, 31, 44, 27, 45, 38, 46, 28, 47, 341, 49, 342, 50]
+ timed out 
+14; trying with Chain: [26, 39, 31, 44, 27, 45, 38, 46, 28, 47, 341, 50, 49, 342]
+ timed out 
+15; trying with Chain: [26, 39, 31, 44, 27, 45, 38, 46, 28, 47, 341, 50, 342, 49]
+ timed out 
+16; trying with Chain: [26, 39, 31, 44, 27, 45, 38, 46, 28, 47, 341, 342, 49, 50]
+ timed out 
+17; trying with Chain: [26, 39, 31, 44, 27, 45, 38, 46, 28, 47, 341, 342, 50, 49]
+ timed out 
+18; trying with Chain: [26, 39, 31, 44, 27, 45, 38, 46, 28, 47, 342, 49, 50, 341]
+ timed out 
+19; trying with Chain: [26, 39, 31, 44, 27, 45, 38, 46, 28, 47, 342, 49, 341, 50]
+ timed out 
+
+
+ %%% PROBLEM: aim-50-1_6-no-1; longest chain length: 6; average chain length: 2.625; timeout: 120 
+original chain with index 27: [9, 8, 10, 5, 82, 77] 
+0; trying with Chain: [5, 8, 9, 10, 77, 82]
+1       0        timed out 
+1; trying with Chain: [5, 8, 9, 10, 82, 77]
+1       1        timed out 
+2; trying with Chain: [5, 8, 9, 77, 10, 82]
+1       0        timed out 
+3; trying with Chain: [5, 8, 9, 77, 82, 10]
+1       0        timed out 
+4; trying with Chain: [5, 8, 9, 82, 10, 77]
+1       1        timed out 
+5; trying with Chain: [5, 8, 9, 82, 77, 10]
+1       1        timed out 
+6; trying with Chain: [5, 8, 10, 9, 77, 82]
+1       0        timed out 
+7; trying with Chain: [5, 8, 10, 9, 82, 77]
+1       0        timed out 
+8; trying with Chain: [5, 8, 10, 77, 9, 82]
+1       0        timed out 
+9; trying with Chain: [5, 8, 10, 77, 82, 9]
+1       1        timed out 
+10; trying with Chain: [5, 8, 10, 82, 9, 77]
+1       0        timed out 
+11; trying with Chain: [5, 8, 10, 82, 77, 9]
+1       0        timed out 
+12; trying with Chain: [5, 8, 77, 9, 10, 82]
+1       0        timed out 
+13; trying with Chain: [5, 8, 77, 9, 82, 10]
+1       1        timed out 
+14; trying with Chain: [5, 8, 77, 10, 9, 82]
+1       0        timed out 
+15; trying with Chain: [5, 8, 77, 10, 82, 9]
+1       0        timed out 
+16; trying with Chain: [5, 8, 77, 82, 9, 10]
+1       0        timed out 
+17; trying with Chain: [5, 8, 77, 82, 10, 9]
+1       1        timed out 
+18; trying with Chain: [5, 8, 82, 9, 10, 77]
+1       0        timed out 
+19; trying with Chain: [5, 8, 82, 9, 77, 10]
+1       0        timed out 
+
+
+ %%% PROBLEM: aim-50-1_6-no-2; longest chain length: 7; average chain length: 3.17391304348; timeout: 120 
+original chain with index 35: [7, 6, 5, 2, 85, 84, 1] 
+0; trying with Chain: [1, 5, 2, 6, 7, 84, 85]
+1       0        timed out 
+1; trying with Chain: [1, 5, 2, 6, 7, 85, 84]
+1       0        timed out 
+2; trying with Chain: [1, 5, 2, 6, 84, 7, 85]
+1       0        timed out 
+3; trying with Chain: [1, 5, 2, 6, 84, 85, 7]
+1       1        timed out 
+4; trying with Chain: [1, 5, 2, 6, 85, 7, 84]
+1       1        timed out 
+5; trying with Chain: [1, 5, 2, 6, 85, 84, 7]
+1       1        timed out 
+6; trying with Chain: [1, 5, 2, 7, 6, 84, 85]
+1       1        timed out 
+7; trying with Chain: [1, 5, 2, 7, 6, 85, 84]
+1       0        timed out 
+8; trying with Chain: [1, 5, 2, 7, 84, 6, 85]
+1       0        timed out 
+9; trying with Chain: [1, 5, 2, 7, 84, 85, 6]
+1       0        timed out 
+10; trying with Chain: [1, 5, 2, 7, 85, 6, 84]
+1       1        timed out 
+11; trying with Chain: [1, 5, 2, 7, 85, 84, 6]
+1       1        timed out 
+12; trying with Chain: [1, 5, 2, 84, 6, 7, 85]
+1       0        timed out 
+13; trying with Chain: [1, 5, 2, 84, 6, 85, 7]
+1       0        timed out 
+14; trying with Chain: [1, 5, 2, 84, 7, 6, 85]
+1       0        timed out 
+15; trying with Chain: [1, 5, 2, 84, 7, 85, 6]
+1       0        timed out 
+16; trying with Chain: [1, 5, 2, 84, 85, 6, 7]
+1       1        timed out 
+17; trying with Chain: [1, 5, 2, 84, 85, 7, 6]
+1       0        timed out 
+18; trying with Chain: [1, 5, 2, 85, 6, 7, 84]
+1       0        timed out 
+19; trying with Chain: [1, 5, 2, 85, 6, 84, 7]
+1       0        timed out 
+
+
+ %%% PROBLEM: aim-50-1_6-no-3; longest chain length: 6; average chain length: 2.66666666667; timeout: 120 
+original chain with index 41: [8, 87, 11, 90, 12, 89] 
+0; trying with Chain: [8, 12, 11, 87, 89, 90]
+1       0        timed out 
+1; trying with Chain: [8, 12, 11, 87, 90, 89]
+1       0        timed out 
+2; trying with Chain: [8, 12, 11, 89, 87, 90]
+1       0        timed out 
+3; trying with Chain: [8, 12, 11, 89, 90, 87]
+1       0        timed out 
+4; trying with Chain: [8, 12, 11, 90, 87, 89]
+1       0        timed out 
+5; trying with Chain: [8, 12, 11, 90, 89, 87]
+1       0        timed out 
+6; trying with Chain: [8, 12, 87, 11, 89, 90]
+1       1        timed out 
+7; trying with Chain: [8, 12, 87, 11, 90, 89]
+1       1        timed out 
+8; trying with Chain: [8, 12, 87, 89, 11, 90]
+1       1        timed out 
+9; trying with Chain: [8, 12, 87, 89, 90, 11]
+1       0        timed out 
+10; trying with Chain: [8, 12, 87, 90, 11, 89]
+1       0        timed out 
+11; trying with Chain: [8, 12, 87, 90, 89, 11]
+1       0        timed out 
+12; trying with Chain: [8, 12, 89, 11, 87, 90]
+1       1        timed out 
+13; trying with Chain: [8, 12, 89, 11, 90, 87]
+1       1        timed out 
+14; trying with Chain: [8, 12, 89, 87, 11, 90]
+1       0        timed out 
+15; trying with Chain: [8, 12, 89, 87, 90, 11]
+1       0        timed out 
+16; trying with Chain: [8, 12, 89, 90, 11, 87]
+1       0        timed out 
+17; trying with Chain: [8, 12, 89, 90, 87, 11]
+1       1        timed out 
+18; trying with Chain: [8, 12, 90, 11, 87, 89]
+1       1        timed out 
+19; trying with Chain: [8, 12, 90, 11, 89, 87]
+1       0        timed out 
+
+
+ %%% PROBLEM: aim-50-1_6-no-4; longest chain length: 5; average chain length: 2.4347826087; timeout: 120 
+original chain with index 26: [9, 90, 91, 88, 8] 
+0; trying with Chain: [8, 9, 88, 90, 91]
+1       1        timed out 
+1; trying with Chain: [8, 9, 88, 91, 90]
+1       0        timed out 
+2; trying with Chain: [8, 9, 90, 88, 91]
+1       0        timed out 
+3; trying with Chain: [8, 9, 90, 91, 88]
+1       0        timed out 
+4; trying with Chain: [8, 9, 91, 88, 90]
+1       1        timed out 
+5; trying with Chain: [8, 9, 91, 90, 88]
+1       0        timed out 
+6; trying with Chain: [8, 88, 9, 90, 91]
+1       0        timed out 
+7; trying with Chain: [8, 88, 9, 91, 90]
+1       0        timed out 
+8; trying with Chain: [8, 88, 90, 9, 91]
+1       1        timed out 
+9; trying with Chain: [8, 88, 90, 91, 9]
+1       1        timed out 
+10; trying with Chain: [8, 88, 91, 9, 90]
+1       0        timed out 
+11; trying with Chain: [8, 88, 91, 90, 9]
+1       0        timed out 
+12; trying with Chain: [8, 90, 9, 88, 91]
+1       0        timed out 
+13; trying with Chain: [8, 90, 9, 91, 88]
+1       1        timed out 
+14; trying with Chain: [8, 90, 88, 9, 91]
+1       1        timed out 
+15; trying with Chain: [8, 90, 88, 91, 9]
+1       0        timed out 
+16; trying with Chain: [8, 90, 91, 9, 88]
+1       0        timed out 
+17; trying with Chain: [8, 90, 91, 88, 9]
+1       0        timed out 
+18; trying with Chain: [8, 91, 9, 88, 90]
+1       0        timed out 
+19; trying with Chain: [8, 91, 9, 90, 88]
+1       1        timed out 
+
+
+ %%% PROBLEM: aim-50-2_0-no-1; longest chain length: 12; average chain length: 3.76470588235; timeout: 120 
+original chain with index 28: [11, 18, 21, 12, 15, 105, 107, 1, 101, 4, 7, 3] 
+0; trying with Chain: [1, 11, 3, 12, 4, 15, 7, 18, 21, 101, 105, 107]
+ timed out 
+1; trying with Chain: [1, 11, 3, 12, 4, 15, 7, 18, 21, 101, 107, 105]
+ timed out 
+2; trying with Chain: [1, 11, 3, 12, 4, 15, 7, 18, 21, 105, 101, 107]
+ timed out 
+3; trying with Chain: [1, 11, 3, 12, 4, 15, 7, 18, 21, 105, 107, 101]
+ timed out 
+4; trying with Chain: [1, 11, 3, 12, 4, 15, 7, 18, 21, 107, 101, 105]
+ timed out 
+5; trying with Chain: [1, 11, 3, 12, 4, 15, 7, 18, 21, 107, 105, 101]
+ timed out 
+6; trying with Chain: [1, 11, 3, 12, 4, 15, 7, 18, 101, 21, 105, 107]
+ timed out 
+7; trying with Chain: [1, 11, 3, 12, 4, 15, 7, 18, 101, 21, 107, 105]
+ timed out 
+8; trying with Chain: [1, 11, 3, 12, 4, 15, 7, 18, 101, 105, 21, 107]
+ timed out 
+9; trying with Chain: [1, 11, 3, 12, 4, 15, 7, 18, 101, 105, 107, 21]
+ timed out 
+10; trying with Chain: [1, 11, 3, 12, 4, 15, 7, 18, 101, 107, 21, 105]
+ timed out 
+11; trying with Chain: [1, 11, 3, 12, 4, 15, 7, 18, 101, 107, 105, 21]
+ timed out 
+12; trying with Chain: [1, 11, 3, 12, 4, 15, 7, 18, 105, 21, 101, 107]
+ timed out 
+13; trying with Chain: [1, 11, 3, 12, 4, 15, 7, 18, 105, 21, 107, 101]
+ timed out 
+14; trying with Chain: [1, 11, 3, 12, 4, 15, 7, 18, 105, 101, 21, 107]
+ timed out 
+15; trying with Chain: [1, 11, 3, 12, 4, 15, 7, 18, 105, 101, 107, 21]
+ timed out 
+16; trying with Chain: [1, 11, 3, 12, 4, 15, 7, 18, 105, 107, 21, 101]
+ timed out 
+17; trying with Chain: [1, 11, 3, 12, 4, 15, 7, 18, 105, 107, 101, 21]
+ timed out 
+18; trying with Chain: [1, 11, 3, 12, 4, 15, 7, 18, 107, 21, 101, 105]
+ timed out 
+19; trying with Chain: [1, 11, 3, 12, 4, 15, 7, 18, 107, 21, 105, 101]
+ timed out 
+
+
+ %%% PROBLEM: aim-50-2_0-no-2; longest chain length: 7; average chain length: 2.76666666667; timeout: 120 
+original chain with index 43: [11, 117, 7, 114, 104, 120, 118] 
+0; trying with Chain: [7, 104, 11, 114, 117, 118, 120]
+1       1        timed out 
+1; trying with Chain: [7, 104, 11, 114, 117, 120, 118]
+1       2        timed out 
+2; trying with Chain: [7, 104, 11, 114, 118, 117, 120]
+1       1        timed out 
+3; trying with Chain: [7, 104, 11, 114, 118, 120, 117]
+1       1        timed out 
+4; trying with Chain: [7, 104, 11, 114, 120, 117, 118]
+1       2        timed out 
+5; trying with Chain: [7, 104, 11, 114, 120, 118, 117]
+1       1        timed out 
+6; trying with Chain: [7, 104, 11, 117, 114, 118, 120]
+1       1        timed out 
+7; trying with Chain: [7, 104, 11, 117, 114, 120, 118]
+1       1        timed out 
+8; trying with Chain: [7, 104, 11, 117, 118, 114, 120]
+1       2        timed out 
+9; trying with Chain: [7, 104, 11, 117, 118, 120, 114]
+1       1        timed out 
+10; trying with Chain: [7, 104, 11, 117, 120, 114, 118]
+1       1        timed out 
+11; trying with Chain: [7, 104, 11, 117, 120, 118, 114]
+1       2        timed out 
+12; trying with Chain: [7, 104, 11, 118, 114, 117, 120]
+1       2        timed out 
+13; trying with Chain: [7, 104, 11, 118, 114, 120, 117]
+1       2        timed out 
+14; trying with Chain: [7, 104, 11, 118, 117, 114, 120]
+1       2        timed out 
+15; trying with Chain: [7, 104, 11, 118, 117, 120, 114]
+1       2        timed out 
+16; trying with Chain: [7, 104, 11, 118, 120, 114, 117]
+1       2        timed out 
+17; trying with Chain: [7, 104, 11, 118, 120, 117, 114]
+1       1        timed out 
+18; trying with Chain: [7, 104, 11, 120, 114, 117, 118]
+1       1        timed out 
+19; trying with Chain: [7, 104, 11, 120, 114, 118, 117]
+1       2        timed out 
+
+
+ %%% PROBLEM: aim-50-2_0-no-3; longest chain length: 6; average chain length: 2.69565217391; timeout: 120 
+original chain with index 34: [6, 105, 107, 4, 104, 5] 
+0; trying with Chain: [4, 6, 5, 104, 105, 107]
+1       0        timed out 
+1; trying with Chain: [4, 6, 5, 104, 107, 105]
+1       1        timed out 
+2; trying with Chain: [4, 6, 5, 105, 104, 107]
+1       0        timed out 
+3; trying with Chain: [4, 6, 5, 105, 107, 104]
+1       0        timed out 
+4; trying with Chain: [4, 6, 5, 107, 104, 105]
+1       0        timed out 
+5; trying with Chain: [4, 6, 5, 107, 105, 104]
+1       1        timed out 
+6; trying with Chain: [4, 6, 104, 5, 105, 107]
+1       0        timed out 
+7; trying with Chain: [4, 6, 104, 5, 107, 105]
+1       0        timed out 
+8; trying with Chain: [4, 6, 104, 105, 5, 107]
+1       0        timed out 
+9; trying with Chain: [4, 6, 104, 105, 107, 5]
+1       1        timed out 
+10; trying with Chain: [4, 6, 104, 107, 5, 105]
+1       0        timed out 
+11; trying with Chain: [4, 6, 104, 107, 105, 5]
+1       0        timed out 
+12; trying with Chain: [4, 6, 105, 5, 104, 107]
+1       0        timed out 
+13; trying with Chain: [4, 6, 105, 5, 107, 104]
+1       1        timed out 
+14; trying with Chain: [4, 6, 105, 104, 5, 107]
+1       1        timed out 
+15; trying with Chain: [4, 6, 105, 104, 107, 5]
+1       0        timed out 
+16; trying with Chain: [4, 6, 105, 107, 5, 104]
+1       0        timed out 
+17; trying with Chain: [4, 6, 105, 107, 104, 5]
+1       0        timed out 
+18; trying with Chain: [4, 6, 107, 5, 104, 105]
+1       1        timed out 
+19; trying with Chain: [4, 6, 107, 5, 105, 104]
+1       1        timed out 
+
+
+ %%% PROBLEM: aim-50-2_0-no-4; longest chain length: 6; average chain length: 2.85714285714; timeout: 120 
+original chain with index 25: [22, 104, 101, 102, 23, 21] 
+0; trying with Chain: [21, 22, 23, 101, 102, 104]
+1       0        timed out 
+1; trying with Chain: [21, 22, 23, 101, 104, 102]
+1       1        timed out 
+2; trying with Chain: [21, 22, 23, 102, 101, 104]
+1       1        timed out 
+3; trying with Chain: [21, 22, 23, 102, 104, 101]
+1       0        timed out 
+4; trying with Chain: [21, 22, 23, 104, 101, 102]
+1       0        timed out 
+5; trying with Chain: [21, 22, 23, 104, 102, 101]
+1       0        timed out 
+6; trying with Chain: [21, 22, 101, 23, 102, 104]
+1       1        timed out 
+7; trying with Chain: [21, 22, 101, 23, 104, 102]
+1       0        timed out 
+8; trying with Chain: [21, 22, 101, 102, 23, 104]
+1       0        timed out 
+9; trying with Chain: [21, 22, 101, 102, 104, 23]
+1       0        timed out 
+10; trying with Chain: [21, 22, 101, 104, 23, 102]
+1       0        timed out 
+11; trying with Chain: [21, 22, 101, 104, 102, 23]
+1       1        timed out 
+12; trying with Chain: [21, 22, 102, 23, 101, 104]
+1       0        timed out 
+13; trying with Chain: [21, 22, 102, 23, 104, 101]
+1       0        timed out 
+14; trying with Chain: [21, 22, 102, 101, 23, 104]
+1       0        timed out 
+15; trying with Chain: [21, 22, 102, 101, 104, 23]
+1       1        timed out 
+16; trying with Chain: [21, 22, 102, 104, 23, 101]
+1       1        timed out 
+17; trying with Chain: [21, 22, 102, 104, 101, 23]
+1       0        timed out 
+18; trying with Chain: [21, 22, 104, 23, 101, 102]
+1       0        timed out 
+19; trying with Chain: [21, 22, 104, 23, 102, 101]
+1       0        timed out 
+
+
+ %%% PROBLEM: ../booleforce-1.2/traces/madeup2trace; longest chain length: 5; average chain length: 3.33333333333; timeout: 30 
+original chain with index 7: [2, 6, 10, 11, 12] 
+0; trying with Chain: [2, 6, 10, 11, 12]
+1       199      timed out 
+1; trying with Chain: [2, 6, 10, 12, 11]
+1       34       timed out 
+2; trying with Chain: [2, 6, 11, 10, 12]
+1       34       timed out 
+3; trying with Chain: [2, 6, 11, 12, 10]
+1       32       timed out 
+4; trying with Chain: [2, 6, 12, 10, 11]
+1       32       timed out 
+5; trying with Chain: [2, 6, 12, 11, 10]
+1       36       timed out 
+6; trying with Chain: [2, 10, 6, 11, 12]
+1       38       timed out 
+7; trying with Chain: [2, 10, 6, 12, 11]
+1       36       timed out 
+8; trying with Chain: [2, 10, 11, 6, 12]
+1       35       timed out 
+9; trying with Chain: [2, 10, 11, 12, 6]
+1       34       timed out 
+10; trying with Chain: [2, 10, 12, 6, 11]
+1       33       timed out 
+11; trying with Chain: [2, 10, 12, 11, 6]
+1       34       timed out 
+12; trying with Chain: [2, 11, 6, 10, 12]
+1       38       timed out 
+13; trying with Chain: [2, 11, 6, 12, 10]
+1       35       timed out 
+14; trying with Chain: [2, 11, 10, 6, 12]
+1       34       timed out 
+15; trying with Chain: [2, 11, 10, 12, 6]
+1       34       timed out 
+16; trying with Chain: [2, 11, 12, 6, 10]
+1       34       timed out 
+17; trying with Chain: [2, 11, 12, 10, 6]
+1       38       timed out 
+18; trying with Chain: [2, 12, 6, 10, 11]
+1       35       timed out 
+19; trying with Chain: [2, 12, 6, 11, 10]
+1       35       timed out 
+20; trying with Chain: [2, 12, 10, 6, 11]
+1       33       timed out 
+21; trying with Chain: [2, 12, 10, 11, 6]
+1       34       timed out 
+22; trying with Chain: [2, 12, 11, 6, 10]
+1       31       timed out 
+23; trying with Chain: [2, 12, 11, 10, 6]
+1       34       timed out 
+24; trying with Chain: [6, 2, 10, 11, 12]
+1       33       timed out 
+25; trying with Chain: [6, 2, 10, 12, 11]
+1       32       timed out 
+26; trying with Chain: [6, 2, 11, 10, 12]
+1       32       timed out 
+27; trying with Chain: [6, 2, 11, 12, 10]
+1       34       timed out 
+28; trying with Chain: [6, 2, 12, 10, 11]
+1       33       timed out 
+29; trying with Chain: [6, 2, 12, 11, 10]
+1       34       timed out 
+30; trying with Chain: [6, 10, 2, 11, 12]
+1       32       timed out 
+31; trying with Chain: [6, 10, 2, 12, 11]
+1       32       timed out 
+32; trying with Chain: [6, 10, 11, 2, 12]
+1       33       timed out 
+33; trying with Chain: [6, 10, 11, 12, 2]
+1       32       timed out 
+34; trying with Chain: [6, 10, 12, 2, 11]
+1       32       timed out 
+35; trying with Chain: [6, 10, 12, 11, 2]
+1       32       timed out 
+36; trying with Chain: [6, 11, 2, 10, 12]
+1       32       timed out 
+37; trying with Chain: [6, 11, 2, 12, 10]
+1       32       timed out 
+38; trying with Chain: [6, 11, 10, 2, 12]
+1       31       timed out 
+39; trying with Chain: [6, 11, 10, 12, 2]
+1       39       timed out 
+40; trying with Chain: [6, 11, 12, 2, 10]
+1       34       timed out 
+41; trying with Chain: [6, 11, 12, 10, 2]
+1       32       timed out 
+42; trying with Chain: [6, 12, 2, 10, 11]
+1       31       timed out 
+43; trying with Chain: [6, 12, 2, 11, 10]
+1       31       timed out 
+44; trying with Chain: [6, 12, 10, 2, 11]
+1       31       timed out 
+45; trying with Chain: [6, 12, 10, 11, 2]
+1       32       timed out 
+46; trying with Chain: [6, 12, 11, 2, 10]
+1       32       timed out 
+47; trying with Chain: [6, 12, 11, 10, 2]
+1       33       timed out 
+48; trying with Chain: [10, 2, 6, 11, 12]
+1       33       timed out 
+49; trying with Chain: [10, 2, 6, 12, 11]
+1       32       timed out 
+50; trying with Chain: [10, 2, 11, 6, 12]
+1       33       timed out 
+51; trying with Chain: [10, 2, 11, 12, 6]
+1       31       timed out 
+52; trying with Chain: [10, 2, 12, 6, 11]
+1       32       timed out 
+53; trying with Chain: [10, 2, 12, 11, 6]
+1       32       timed out 
+54; trying with Chain: [10, 6, 2, 11, 12]
+1       33       timed out 
+55; trying with Chain: [10, 6, 2, 12, 11]
+1       32       timed out 
+56; trying with Chain: [10, 6, 11, 2, 12]
+1       31       timed out 
+57; trying with Chain: [10, 6, 11, 12, 2]
+1       33       timed out 
+58; trying with Chain: [10, 6, 12, 2, 11]
+1       31       timed out 
+59; trying with Chain: [10, 6, 12, 11, 2]
+1       33       timed out 
+60; trying with Chain: [10, 11, 2, 6, 12]
+1       33       timed out 
+61; trying with Chain: [10, 11, 2, 12, 6]
+1       32       timed out 
+62; trying with Chain: [10, 11, 6, 2, 12]
+1       33       timed out 
+63; trying with Chain: [10, 11, 6, 12, 2]
+1       32       timed out 
+64; trying with Chain: [10, 11, 12, 2, 6]
+1       36       timed out 
+65; trying with Chain: [10, 11, 12, 6, 2]
+1       34       timed out 
+66; trying with Chain: [10, 12, 2, 6, 11]
+1       32       timed out 
+67; trying with Chain: [10, 12, 2, 11, 6]
+1       32       timed out 
+68; trying with Chain: [10, 12, 6, 2, 11]
+1       32       timed out 
+69; trying with Chain: [10, 12, 6, 11, 2]
+1       34       timed out 
+70; trying with Chain: [10, 12, 11, 2, 6]
+1       31       timed out 
+71; trying with Chain: [10, 12, 11, 6, 2]
+1       31       timed out 
+72; trying with Chain: [11, 2, 6, 10, 12]
+1       31       timed out 
+73; trying with Chain: [11, 2, 6, 12, 10]
+1       33       timed out 
+74; trying with Chain: [11, 2, 10, 6, 12]
+1       34       timed out 
+75; trying with Chain: [11, 2, 10, 12, 6]
+1       32       timed out 
+76; trying with Chain: [11, 2, 12, 6, 10]
+1       32       timed out 
+77; trying with Chain: [11, 2, 12, 10, 6]
+1       31       timed out 
+78; trying with Chain: [11, 6, 2, 10, 12]
+1       32       timed out 
+79; trying with Chain: [11, 6, 2, 12, 10]
+1       32       timed out 
+80; trying with Chain: [11, 6, 10, 2, 12]
+1       32       timed out 
+81; trying with Chain: [11, 6, 10, 12, 2]
+1       33       timed out 
+82; trying with Chain: [11, 6, 12, 2, 10]
+1       35       timed out 
+83; trying with Chain: [11, 6, 12, 10, 2]
+1       30       timed out 
+84; trying with Chain: [11, 10, 2, 6, 12]
+1       31       timed out 
+85; trying with Chain: [11, 10, 2, 12, 6]
+1       32       timed out 
+86; trying with Chain: [11, 10, 6, 2, 12]
+1       31       timed out 
+87; trying with Chain: [11, 10, 6, 12, 2]
+1       32       timed out 
+88; trying with Chain: [11, 10, 12, 2, 6]
+1       33       timed out 
+89; trying with Chain: [11, 10, 12, 6, 2]
+1       33       timed out 
+90; trying with Chain: [11, 12, 2, 6, 10]
+1       32       timed out 
+91; trying with Chain: [11, 12, 2, 10, 6]
+1       34       timed out 
+92; trying with Chain: [11, 12, 6, 2, 10]
+1       33       timed out 
+93; trying with Chain: [11, 12, 6, 10, 2]
+1       35       timed out 
+94; trying with Chain: [11, 12, 10, 2, 6]
+1       32       timed out 
+95; trying with Chain: [11, 12, 10, 6, 2]
+1       33       timed out 
+96; trying with Chain: [12, 2, 6, 10, 11]
+1       33       timed out 
+97; trying with Chain: [12, 2, 6, 11, 10]
+1       36       timed out 
+98; trying with Chain: [12, 2, 10, 6, 11]
+1       32       timed out 
+99; trying with Chain: [12, 2, 10, 11, 6]
+1       34       timed out 
+100; trying with Chain: [12, 2, 11, 6, 10]
+1       35       timed out 
+101; trying with Chain: [12, 2, 11, 10, 6]
+1       31       timed out 
+102; trying with Chain: [12, 6, 2, 10, 11]
+1       34       timed out 
+103; trying with Chain: [12, 6, 2, 11, 10]
+1       33       timed out 
+104; trying with Chain: [12, 6, 10, 2, 11]
+1       33       timed out 
+105; trying with Chain: [12, 6, 10, 11, 2]
+1       32       timed out 
+106; trying with Chain: [12, 6, 11, 2, 10]
+1       33       timed out 
+107; trying with Chain: [12, 6, 11, 10, 2]
+1       32       timed out 
+108; trying with Chain: [12, 10, 2, 6, 11]
+1       32       timed out 
+109; trying with Chain: [12, 10, 2, 11, 6]
+1       33       timed out 
+110; trying with Chain: [12, 10, 6, 2, 11]
+1       35       timed out 
+111; trying with Chain: [12, 10, 6, 11, 2]
+1       33       timed out 
+112; trying with Chain: [12, 10, 11, 2, 6]
+1       31       timed out 
+113; trying with Chain: [12, 10, 11, 6, 2]
+1       36       timed out 
+114; trying with Chain: [12, 11, 2, 6, 10]
+1       33       timed out 
+115; trying with Chain: [12, 11, 2, 10, 6]
+1       33       timed out 
+116; trying with Chain: [12, 11, 6, 2, 10]
+1       33       timed out 
+117; trying with Chain: [12, 11, 6, 10, 2]
+1       38       timed out 
+118; trying with Chain: [12, 11, 10, 2, 6]
+1       35       timed out 
+119; trying with Chain: [12, 11, 10, 6, 2]
+1       32       timed out 
+
+
+ %%% PROBLEM: ../booleforce-1.2/traces/madeup2trace; longest chain length: 5; average chain length: 3.33333333333; timeout: 30 
+original chain with index 7: [2, 6, 10, 11, 12] 
+0; trying with Chain: [2, 6, 10, 11, 12]
+1       177248465 timed out 
+1; trying with Chain: [2, 6, 10, 12, 11]
+1       41688126 timed out 
+2; trying with Chain: [2, 6, 11, 10, 12]
+1       43791087 timed out 
+3; trying with Chain: [2, 6, 11, 12, 10]
+1       41021568 timed out 
+4; trying with Chain: [2, 6, 12, 10, 11]
+1       47009155 timed out 
+5; trying with Chain: [2, 6, 12, 11, 10]
+1       44247120 timed out 
+6; trying with Chain: [2, 10, 6, 11, 12]
+1       43180431 timed out 
+7; trying with Chain: [2, 10, 6, 12, 11]
+1       44240371 timed out 
+8; trying with Chain: [2, 10, 11, 6, 12]
+1       36702441 timed out 
+9; trying with Chain: [2, 10, 11, 12, 6]
+1       44733346 timed out 
+10; trying with Chain: [2, 10, 12, 6, 11]
+1       42144149 timed out 
+11; trying with Chain: [2, 10, 12, 11, 6]
+1       31555810 timed out 
+12; trying with Chain: [2, 11, 6, 10, 12]
+1       35919011 timed out 
+13; trying with Chain: [2, 11, 6, 12, 10]
+1       41588360 timed out 
+14; trying with Chain: [2, 11, 10, 6, 12]
+1       36181427 timed out 
+15; trying with Chain: [2, 11, 10, 12, 6]
+1       45225964 timed out 
+16; trying with Chain: [2, 11, 12, 6, 10]
+1       45163972 timed out 
+17; trying with Chain: [2, 11, 12, 10, 6]
+1       37879653 timed out 
+18; trying with Chain: [2, 12, 6, 10, 11]
+1       55009389 timed out 
+19; trying with Chain: [2, 12, 6, 11, 10]
+1       43213440 timed out 
+20; trying with Chain: [2, 12, 10, 6, 11]
+1       64024131 timed out 
+21; trying with Chain: [2, 12, 10, 11, 6]
+1       70151104 timed out 
+22; trying with Chain: [2, 12, 11, 6, 10]
+1       63257989 timed out 
+23; trying with Chain: [2, 12, 11, 10, 6]
+1       36426834 timed out 
+24; trying with Chain: [6, 2, 10, 11, 12]
+1       43502231 timed out 
+25; trying with Chain: [6, 2, 10, 12, 11]
+1       56509548 timed out 
+26; trying with Chain: [6, 2, 11, 10, 12]
+1       42643942 timed out 
+27; trying with Chain: [6, 2, 11, 12, 10]
+1       32310356 timed out 
+28; trying with Chain: [6, 2, 12, 10, 11]
+1       38476887 timed out 
+29; trying with Chain: [6, 2, 12, 11, 10]
+1       62129053 timed out 
+30; trying with Chain: [6, 10, 2, 11, 12]
+1       38192539 timed out 
+31; trying with Chain: [6, 10, 2, 12, 11]
+1       33122009 timed out 
+32; trying with Chain: [6, 10, 11, 2, 12]
+1       32515364 timed out 
+33; trying with Chain: [6, 10, 11, 12, 2]
+1       41701221 timed out 
+34; trying with Chain: [6, 10, 12, 2, 11]
+1       41427808 timed out 
+35; trying with Chain: [6, 10, 12, 11, 2]
+1       51267843 timed out 
+36; trying with Chain: [6, 11, 2, 10, 12]
+1       39853950 timed out 
+37; trying with Chain: [6, 11, 2, 12, 10]
+1       40994229 timed out 
+38; trying with Chain: [6, 11, 10, 2, 12]
+1       40239962 timed out 
+39; trying with Chain: [6, 11, 10, 12, 2]
+1       49506333 timed out 
+40; trying with Chain: [6, 11, 12, 2, 10]
+1       51310333 timed out 
+41; trying with Chain: [6, 11, 12, 10, 2]
+1       41469397 timed out 
+42; trying with Chain: [6, 12, 2, 10, 11]
+1       52627934 timed out 
+43; trying with Chain: [6, 12, 2, 11, 10]
+1       32887084 timed out 
+44; trying with Chain: [6, 12, 10, 2, 11]
+1       34552684 timed out 
+45; trying with Chain: [6, 12, 10, 11, 2]
+1       37588626 timed out 
+46; trying with Chain: [6, 12, 11, 2, 10]
+1       32658860 timed out 
+47; trying with Chain: [6, 12, 11, 10, 2]
+1       34859383 timed out 
+48; trying with Chain: [10, 2, 6, 11, 12]
+1       30915833 timed out 
+49; trying with Chain: [10, 2, 6, 12, 11]
+1       31707857 timed out 
+50; trying with Chain: [10, 2, 11, 6, 12]
+1       37995848 timed out 
+51; trying with Chain: [10, 2, 11, 12, 6]
+1       32797147 timed out 
+52; trying with Chain: [10, 2, 12, 6, 11]
+1       34230211 timed out 
+53; trying with Chain: [10, 2, 12, 11, 6]
+1       36148663 timed out 
+54; trying with Chain: [10, 6, 2, 11, 12]
+1       38861049 timed out 
+55; trying with Chain: [10, 6, 2, 12, 11]
+1       36566526 timed out 
+56; trying with Chain: [10, 6, 11, 2, 12]
+1       31163472 timed out 
+57; trying with Chain: [10, 6, 11, 12, 2]
+1       34043877 timed out 
+58; trying with Chain: [10, 6, 12, 2, 11]
+1       37516250 timed out 
+59; trying with Chain: [10, 6, 12, 11, 2]
+1       35609304 timed out 
+60; trying with Chain: [10, 11, 2, 6, 12]
+1       37288834 timed out 
+61; trying with Chain: [10, 11, 2, 12, 6]
+1       37533678 timed out 
+62; trying with Chain: [10, 11, 6, 2, 12]
+1       34124896 timed out 
+63; trying with Chain: [10, 11, 6, 12, 2]
+1       31231542 timed out 
+64; trying with Chain: [10, 11, 12, 2, 6]
+1       34596873 timed out 
+65; trying with Chain: [10, 11, 12, 6, 2]
+1       34939030 timed out 
+66; trying with Chain: [10, 12, 2, 6, 11]
+1       190572708 timed out 
+67; trying with Chain: [10, 12, 2, 11, 6]
+1       32338372 timed out 
+68; trying with Chain: [10, 12, 6, 2, 11]
+1       64851742 timed out 
+69; trying with Chain: [10, 12, 6, 11, 2]
+1       33043415 timed out 
+70; trying with Chain: [10, 12, 11, 2, 6]
+1       35220244 timed out 
+71; trying with Chain: [10, 12, 11, 6, 2]
+1       33752805 timed out 
+72; trying with Chain: [11, 2, 6, 10, 12]
+1       30881372 timed out 
+73; trying with Chain: [11, 2, 6, 12, 10]
+1       30857351 timed out 
+74; trying with Chain: [11, 2, 10, 6, 12]
+1       32580672 timed out 
+75; trying with Chain: [11, 2, 10, 12, 6]
+1       35861750 timed out 
+76; trying with Chain: [11, 2, 12, 6, 10]
+1       38478044 timed out 
+77; trying with Chain: [11, 2, 12, 10, 6]
+1       32084763 timed out 
+78; trying with Chain: [11, 6, 2, 10, 12]
+1       31231912 timed out 
+79; trying with Chain: [11, 6, 2, 12, 10]
+1       31742343 timed out 
+80; trying with Chain: [11, 6, 10, 2, 12]
+1       38926440 timed out 
+81; trying with Chain: [11, 6, 10, 12, 2]
+1       39462045 timed out 
+82; trying with Chain: [11, 6, 12, 2, 10]
+1       32832800 timed out 
+83; trying with Chain: [11, 6, 12, 10, 2]
+1       33461949 timed out 
+84; trying with Chain: [11, 10, 2, 6, 12]
+1       34566061 timed out 
+85; trying with Chain: [11, 10, 2, 12, 6]
+1       31131791 timed out 
+86; trying with Chain: [11, 10, 6, 2, 12]
+1       38527242 timed out 
+87; trying with Chain: [11, 10, 6, 12, 2]
+1       35766165 timed out 
+88; trying with Chain: [11, 10, 12, 2, 6]
+1       34645453 timed out 
+89; trying with Chain: [11, 10, 12, 6, 2]
+1       33170513 timed out 
+90; trying with Chain: [11, 12, 2, 6, 10]
+1       32850560 timed out 
+91; trying with Chain: [11, 12, 2, 10, 6]
+1       32628389 timed out 
+92; trying with Chain: [11, 12, 6, 2, 10]
+1       34449490 timed out 
+93; trying with Chain: [11, 12, 6, 10, 2]
+1       31560477 timed out 
+94; trying with Chain: [11, 12, 10, 2, 6]
+1       33454309 timed out 
+95; trying with Chain: [11, 12, 10, 6, 2]
+1       35529188 timed out 
+96; trying with Chain: [12, 2, 6, 10, 11]
+1       31303258 timed out 
+97; trying with Chain: [12, 2, 6, 11, 10]
+1       34528605 timed out 
+98; trying with Chain: [12, 2, 10, 6, 11]
+1       33287274 timed out 
+99; trying with Chain: [12, 2, 10, 11, 6]
+1       30935147 timed out 
+100; trying with Chain: [12, 2, 11, 6, 10]
+1       32013130 timed out 
+101; trying with Chain: [12, 2, 11, 10, 6]
+1       30834925 timed out 
+102; trying with Chain: [12, 6, 2, 10, 11]
+1       32055127 timed out 
+103; trying with Chain: [12, 6, 2, 11, 10]
+1       31100796 timed out 
+104; trying with Chain: [12, 6, 10, 2, 11]
+1       30611349 timed out 
+105; trying with Chain: [12, 6, 10, 11, 2]
+1       32489996 timed out 
+106; trying with Chain: [12, 6, 11, 2, 10]
+1       34109017 timed out 
+107; trying with Chain: [12, 6, 11, 10, 2]
+1       31346956 timed out 
+108; trying with Chain: [12, 10, 2, 6, 11]
+1       31120190 timed out 
+109; trying with Chain: [12, 10, 2, 11, 6]
+1       30820520 timed out 
+110; trying with Chain: [12, 10, 6, 2, 11]
+1       32662604 timed out 
+111; trying with Chain: [12, 10, 6, 11, 2]
+1       33876730 timed out 
+112; trying with Chain: [12, 10, 11, 2, 6]
+1       30660915 timed out 
+113; trying with Chain: [12, 10, 11, 6, 2]
+1       35111571 timed out 
+114; trying with Chain: [12, 11, 2, 6, 10]
+1       34253155 timed out 
+115; trying with Chain: [12, 11, 2, 10, 6]
+1       33758338 timed out 
+116; trying with Chain: [12, 11, 6, 2, 10]
+1       33150505 timed out 
+117; trying with Chain: [12, 11, 6, 10, 2]
+1       31321693 timed out 
+118; trying with Chain: [12, 11, 10, 2, 6]
+1       31915953 timed out 
+119; trying with Chain: [12, 11, 10, 6, 2]
+1       31776108 timed out 
+
+
+ %%% PROBLEM: ../booleforce-1.2/traces/madeup2trace; longest chain length: 5; average chain length: 3.33333333333; timeout: 30 
+original chain with index 7: [2, 6, 10, 11, 12] 
+0; trying with Chain: [2, 6, 10, 11, 12]
+ 	1       58,949,510 timed out 
+1; trying with Chain: [2, 6, 10, 12, 11]
+ 	1       33,057,281 timed out 
+2; trying with Chain: [2, 6, 11, 10, 12]
+ 	1       31,623,274 timed out 
+3; trying with Chain: [2, 6, 11, 12, 10]
+ 	1       31,913,365 timed out 
+4; trying with Chain: [2, 6, 12, 10, 11]
+ 	1       32,569,363 timed out 
+5; trying with Chain: [2, 6, 12, 11, 10]
+ 	1       35,090,568 timed out 
+6; trying with Chain: [2, 10, 6, 11, 12]
+ 	1       30,823,519 timed out 
+7; trying with Chain: [2, 10, 6, 12, 11]
+ 	1       32,649,753 timed out 
+8; trying with Chain: [2, 10, 11, 6, 12]
+ 	1       31,725,349 timed out 
+9; trying with Chain: [2, 10, 11, 12, 6]
+ 	1       32,177,053 timed out 
+10; trying with Chain: [2, 10, 12, 6, 11]
+ 	1       31,188,678 timed out 
+11; trying with Chain: [2, 10, 12, 11, 6]
+ 	1       31,108,112 timed out 
+12; trying with Chain: [2, 11, 6, 10, 12]
+ 	1       30,943,484 timed out 
+13; trying with Chain: [2, 11, 6, 12, 10]
+ 	1       32,589,428 timed out 
+14; trying with Chain: [2, 11, 10, 6, 12]
+ 	1       30,793,553 timed out 
+15; trying with Chain: [2, 11, 10, 12, 6]
+ 	1       30,704,108 timed out 
+16; trying with Chain: [2, 11, 12, 6, 10]
+ 	1       30,374,440 timed out 
+17; trying with Chain: [2, 11, 12, 10, 6]
+ 	1       30,624,066 timed out 
+18; trying with Chain: [2, 12, 6, 10, 11]
+ 	1       31,189,339 timed out 
+19; trying with Chain: [2, 12, 6, 11, 10]
+ 	1       31,972,904 timed out 
+20; trying with Chain: [2, 12, 10, 6, 11]
+ 	1       31,353,971 timed out 
+21; trying with Chain: [2, 12, 10, 11, 6]
+ 	1       31,256,249 timed out 
+22; trying with Chain: [2, 12, 11, 6, 10]
+ 	1       30,433,715 timed out 
+23; trying with Chain: [2, 12, 11, 10, 6]
+ 	1       31,094,536 timed out 
+24; trying with Chain: [6, 2, 10, 11, 12]
+ 	1       32,280,312 timed out 
+25; trying with Chain: [6, 2, 10, 12, 11]
+ 	1       29,730,454 timed out 
+26; trying with Chain: [6, 2, 11, 10, 12]
+ 	1       31,603,638 timed out 
+27; trying with Chain: [6, 2, 11, 12, 10]
+ 	1       32,752,519 timed out 
+28; trying with Chain: [6, 2, 12, 10, 11]
+ 	1       31,191,114 timed out 
+29; trying with Chain: [6, 2, 12, 11, 10]
+ 	1       32,109,245 timed out 
+30; trying with Chain: [6, 10, 2, 11, 12]
+ 	1       31,462,859 timed out 
+31; trying with Chain: [6, 10, 2, 12, 11]
+ 	1       31,708,964 timed out 
+32; trying with Chain: [6, 10, 11, 2, 12]
+ 	1       30,299,445 timed out 
+33; trying with Chain: [6, 10, 11, 12, 2]
+ 	1       30,836,514 timed out 
+34; trying with Chain: [6, 10, 12, 2, 11]
+ 	1       37,229,963 timed out 
+35; trying with Chain: [6, 10, 12, 11, 2]
+ 	1       32,111,371 timed out 
+36; trying with Chain: [6, 11, 2, 10, 12]
+ 	1       35,061,684 timed out 
+37; trying with Chain: [6, 11, 2, 12, 10]
+ 	1       31,734,071 timed out 
+38; trying with Chain: [6, 11, 10, 2, 12]
+ 	1       31,852,488 timed out 
+39; trying with Chain: [6, 11, 10, 12, 2]
+ 	1       32,834,173 timed out 
+40; trying with Chain: [6, 11, 12, 2, 10]
+ 	1       32,265,032 timed out 
+41; trying with Chain: [6, 11, 12, 10, 2]
+ 	1       31,849,801 timed out 
+42; trying with Chain: [6, 12, 2, 10, 11]
+ 	1       32,830,186 timed out 
+43; trying with Chain: [6, 12, 2, 11, 10]
+ 	1       31,027,009 timed out 
+44; trying with Chain: [6, 12, 10, 2, 11]
+ 	1       30,977,890 timed out 
+45; trying with Chain: [6, 12, 10, 11, 2]
+ 	1       33,844,639 timed out 
+46; trying with Chain: [6, 12, 11, 2, 10]
+ 	1       30,963,819 timed out 
+47; trying with Chain: [6, 12, 11, 10, 2]
+ 	1       33,162,445 timed out 
+48; trying with Chain: [10, 2, 6, 11, 12]
+ 	1       34,499,881 timed out 
+49; trying with Chain: [10, 2, 6, 12, 11]
+ 	1       30,927,183 timed out 
+50; trying with Chain: [10, 2, 11, 6, 12]
+ 	1       40,788,214 timed out 
+51; trying with Chain: [10, 2, 11, 12, 6]
+ 	1       31,440,382 timed out 
+52; trying with Chain: [10, 2, 12, 6, 11]
+ 	1       30,867,691 timed out 
+53; trying with Chain: [10, 2, 12, 11, 6]
+ 	1       35,504,258 timed out 
+54; trying with Chain: [10, 6, 2, 11, 12]
+ 	1       33,194,133 timed out 
+55; trying with Chain: [10, 6, 2, 12, 11]
+ 	1       35,865,341 timed out 
+56; trying with Chain: [10, 6, 11, 2, 12]
+ 	1       36,666,020 timed out 
+57; trying with Chain: [10, 6, 11, 12, 2]
+ 	1       31,564,071 timed out 
+58; trying with Chain: [10, 6, 12, 2, 11]
+ 	1       32,883,453 timed out 
+59; trying with Chain: [10, 6, 12, 11, 2]
+ 	1       34,452,946 timed out 
+60; trying with Chain: [10, 11, 2, 6, 12]
+ 	1       33,813,892 timed out 
+61; trying with Chain: [10, 11, 2, 12, 6]
+ 	1       33,341,442 timed out 
+62; trying with Chain: [10, 11, 6, 2, 12]
+ 	1       34,775,829 timed out 
+63; trying with Chain: [10, 11, 6, 12, 2]
+ 	1       33,034,934 timed out 
+64; trying with Chain: [10, 11, 12, 2, 6]
+ 	1       43,997,583 timed out 
+65; trying with Chain: [10, 11, 12, 6, 2]
+ 	1       40,089,143 timed out 
+66; trying with Chain: [10, 12, 2, 6, 11]
+ 	1       46,385,324 timed out 
+67; trying with Chain: [10, 12, 2, 11, 6]
+ 	1       41,698,896 timed out 
+68; trying with Chain: [10, 12, 6, 2, 11]
+ 	1       56,029,362 timed out 
+69; trying with Chain: [10, 12, 6, 11, 2]
+ 	1       43,503,725 timed out 
+70; trying with Chain: [10, 12, 11, 2, 6]
+ 	1       47,174,897 timed out 
+71; trying with Chain: [10, 12, 11, 6, 2]
+ 	1       36,348,811 timed out 
+72; trying with Chain: [11, 2, 6, 10, 12]
+ 	1       65,326,355 timed out 
+73; trying with Chain: [11, 2, 6, 12, 10]
+ 	1       35,147,310 timed out 
+74; trying with Chain: [11, 2, 10, 6, 12]
+ 	1       53,846,943 timed out 
+75; trying with Chain: [11, 2, 10, 12, 6]
+ 	1       32,366,964 timed out 
+76; trying with Chain: [11, 2, 12, 6, 10]
+ 	1       50,491,690 timed out 
+77; trying with Chain: [11, 2, 12, 10, 6]
+ 	1       34,327,755 timed out 
+78; trying with Chain: [11, 6, 2, 10, 12]
+ 	1       44,816,008 timed out 
+79; trying with Chain: [11, 6, 2, 12, 10]
+ 	1       36,048,150 timed out 
+80; trying with Chain: [11, 6, 10, 2, 12]
+ 	1       38,834,488 timed out 
+81; trying with Chain: [11, 6, 10, 12, 2]
+ 	1       49,002,787 timed out 
+82; trying with Chain: [11, 6, 12, 2, 10]
+ 	1       41,045,953 timed out 
+83; trying with Chain: [11, 6, 12, 10, 2]
+ 	1       63,133,790 timed out 
+84; trying with Chain: [11, 10, 2, 6, 12]
+ 	1       35,958,741 timed out 
+85; trying with Chain: [11, 10, 2, 12, 6]
+ 	1       55,469,699 timed out 
+86; trying with Chain: [11, 10, 6, 2, 12]
+ 	1       42,425,004 timed out 
+87; trying with Chain: [11, 10, 6, 12, 2]
+ 	1       46,692,025 timed out 
+88; trying with Chain: [11, 10, 12, 2, 6]
+ 	1       38,649,240 timed out 
+89; trying with Chain: [11, 10, 12, 6, 2]
+ 	1       38,919,832 timed out 
+90; trying with Chain: [11, 12, 2, 6, 10]
+ 	1       44,129,737 timed out 
+91; trying with Chain: [11, 12, 2, 10, 6]
+ 	1       37,926,361 timed out 
+92; trying with Chain: [11, 12, 6, 2, 10]
+ 	1       34,027,944 timed out 
+93; trying with Chain: [11, 12, 6, 10, 2]
+ 	1       47,894,259 timed out 
+94; trying with Chain: [11, 12, 10, 2, 6]
+ 	1       42,237,578 timed out 
+95; trying with Chain: [11, 12, 10, 6, 2]
+ 	1       73,729,515 timed out 
+96; trying with Chain: [12, 2, 6, 10, 11]
+ 	1       58,444,339 timed out 
+97; trying with Chain: [12, 2, 6, 11, 10]
+ 	1       34,610,637 timed out 
+98; trying with Chain: [12, 2, 10, 6, 11]
+ 	1       55,492,736 timed out 
+99; trying with Chain: [12, 2, 10, 11, 6]
+ 	1       46,145,413 timed out 
+100; trying with Chain: [12, 2, 11, 6, 10]
+ 	1       56,888,888 timed out 
+101; trying with Chain: [12, 2, 11, 10, 6]
+ 	1       36,601,720 timed out 
+102; trying with Chain: [12, 6, 2, 10, 11]
+ 	1       34,659,678 timed out 
+103; trying with Chain: [12, 6, 2, 11, 10]
+ 	1       33,101,026 timed out 
+104; trying with Chain: [12, 6, 10, 2, 11]
+ 	1       37,532,954 timed out 
+105; trying with Chain: [12, 6, 10, 11, 2]
+ 	1       38,830,205 timed out 
+106; trying with Chain: [12, 6, 11, 2, 10]
+ 	1       31,140,002 timed out 
+107; trying with Chain: [12, 6, 11, 10, 2]
+ 	1       55,643,342 timed out 
+108; trying with Chain: [12, 10, 2, 6, 11]
+ 	1       38,113,255 timed out 
+109; trying with Chain: [12, 10, 2, 11, 6]
+ 	1       37,788,128 timed out 
+110; trying with Chain: [12, 10, 6, 2, 11]
+ 	1       45,794,043 timed out 
+111; trying with Chain: [12, 10, 6, 11, 2]
+ 	1       41,906,693 timed out 
+112; trying with Chain: [12, 10, 11, 2, 6]
+ 	1       45,088,004 timed out 
+113; trying with Chain: [12, 10, 11, 6, 2]
+ 	1       54,784,958 timed out 
+114; trying with Chain: [12, 11, 2, 6, 10]
+ 	1       42,202,975 timed out 
+115; trying with Chain: [12, 11, 2, 10, 6]
+ 	1       47,838,525 timed out 
+116; trying with Chain: [12, 11, 6, 2, 10]
+ 	1       63,907,124 timed out 
+117; trying with Chain: [12, 11, 6, 10, 2]
+ 	1       58,648,041 timed out 
+118; trying with Chain: [12, 11, 10, 2, 6]
+ 	1       50,218,289 timed out 
+119; trying with Chain: [12, 11, 10, 6, 2]
+ 	1       51,047,341 timed out 

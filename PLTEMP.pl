@@ -82,3 +82,11 @@ negate(false,true).
 %!!!end of checker code !!!
 
 
+%Trace from file: ../booleforce-1.2/traces/madeup2trace
+main :- check(certRight([10, 8, 6, 1, 2], 
+ chains([chain(11,[8,10],not(x(1))),
+chain(12,[1,11,10],x(3)),
+chain(13,[12,11,10,6,2],false)])), 
+ store([],[]), 
+  unfk([or(x(2),or(and(x(1),not(x(2))),or(not(x(4)),or(and(not(x(3)),not(x(1))),and(x(3),not(x(1)))))))])), print(1), nl ;  
+ print(0),nl, fail. 
