@@ -7,6 +7,6 @@ exito=$(prolog -q -t main $1)
 END=$(date +%s%N)
 DIFF=$((END - START))
 python storeInfo2.py $exito $DIFF $2
-echo 1
+
 
                 

@@ -7,7 +7,7 @@ from math import factorial
 template = "template.pl"
 #root = "../booleforce-1.2/traces/"
 
-traceName, prologName, numPermString, timeOut, methodString = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5]
+traceName, prologName, numPermString, timeOut, methodString, informeFileName = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5], sys.argv[6]
 #assume timeOut to be an integer in seconds
 #assume method to be a string beginning with 'lex', meaning lexicographic. default, therefore, is random shuffle
 def Lexicographic(iostring):
@@ -27,11 +27,12 @@ def getPermNum(iostring,antecedents): #iostring can be either "all" or an intege
         return int(iostring)
     
 method_is_lex = Lexicographic(methodString)
-print "LEX IS "+str(method_is_lex)
+'''print "LEX IS "+str(method_is_lex)
 if method_is_lex:
     informeFileName = "informeCadena"
 elif not method_is_lex:
-    informeFileName = 'informeCadenaRandom'
+    informeFileName = 'informeCadenaRandom''' 
+    #the above is for if I'm adding all reports to one long file
 informeFile = open(informeFileName,'a')
 command = "bash timeout.sh "+prologName+" "+str(timeOut)+"s "+informeFileName
 
@@ -40,12 +41,13 @@ command = "bash timeout.sh "+prologName+" "+str(timeOut)+"s "+informeFileName
 trace = cvTrace.Trace(traceName)
 longestChain, chainDex = trace.longestChain()
 averageChain = trace.avgChain() 
-infoString = "\n\n %%% PROBLEM: {0}; longest chain length: {1}; average chain length: {2}; timeout: {3} \n".format(traceName,longestChain,averageChain,str(timeOut))
+infoString = "\n\n#PROBLEM: {0}; longest chain length: {1}; average chain length: {2}; timeout: {3}s \n".format(traceName,longestChain,averageChain,str(timeOut))
+#NOTE: if adding other info to infoString, keep timeout last. its position is used in summarize.py
 informeFile.write(infoString)
 informeFile.flush()
 chains = trace.getChain(chainDex)
 
-informeFile.write("original chain with index {0}: {1} \n".format(chainDex,chains))
+informeFile.write("#original chain with index {0}: {1} \n".format(chainDex,chains))
 informeFile.flush()
 sortedChain = permu.mergeSort(chains)
 if method_is_lex:
@@ -61,8 +63,8 @@ numPermutations = getPermNum(numPermString,chains)
 #the below is run for each permutation attempted
 for n in range(numPermutations):
     trying = next(chainPermu)
-    informeFile.write("#"+str(n)+'; trying with Chain: '+str(trying)+"\n")
-    informeFile.write("\t")
+    informeFile.write("#trying: "+str(trying)+"\n")
+    informeFile.write(str(n)+"\t")
     informeFile.flush()
     trace.replaceChain(trying,chainDex)
     copyfile(template,prologName)

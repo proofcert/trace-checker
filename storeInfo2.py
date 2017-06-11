@@ -38,11 +38,11 @@ def formatNum(digits):
 
 if len(sys.argv) == 4: #prolog did not time out. now returning success (1,0) and time
     file = open(sys.argv[3],'a')
-    timeFormat = formatNum(sys.argv[2])
-    continueLine(file,sys.argv[1],timeFormat)
+    #timeFormat = formatNum(sys.argv[2])
+    continueLine(file,sys.argv[1],sys.argv[2])
 elif len(sys.argv) == 2: #prolog timed out
     file = open(sys.argv[1],'a')
-    file.write(" timed out \n") 
+    file.write("Timeout \n") 
 else:
     raise ValueError('nope, length of args is '+str(len(sys.argv))+"\n and they are "+str(sys.argv))
 file.close()
