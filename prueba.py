@@ -18,10 +18,12 @@ def uselessExponent(a,x):
                 #print u"はい、これは全然必要じゃないのね"
         useless.append(prueba)
     return n, useless
-#result, useList = uselessExponent(int(sys.argv[1]),int(sys.argv[2]))
-#print "数：{0}, 他の数：{1}".format(result,useList)
 
 #sleep(int(sys.argv[1]))
+def do():
+    result, useList = uselessExponent(int(sys.argv[1]),int(sys.argv[2]))
+    print "数：{0}, 他の数：{1}".format(result,useList)
+do()
 
 def formatNum(digits):
     counter = 0

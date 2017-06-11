@@ -61,7 +61,8 @@ numPermutations = getPermNum(numPermString,chains)
 #the below is run for each permutation attempted
 for n in range(numPermutations):
     trying = next(chainPermu)
-    informeFile.write(str(n)+'; trying with Chain: '+str(trying)+"\n \t")
+    informeFile.write("#"+str(n)+'; trying with Chain: '+str(trying)+"\n")
+    informeFile.write("\t")
     informeFile.flush()
     trace.replaceChain(trying,chainDex)
     copyfile(template,prologName)
@@ -76,22 +77,3 @@ informeFile.close()
 
 #shellcommand = "swipl -q -s init.pl -f "+logicprogram
 #os.system(shellcommand)
-
-''' SYNTAX; ESO FUNCIONA
-pruebaChain = cvT.Trace(root+problemDict[4])
-print pruebaChain.avgChain()
-longestChain, chainDex = pruebaChain.longestChain()
-print "longest Chain: "+str(longestChain)+"; index: "+str(chainDex)
-chains = pruebaChain.getLongestChain(chainDex)
-print "chain: "+str(chains)
-
-perms = genPerm(chains)
-for i in range(10): 
-    print next(perms)'''
-    
-
-
-
-
-#get trace, write to prolog file, run prolog file, get output/info
-#sort longest chain, try on different permutations

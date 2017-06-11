@@ -19,6 +19,7 @@ def startLine(file,info1,info2):
 
 def continueLine(file,success,time): #info should be time and success, but just time for now
     file.write(writeFormat('',[success,time]))
+    file.write('\n')
     file.close()
 def continueLine1(file,name):
     file.write(name+'\n')
