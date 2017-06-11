@@ -1409,3 +1409,677 @@ original chain with index 64: [16, 9, 225, 224, 223, 8, 15, 14, 211, 22, 201, 21
 8; trying with Chain: [224, 225, 211, 8, 201, 9, 22, 16, 14, 223, 15, 219]
  timed out 
 9; trying with Chain: [224, 8, 22, 211, 9, 225, 201, 223, 16, 14, 15, 219]
+
+
+ %%% PROBLEM: ../booleforce-1.2/traces/aim100-2no4; longest chain length: 10; average chain length: 3.78947368421; timeout: 100 
+original chain with index 42: [21, 19, 18, 219, 26, 22, 222, 209, 220, 27] 
+0; trying with Chain: [222, 26, 18, 219, 19, 27, 21, 22, 209, 220]
+ 	1       92,906,524 timed out 
+1; trying with Chain: [22, 18, 219, 27, 26, 209, 220, 222, 21, 19]
+ 	1       77,674,406,894 timed out 
+2; trying with Chain: [220, 19, 27, 22, 26, 222, 21, 219, 209, 18]
+ 	 timed out 
+3; trying with Chain: [219, 209, 27, 26, 220, 222, 19, 21, 22, 18]
+ 	 timed out 
+4; trying with Chain: [220, 209, 21, 27, 219, 222, 18, 26, 19, 22]
+ 	 timed out 
+5; trying with Chain: [27, 220, 18, 222, 22, 21, 209, 26, 219, 19]
+ 	 timed out 
+6; trying with Chain: [21, 27, 222, 209, 18, 22, 219, 19, 220, 26]
+ 	1       181,653,921 timed out 
+7; trying with Chain: [220, 26, 18, 19, 21, 222, 22, 209, 27, 219]
+ 	 timed out 
+8; trying with Chain: [26, 19, 220, 219, 209, 27, 21, 22, 18, 222]
+ 	 timed out 
+9; trying with Chain: [21, 26, 209, 222, 219, 220, 19, 18, 22, 27]
+ 	 timed out 
+10; trying with Chain: [27, 209, 21, 22, 18, 219, 222, 19, 26, 220]
+ 	1       171,761,754 timed out 
+11; trying with Chain: [22, 18, 26, 209, 222, 21, 27, 220, 219, 19]
+ 	1       48,648,973 timed out 
+12; trying with Chain: [21, 219, 26, 27, 22, 19, 220, 222, 209, 18]
+ 	 timed out 
+13; trying with Chain: [26, 219, 19, 209, 222, 220, 27, 18, 22, 21]
+ 	 timed out 
+14; trying with Chain: [209, 219, 26, 21, 18, 220, 27, 222, 22, 19]
+ 	 timed out 
+15; trying with Chain: [27, 209, 220, 19, 18, 22, 26, 21, 219, 222]
+ 	 timed out 
+16; trying with Chain: [21, 220, 18, 27, 222, 26, 22, 209, 19, 219]
+ 	 timed out 
+17; trying with Chain: [18, 21, 19, 222, 219, 26, 27, 220, 22, 209]
+ 	1       176,519,297 timed out 
+18; trying with Chain: [19, 21, 27, 26, 209, 222, 18, 220, 22, 219]
+ 	1       180,005,415 timed out 
+19; trying with Chain: [27, 26, 22, 19, 18, 21, 209, 219, 220, 222]
+ 	1       175,284,897 timed out 
+20; trying with Chain: [26, 18, 220, 219, 209, 222, 27, 21, 22, 19]
+ 	 timed out 
+21; trying with Chain: [219, 22, 27, 18, 26, 222, 209, 21, 220, 19]
+ 	1       171,308,817 timed out 
+22; trying with Chain: [19, 219, 22, 220, 222, 21, 209, 18, 27, 26]
+ 	 timed out 
+23; trying with Chain: [21, 209, 22, 222, 19, 26, 219, 18, 220, 27]
+ 	1       50,328,777 timed out 
+24; trying with Chain: [18, 26, 27, 220, 209, 219, 21, 222, 22, 19]
+ 	 timed out 
+25; trying with Chain: [21, 27, 18, 26, 19, 220, 209, 22, 219, 222]
+ 	 timed out 
+26; trying with Chain: [220, 22, 209, 19, 27, 26, 21, 222, 18, 219]
+ 	 timed out 
+27; trying with Chain: [27, 21, 222, 220, 219, 18, 209, 22, 19, 26]
+ 	 timed out 
+28; trying with Chain: [18, 222, 219, 220, 22, 209, 27, 19, 21, 26]
+ 	 timed out 
+29; trying with Chain: [219, 21, 22, 26, 222, 220, 27, 209, 19, 18]
+ 	 timed out 
+30; trying with Chain: [18, 209, 220, 222, 21, 27, 26, 22, 19, 219]
+ 	 timed out 
+31; trying with Chain: [22, 222, 19, 209, 26, 219, 21, 27, 18, 220]
+ 	1       176,270,409 timed out 
+32; trying with Chain: [220, 19, 222, 21, 27, 26, 18, 209, 22, 219]
+ 	 timed out 
+33; trying with Chain: [18, 27, 209, 219, 21, 26, 22, 220, 19, 222]
+ 	1       1,384,747,799 timed out 
+34; trying with Chain: [27, 21, 222, 26, 219, 220, 22, 19, 209, 18]
+ 	 timed out 
+35; trying with Chain: [18, 209, 27, 219, 21, 222, 26, 22, 220, 19]
+ 	1       173,479,377 timed out 
+36; trying with Chain: [219, 18, 27, 209, 19, 21, 22, 220, 222, 26]
+ 	1       197,690,260 timed out 
+37; trying with Chain: [220, 19, 209, 219, 27, 21, 26, 22, 222, 18]
+ 	 timed out 
+38; trying with Chain: [222, 26, 27, 18, 19, 209, 22, 219, 21, 220]
+ 	1       171,690,744 timed out 
+39; trying with Chain: [220, 219, 22, 26, 209, 21, 19, 222, 18, 27]
+ 	 timed out 
+40; trying with Chain: [19, 222, 220, 21, 22, 18, 219, 209, 27, 26]
+ 	 timed out 
+41; trying with Chain: [21, 209, 22, 220, 222, 26, 219, 19, 27, 18]
+ 	 timed out 
+42; trying with Chain: [21, 220, 18, 222, 27, 219, 19, 209, 26, 22]
+ 	 timed out 
+43; trying with Chain: [26, 220, 22, 209, 219, 18, 21, 19, 27, 222]
+ 	 timed out 
+44; trying with Chain: [222, 209, 19, 27, 21, 18, 220, 26, 219, 22]
+ 	1       181,448,208 timed out 
+45; trying with Chain: [219, 18, 222, 209, 220, 19, 26, 27, 22, 21]
+ 	 timed out 
+46; trying with Chain: [27, 22, 220, 219, 18, 19, 222, 21, 26, 209]
+ 	 timed out 
+47; trying with Chain: [26, 209, 22, 21, 27, 19, 18, 219, 220, 222]
+ 	1       178,555,039 timed out 
+48; trying with Chain: [26, 19, 21, 219, 18, 22, 209, 220, 222, 27]
+ 	1       14,973,010,597 timed out 
+49; trying with Chain: [22, 21, 18, 209, 26, 219, 220, 19, 222, 27]
+ 	 timed out 
+50; trying with Chain: [26, 220, 222, 22, 21, 219, 18, 27, 209, 19]
+ 	 timed out 
+51; trying with Chain: [220, 18, 21, 209, 219, 222, 27, 26, 22, 19]
+ 	 timed out 
+52; trying with Chain: [21, 18, 222, 209, 26, 19, 220, 27, 219, 22]
+ 	1       25,236,805,657 timed out 
+53; trying with Chain: [22, 220, 18, 21, 27, 219, 222, 209, 19, 26]
+ 	 timed out 
+54; trying with Chain: [18, 26, 22, 222, 19, 219, 27, 209, 220, 21]
+ 	1       169,151,663 timed out 
+55; trying with Chain: [222, 19, 220, 18, 209, 22, 219, 21, 27, 26]
+ 	 timed out 
+56; trying with Chain: [26, 220, 209, 22, 18, 219, 222, 21, 19, 27]
+ 	 timed out 
+57; trying with Chain: [18, 27, 21, 222, 22, 219, 220, 209, 26, 19]
+ 	1       170,777,649 timed out 
+58; trying with Chain: [219, 18, 26, 222, 22, 220, 21, 27, 209, 19]
+ 	 timed out 
+59; trying with Chain: [18, 22, 26, 222, 219, 21, 220, 209, 27, 19]
+ 	1       2,010,331,742 timed out 
+60; trying with Chain: [26, 19, 222, 21, 22, 18, 27, 219, 209, 220]
+ 	1       46,356,525 timed out 
+61; trying with Chain: [18, 27, 209, 22, 26, 219, 222, 220, 19, 21]
+ 	1       51,377,296 timed out 
+62; trying with Chain: [219, 18, 220, 26, 209, 21, 19, 22, 27, 222]
+ 	 timed out 
+63; trying with Chain: [19, 222, 219, 220, 18, 209, 21, 26, 22, 27]
+ 	 timed out 
+64; trying with Chain: [209, 220, 26, 222, 27, 18, 21, 19, 22, 219]
+ 	 timed out 
+65; trying with Chain: [209, 19, 219, 27, 18, 22, 21, 222, 26, 220]
+ 	1       52,275,050 timed out 
+66; trying with Chain: [209, 219, 27, 21, 22, 26, 18, 222, 19, 220]
+ 	1       168,713,231 timed out 
+67; trying with Chain: [219, 18, 19, 21, 209, 222, 220, 26, 22, 27]
+ 	1       21,774,053,478 timed out 
+68; trying with Chain: [27, 22, 18, 219, 26, 21, 220, 19, 209, 222]
+ 	1       55,157,851,216 timed out 
+69; trying with Chain: [219, 222, 209, 26, 27, 220, 18, 19, 22, 21]
+ 	 timed out 
+70; trying with Chain: [21, 19, 222, 209, 22, 18, 26, 220, 27, 219]
+ 	1       49,952,161 timed out 
+71; trying with Chain: [21, 26, 27, 22, 19, 222, 219, 220, 209, 18]
+ 	1       1,219,469,552 timed out 
+72; trying with Chain: [22, 222, 19, 220, 21, 26, 209, 18, 27, 219]
+ 	 timed out 
+73; trying with Chain: [222, 26, 219, 27, 22, 220, 18, 19, 21, 209]
+ 	1       1,388,272,207 timed out 
+74; trying with Chain: [19, 220, 21, 26, 22, 219, 209, 27, 222, 18]
+ 	 timed out 
+75; trying with Chain: [220, 18, 26, 21, 219, 19, 22, 27, 209, 222]
+ 	 timed out 
+76; trying with Chain: [18, 26, 219, 19, 22, 209, 220, 21, 27, 222]
+ 	 timed out 
+77; trying with Chain: [219, 220, 22, 19, 222, 18, 26, 209, 21, 27]
+ 	 timed out 
+78; trying with Chain: [219, 18, 209, 26, 220, 22, 27, 19, 21, 222]
+ 	 timed out 
+79; trying with Chain: [27, 209, 219, 26, 220, 19, 18, 21, 22, 222]
+ 	 timed out 
+80; trying with Chain: [21, 22, 222, 18, 209, 27, 26, 219, 19, 220]
+ 	1       188,186,222 timed out 
+81; trying with Chain: [27, 19, 26, 18, 22, 219, 220, 21, 209, 222]
+ 	1       42,406,014,073 timed out 
+82; trying with Chain: [21, 22, 222, 27, 18, 220, 26, 19, 219, 209]
+ 	1       180,902,967 timed out 
+83; trying with Chain: [222, 219, 19, 220, 22, 18, 209, 27, 21, 26]
+ 	 timed out 
+84; trying with Chain: [209, 19, 220, 219, 21, 22, 18, 222, 27, 26]
+ 	 timed out 
+85; trying with Chain: [222, 19, 27, 22, 220, 18, 26, 21, 209, 219]
+ 	1       1,352,684,641 timed out 
+86; trying with Chain: [209, 21, 222, 27, 18, 19, 26, 22, 220, 219]
+ 	1       169,869,314 timed out 
+87; trying with Chain: [209, 26, 18, 220, 222, 22, 27, 219, 19, 21]
+ 	 timed out 
+88; trying with Chain: [219, 22, 18, 209, 27, 21, 220, 26, 19, 222]
+ 	1       1,400,625,988 timed out 
+89; trying with Chain: [209, 21, 27, 220, 18, 19, 26, 22, 222, 219]
+ 	 timed out 
+90; trying with Chain: [21, 22, 27, 26, 222, 19, 220, 18, 209, 219]
+ 	1       1,219,453,962 timed out 
+91; trying with Chain: [209, 22, 19, 222, 220, 18, 21, 219, 26, 27]
+ 	 timed out 
+92; trying with Chain: [27, 18, 209, 220, 21, 26, 219, 222, 22, 19]
+ 	 timed out 
+93; trying with Chain: [27, 22, 209, 220, 222, 18, 21, 219, 26, 19]
+ 	 timed out 
+94; trying with Chain: [26, 222, 22, 27, 18, 219, 209, 21, 19, 220]
+ 	1       173,165,482 timed out 
+95; trying with Chain: [22, 19, 26, 220, 222, 209, 27, 18, 21, 219]
+ 	 timed out 
+96; trying with Chain: [22, 27, 26, 209, 21, 18, 219, 220, 222, 19]
+ 	1       1,398,353,348 timed out 
+97; trying with Chain: [26, 27, 18, 19, 222, 219, 21, 22, 220, 209]
+ 	1       174,710,933 timed out 
+98; trying with Chain: [27, 219, 220, 21, 19, 22, 18, 26, 209, 222]
+ 	 timed out 
+99; trying with Chain: [220, 21, 209, 19, 222, 219, 22, 27, 26, 18]
+ 	 timed out 
+100; trying with Chain: [219, 22, 18, 209, 222, 21, 26, 19, 220, 27]
+ 	1       175,822,423 timed out 
+101; trying with Chain: [22, 220, 26, 222, 219, 21, 27, 19, 209, 18]
+ 	 timed out 
+102; trying with Chain: [26, 18, 220, 219, 22, 21, 222, 27, 19, 209]
+ 	 timed out 
+103; trying with Chain: [209, 222, 220, 22, 26, 27, 219, 18, 19, 21]
+ 	 timed out 
+104; trying with Chain: [222, 18, 209, 220, 219, 19, 21, 27, 22, 26]
+ 	 timed out 
+105; trying with Chain: [19, 220, 26, 222, 21, 219, 209, 27, 22, 18]
+ 	 timed out 
+106; trying with Chain: [18, 19, 22, 219, 222, 27, 21, 26, 220, 209]
+ 	1       180,951,334 timed out 
+107; trying with Chain: [21, 220, 219, 26, 18, 22, 209, 222, 19, 27]
+ 	 timed out 
+108; trying with Chain: [19, 209, 219, 26, 22, 220, 18, 21, 27, 222]
+ 	 timed out 
+109; trying with Chain: [21, 18, 22, 209, 220, 219, 26, 222, 27, 19]
+ 	 timed out 
+110; trying with Chain: [219, 222, 19, 22, 27, 220, 209, 18, 26, 21]
+ 	1       1,373,973,443 timed out 
+111; trying with Chain: [26, 222, 27, 219, 220, 19, 22, 18, 21, 209]
+ 	 timed out 
+112; trying with Chain: [219, 22, 27, 21, 26, 19, 220, 222, 209, 18]
+ 	 timed out 
+113; trying with Chain: [220, 27, 21, 22, 26, 19, 209, 18, 222, 219]
+ 	 timed out 
+114; trying with Chain: [26, 22, 219, 21, 19, 27, 222, 18, 209, 220]
+ 	1       50,365,487 timed out 
+115; trying with Chain: [26, 220, 21, 22, 18, 219, 19, 209, 27, 222]
+ 	 timed out 
+116; trying with Chain: [219, 27, 209, 26, 222, 22, 21, 19, 220, 18]
+ 	1       185,221,862 timed out 
+117; trying with Chain: [27, 18, 21, 26, 19, 222, 209, 220, 22, 219]
+ 	1       55,286,394 timed out 
+118; trying with Chain: [27, 219, 209, 220, 18, 222, 26, 19, 22, 21]
+ 	 timed out 
+119; trying with Chain: [21, 26, 222, 219, 19, 220, 22, 27, 18, 209]
+ 	 timed out 
+120; trying with Chain: [26, 19, 22, 27, 18, 21, 222, 220, 209, 219]
+ 	1       48,810,364 timed out 
+121; trying with Chain: [18, 222, 22, 220, 27, 219, 26, 21, 19, 209]
+ 	 timed out 
+122; trying with Chain: [19, 219, 21, 222, 22, 220, 27, 209, 18, 26]
+ 	 timed out 
+123; trying with Chain: [26, 21, 209, 219, 27, 220, 19, 18, 222, 22]
+ 	 timed out 
+124; trying with Chain: [18, 26, 21, 22, 220, 222, 19, 209, 219, 27]
+ 	 timed out 
+125; trying with Chain: [18, 21, 220, 26, 209, 19, 27, 222, 22, 219]
+ 	 timed out 
+126; trying with Chain: [27, 22, 19, 209, 18, 219, 222, 220, 21, 26]
+ 	1       168,584,948 timed out 
+127; trying with Chain: [27, 222, 19, 209, 21, 26, 219, 18, 220, 22]
+ 	1       175,689,763 timed out 
+128; trying with Chain: [19, 26, 220, 18, 22, 21, 222, 27, 219, 209]
+ 	 timed out 
+129; trying with Chain: [18, 19, 22, 220, 219, 27, 222, 26, 21, 209]
+ 	 timed out 
+130; trying with Chain: [219, 19, 220, 27, 26, 18, 22, 209, 21, 222]
+ 	 timed out 
+131; trying with Chain: [209, 26, 21, 27, 19, 22, 222, 18, 220, 219]
+ 	1       51,498,860 timed out 
+132; trying with Chain: [26, 22, 209, 21, 27, 220, 18, 219, 222, 19]
+ 	 timed out 
+133; trying with Chain: [27, 19, 18, 219, 26, 22, 21, 220, 222, 209]
+ 	1       733,553,014 timed out 
+134; trying with Chain: [209, 21, 27, 219, 222, 220, 18, 22, 19, 26]
+ 	 timed out 
+135; trying with Chain: [18, 22, 19, 21, 209, 26, 27, 220, 219, 222]
+ 	1       54,225,434 timed out 
+136; trying with Chain: [21, 209, 22, 18, 222, 220, 19, 219, 27, 26]
+ 	1       223,961,436 timed out 
+137; trying with Chain: [18, 220, 219, 27, 26, 22, 209, 222, 21, 19]
+ 	 timed out 
+138; trying with Chain: [26, 209, 220, 219, 21, 18, 222, 27, 22, 19]
+ 	 timed out 
+139; trying with Chain: [27, 209, 219, 18, 26, 19, 222, 22, 220, 21]
+ 	1       49,450,728 timed out 
+140; trying with Chain: [21, 222, 27, 22, 19, 219, 209, 18, 220, 26]
+ 	1       47,551,311 timed out 
+141; trying with Chain: [26, 219, 209, 18, 222, 220, 19, 21, 27, 22]
+ 	 timed out 
+142; trying with Chain: [27, 222, 22, 209, 220, 219, 19, 21, 18, 26]
+ 	1       205,847,686 timed out 
+143; trying with Chain: [18, 22, 19, 27, 26, 209, 21, 220, 222, 219]
+ 	1       202,928,144 timed out 
+144; trying with Chain: [222, 22, 19, 220, 18, 209, 26, 21, 27, 219]
+ 	 timed out 
+145; trying with Chain: [26, 220, 19, 219, 209, 22, 27, 21, 222, 18]
+ 	 timed out 
+146; trying with Chain: [19, 21, 22, 219, 26, 220, 27, 222, 209, 18]
+ 	 timed out 
+147; trying with Chain: [22, 19, 26, 18, 222, 219, 220, 209, 21, 27]
+ 	1       1,794,045,805 timed out 
+148; trying with Chain: [18, 209, 26, 19, 21, 222, 22, 219, 220, 27]
+ 	1       172,752,791 timed out 
+149; trying with Chain: [222, 220, 26, 219, 21, 22, 209, 27, 18, 19]
+ 	 timed out 
+150; trying with Chain: [22, 19, 220, 209, 222, 219, 18, 26, 21, 27]
+ 	 timed out 
+151; trying with Chain: [219, 222, 19, 220, 26, 21, 18, 27, 22, 209]
+ 	 timed out 
+152; trying with Chain: [21, 26, 222, 27, 19, 18, 220, 22, 219, 209]
+ 	1       184,093,567 timed out 
+153; trying with Chain: [19, 220, 222, 21, 209, 18, 26, 27, 22, 219]
+ 	 timed out 
+154; trying with Chain: [22, 27, 21, 220, 18, 222, 19, 209, 219, 26]
+ 	 timed out 
+155; trying with Chain: [21, 222, 220, 209, 27, 219, 26, 19, 18, 22]
+ 	 timed out 
+156; trying with Chain: [209, 222, 19, 27, 18, 21, 219, 26, 22, 220]
+ 	1       51,956,882 timed out 
+157; trying with Chain: [220, 27, 22, 21, 26, 19, 18, 209, 222, 219]
+ 	 timed out 
+158; trying with Chain: [27, 219, 222, 19, 22, 26, 18, 21, 220, 209]
+ 	1       175,786,073 timed out 
+159; trying with Chain: [18, 222, 19, 21, 209, 219, 22, 26, 27, 220]
+ 	1       48,562,079 timed out 
+160; trying with Chain: [22, 209, 18, 219, 220, 27, 26, 222, 19, 21]
+ 	 timed out 
+161; trying with Chain: [18, 21, 27, 26, 220, 209, 222, 19, 219, 22]
+ 	 timed out 
+162; trying with Chain: [26, 21, 219, 22, 18, 222, 220, 19, 209, 27]
+ 	1       2,003,251,161 timed out 
+163; trying with Chain: [219, 22, 222, 19, 21, 209, 220, 27, 26, 18]
+ 	 timed out 
+164; trying with Chain: [18, 209, 21, 22, 19, 27, 220, 219, 26, 222]
+ 	1       72,987,647 timed out 
+165; trying with Chain: [19, 26, 21, 22, 209, 18, 219, 27, 222, 220]
+ 	1       175,271,208 timed out 
+166; trying with Chain: [220, 209, 21, 222, 22, 19, 26, 18, 219, 27]
+ 	 timed out 
+167; trying with Chain: [26, 222, 22, 27, 219, 18, 209, 19, 21, 220]
+ 	1       48,594,626 timed out 
+168; trying with Chain: [220, 22, 18, 27, 219, 209, 26, 21, 222, 19]
+ 	 timed out 
+169; trying with Chain: [26, 222, 21, 22, 209, 219, 19, 27, 220, 18]
+ 	1       189,063,423 timed out 
+170; trying with Chain: [19, 22, 219, 209, 27, 21, 222, 18, 220, 26]
+ 	1       50,324,614 timed out 
+171; trying with Chain: [18, 26, 220, 19, 222, 219, 21, 27, 22, 209]
+ 	 timed out 
+172; trying with Chain: [209, 22, 18, 19, 219, 220, 27, 21, 26, 222]
+ 	 timed out 
+173; trying with Chain: [26, 22, 209, 18, 219, 220, 21, 19, 222, 27]
+ 	 timed out 
+174; trying with Chain: [19, 22, 222, 18, 220, 27, 26, 219, 209, 21]
+ 	1       1,819,116,723 timed out 
+175; trying with Chain: [222, 26, 22, 219, 18, 21, 27, 19, 220, 209]
+ 	1       50,433,504 timed out 
+176; trying with Chain: [220, 219, 22, 222, 27, 19, 26, 18, 21, 209]
+ 	 timed out 
+177; trying with Chain: [26, 220, 21, 219, 222, 18, 19, 27, 22, 209]
+ 	 timed out 
+178; trying with Chain: [19, 209, 18, 27, 21, 26, 222, 22, 220, 219]
+ 	1       173,918,789 timed out 
+179; trying with Chain: [27, 19, 220, 209, 26, 18, 22, 21, 222, 219]
+ 	 timed out 
+180; trying with Chain: [219, 209, 26, 18, 22, 220, 27, 222, 19, 21]
+ 	 timed out 
+181; trying with Chain: [220, 222, 18, 26, 19, 27, 219, 21, 209, 22]
+ 	 timed out 
+182; trying with Chain: [222, 27, 26, 209, 21, 19, 220, 22, 18, 219]
+ 	 timed out 
+183; trying with Chain: [19, 26, 222, 21, 220, 209, 219, 27, 22, 18]
+ 	 timed out 
+184; trying with Chain: [209, 26, 222, 22, 21, 19, 27, 220, 219, 18]
+ 	1       200,952,123 timed out 
+185; trying with Chain: [209, 219, 27, 26, 220, 19, 22, 222, 21, 18]
+ 	 timed out 
+186; trying with Chain: [219, 209, 19, 21, 26, 27, 22, 220, 222, 18]
+ 	 timed out 
+187; trying with Chain: [222, 22, 19, 27, 220, 18, 219, 209, 26, 21]
+ 	1       1,150,735,533 timed out 
+188; trying with Chain: [18, 222, 27, 26, 19, 220, 22, 209, 219, 21]
+ 	1       400,642,546 timed out 
+189; trying with Chain: [22, 209, 219, 222, 26, 27, 18, 21, 220, 19]
+ 	1       166,581,457 timed out 
+190; trying with Chain: [19, 219, 220, 21, 209, 222, 18, 27, 26, 22]
+ 	 timed out 
+191; trying with Chain: [220, 219, 21, 209, 26, 22, 19, 18, 27, 222]
+ 	 timed out 
+192; trying with Chain: [18, 222, 27, 22, 26, 220, 19, 209, 219, 21]
+ 	1       398,611,198 timed out 
+193; trying with Chain: [18, 26, 22, 222, 27, 220, 19, 219, 21, 209]
+ 	1       399,693,113 timed out 
+194; trying with Chain: [222, 26, 21, 18, 219, 22, 27, 209, 19, 220]
+ 	1       371,121,677 timed out 
+195; trying with Chain: [220, 222, 27, 26, 209, 21, 19, 18, 219, 22]
+ 	 timed out 
+196; trying with Chain: [222, 21, 18, 209, 220, 26, 22, 219, 19, 27]
+ 	 timed out 
+197; trying with Chain: [219, 209, 220, 26, 21, 18, 222, 22, 27, 19]
+ 	 timed out 
+198; trying with Chain: [19, 209, 222, 18, 26, 219, 22, 220, 27, 21]
+ 	1       385,331,628 timed out 
+199; trying with Chain: [27, 19, 220, 18, 22, 26, 21, 219, 209, 222]
+ 	 timed out 
+200; trying with Chain: [22, 220, 18, 219, 19, 209, 26, 21, 222, 27]
+ 	 timed out 
+201; trying with Chain: [19, 219, 22, 209, 18, 26, 21, 222, 220, 27]
+ 	1       412,254,920 timed out 
+202; trying with Chain: [209, 222, 22, 21, 26, 18, 220, 27, 219, 19]
+ 	1       1,003,256,590 timed out 
+203; trying with Chain: [18, 209, 26, 219, 22, 222, 21, 27, 220, 19]
+ 	1       590,133,246 timed out 
+204; trying with Chain: [222, 19, 209, 27, 220, 18, 26, 22, 219, 21]
+ 	 timed out 
+205; trying with Chain: [21, 222, 19, 26, 27, 219, 22, 209, 18, 220]
+ 	1       407,970,869 timed out 
+206; trying with Chain: [219, 18, 26, 209, 27, 21, 19, 22, 222, 220]
+ 	1       411,563,703 timed out 
+207; trying with Chain: [19, 209, 21, 27, 26, 222, 18, 220, 22, 219]
+ 	1       417,581,442 timed out 
+208; trying with Chain: [26, 222, 22, 19, 27, 18, 209, 220, 219, 21]
+ 	1       409,791,108 timed out 
+209; trying with Chain: [26, 18, 19, 22, 21, 219, 222, 209, 220, 27]
+ 	1       406,719,505 timed out 
+210; trying with Chain: [22, 26, 220, 19, 18, 209, 21, 27, 222, 219]
+ 	 timed out 
+211; trying with Chain: [26, 209, 27, 19, 21, 219, 220, 18, 222, 22]
+ 	 timed out 
+212; trying with Chain: [21, 222, 22, 18, 19, 27, 219, 209, 220, 26]
+ 	1       795,268,166 timed out 
+213; trying with Chain: [209, 27, 220, 21, 222, 26, 18, 22, 19, 219]
+ 	 timed out 
+214; trying with Chain: [219, 19, 22, 222, 26, 21, 27, 18, 209, 220]
+ 	1       596,688,032 timed out 
+215; trying with Chain: [209, 21, 22, 19, 18, 219, 220, 26, 27, 222]
+ 	 timed out 
+216; trying with Chain: [21, 18, 19, 22, 27, 209, 26, 220, 222, 219]
+ 	1       415,007,740 timed out 
+217; trying with Chain: [26, 18, 27, 222, 220, 19, 219, 21, 22, 209]
+ 	1       60,804,563,304 timed out 
+218; trying with Chain: [27, 22, 222, 220, 26, 19, 21, 219, 18, 209]
+ 	1       4,610,383,767 timed out 
+219; trying with Chain: [19, 209, 27, 22, 26, 222, 21, 18, 220, 219]
+ 	1       407,409,127 timed out 
+220; trying with Chain: [220, 209, 219, 21, 222, 19, 27, 26, 18, 22]
+ 	 timed out 
+221; trying with Chain: [209, 21, 26, 220, 18, 19, 222, 22, 219, 27]
+ 	 timed out 
+222; trying with Chain: [219, 220, 19, 21, 209, 18, 22, 26, 222, 27]
+ 	 timed out 
+223; trying with Chain: [21, 19, 219, 222, 22, 27, 220, 209, 18, 26]
+ 	1       4,400,857,020 timed out 
+224; trying with Chain: [22, 27, 26, 219, 19, 220, 222, 21, 18, 209]
+ 	 timed out 
+225; trying with Chain: [22, 209, 27, 220, 19, 219, 18, 26, 21, 222]
+ 	 timed out 
+226; trying with Chain: [18, 222, 220, 219, 27, 21, 19, 26, 22, 209]
+ 	 timed out 
+227; trying with Chain: [222, 26, 19, 21, 18, 22, 220, 209, 27, 219]
+ 	1       799,598,730 timed out 
+228; trying with Chain: [22, 27, 18, 26, 222, 19, 220, 21, 209, 219]
+ 	1       593,437,181 timed out 
+229; trying with Chain: [26, 18, 222, 21, 19, 22, 209, 27, 219, 220]
+ 	1       407,673,520 timed out 
+230; trying with Chain: [209, 18, 222, 27, 220, 219, 19, 26, 22, 21]
+ 	1       61,394,558,359 timed out 
+231; trying with Chain: [26, 18, 209, 219, 27, 222, 19, 22, 220, 21]
+ 	1       409,760,362 timed out 
+232; trying with Chain: [19, 220, 22, 21, 209, 219, 222, 18, 26, 27]
+ 	 timed out 
+233; trying with Chain: [27, 19, 22, 222, 220, 18, 219, 26, 209, 21]
+ 	1       4,214,835,476 timed out 
+234; trying with Chain: [220, 27, 219, 209, 26, 19, 18, 222, 21, 22]
+ 	 timed out 
+235; trying with Chain: [220, 26, 19, 222, 18, 219, 22, 27, 209, 21]
+ 	 timed out 
+236; trying with Chain: [220, 26, 27, 219, 22, 19, 21, 209, 18, 222]
+ 	 timed out 
+237; trying with Chain: [22, 19, 222, 220, 27, 21, 209, 219, 26, 18]
+ 	 timed out 
+238; trying with Chain: [27, 22, 19, 219, 26, 18, 222, 220, 21, 209]
+ 	1       412,573,289 timed out 
+239; trying with Chain: [19, 220, 22, 26, 21, 27, 222, 219, 18, 209]
+ 	 timed out 
+240; trying with Chain: [21, 220, 222, 209, 219, 27, 22, 26, 18, 19]
+ 	 timed out 
+241; trying with Chain: [219, 27, 21, 220, 18, 26, 22, 222, 19, 209]
+ 	 timed out 
+242; trying with Chain: [18, 26, 27, 21, 222, 219, 19, 209, 22, 220]
+ 	1       408,446,673 timed out 
+243; trying with Chain: [219, 26, 222, 21, 220, 209, 27, 18, 22, 19]
+ 	 timed out 
+244; trying with Chain: [19, 209, 27, 21, 18, 220, 26, 219, 22, 222]
+ 	 timed out 
+245; trying with Chain: [222, 21, 26, 219, 18, 27, 19, 209, 220, 22]
+ 	1       406,870,662 timed out 
+246; trying with Chain: [222, 209, 19, 219, 27, 18, 26, 22, 220, 21]
+ 	1       407,659,744 timed out 
+247; trying with Chain: [22, 26, 21, 209, 19, 27, 222, 219, 220, 18]
+ 	1       604,749,658 timed out 
+248; trying with Chain: [26, 209, 21, 19, 18, 220, 219, 27, 22, 222]
+ 	 timed out 
+249; trying with Chain: [222, 27, 220, 19, 219, 21, 209, 26, 18, 22]
+ 	 timed out 
+250; trying with Chain: [21, 222, 18, 19, 26, 220, 27, 22, 219, 209]
+ 	1       87,595,262,188 timed out 
+251; trying with Chain: [26, 219, 209, 18, 19, 21, 220, 222, 27, 22]
+ 	 timed out 
+252; trying with Chain: [18, 209, 19, 220, 27, 219, 222, 22, 21, 26]
+ 	 timed out 
+253; trying with Chain: [27, 26, 18, 209, 220, 219, 222, 19, 21, 22]
+ 	 timed out 
+254; trying with Chain: [26, 27, 18, 220, 219, 21, 22, 222, 209, 19]
+ 	 timed out 
+255; trying with Chain: [18, 209, 22, 19, 219, 21, 27, 222, 220, 26]
+ 	1       591,281,423 timed out 
+256; trying with Chain: [18, 27, 222, 220, 19, 209, 21, 219, 26, 22]
+ 	1       61,987,289,760 timed out 
+257; trying with Chain: [18, 19, 209, 220, 26, 27, 222, 22, 219, 21]
+ 	 timed out 
+258; trying with Chain: [222, 209, 220, 19, 27, 22, 18, 219, 21, 26]
+ 	 timed out 
+259; trying with Chain: [22, 220, 26, 18, 27, 219, 209, 222, 19, 21]
+ 	 timed out 
+260; trying with Chain: [27, 209, 26, 22, 219, 222, 19, 18, 220, 21]
+ 	1       408,950,668 timed out 
+261; trying with Chain: [26, 220, 219, 209, 21, 27, 19, 222, 18, 22]
+ 	 timed out 
+262; trying with Chain: [222, 209, 26, 220, 19, 219, 22, 27, 21, 18]
+ 	 timed out 
+263; trying with Chain: [19, 219, 209, 21, 27, 26, 22, 222, 220, 18]
+ 	1       786,714,225 timed out 
+264; trying with Chain: [19, 26, 22, 219, 209, 18, 27, 222, 21, 220]
+ 	1       411,632,866 timed out 
+265; trying with Chain: [222, 220, 219, 21, 18, 209, 22, 26, 19, 27]
+ 	 timed out 
+266; trying with Chain: [21, 220, 222, 26, 19, 219, 22, 27, 209, 18]
+ 	 timed out 
+267; trying with Chain: [18, 21, 26, 27, 19, 219, 222, 220, 22, 209]
+ 	1       588,876,687 timed out 
+268; trying with Chain: [26, 27, 219, 21, 18, 19, 220, 222, 209, 22]
+ 	 timed out 
+269; trying with Chain: [209, 21, 220, 22, 18, 19, 219, 26, 222, 27]
+ 	 timed out 
+270; trying with Chain: [22, 18, 27, 21, 26, 19, 222, 219, 209, 220]
+ 	1       598,409,484 timed out 
+271; trying with Chain: [222, 22, 209, 27, 18, 219, 19, 220, 21, 26]
+ 	1       592,508,078 timed out 
+272; trying with Chain: [26, 209, 18, 22, 27, 21, 220, 219, 19, 222]
+ 	1       4,995,158,759 timed out 
+273; trying with Chain: [27, 19, 222, 220, 209, 219, 22, 21, 26, 18]
+ 	 timed out 
+274; trying with Chain: [21, 19, 209, 26, 219, 27, 222, 220, 18, 22]
+ 	 timed out 
+275; trying with Chain: [222, 19, 21, 220, 209, 22, 219, 27, 26, 18]
+ 	 timed out 
+276; trying with Chain: [27, 18, 209, 222, 26, 22, 219, 19, 21, 220]
+ 	1       593,180,261 timed out 
+277; trying with Chain: [26, 222, 21, 22, 220, 19, 219, 18, 27, 209]
+ 	 timed out 
+278; trying with Chain: [27, 18, 209, 26, 21, 19, 220, 219, 222, 22]
+ 	 timed out 
+279; trying with Chain: [22, 21, 18, 219, 220, 27, 209, 222, 26, 19]
+ 	 timed out 
+280; trying with Chain: [21, 26, 209, 27, 219, 220, 22, 222, 19, 18]
+ 	 timed out 
+281; trying with Chain: [220, 19, 18, 209, 222, 26, 21, 219, 22, 27]
+ 	 timed out 
+282; trying with Chain: [220, 18, 21, 219, 222, 19, 27, 22, 209, 26]
+ 	 timed out 
+283; trying with Chain: [19, 220, 26, 209, 222, 21, 18, 22, 27, 219]
+ 	 timed out 
+284; trying with Chain: [209, 220, 22, 26, 18, 219, 27, 21, 19, 222]
+ 	 timed out 
+285; trying with Chain: [220, 19, 219, 27, 26, 209, 222, 22, 21, 18]
+ 	 timed out 
+286; trying with Chain: [222, 219, 26, 27, 19, 18, 220, 22, 21, 209]
+ 	1       1,602,096,785 timed out 
+287; trying with Chain: [219, 209, 222, 26, 22, 27, 220, 21, 19, 18]
+ 	1       784,510,345 timed out 
+288; trying with Chain: [27, 209, 18, 22, 219, 220, 26, 21, 19, 222]
+ 	 timed out 
+289; trying with Chain: [26, 27, 21, 220, 219, 22, 18, 19, 209, 222]
+ 	 timed out 
+290; trying with Chain: [21, 18, 27, 222, 209, 219, 22, 26, 19, 220]
+ 	1       405,054,349 timed out 
+291; trying with Chain: [27, 19, 26, 220, 22, 222, 21, 209, 219, 18]
+ 	 timed out 
+292; trying with Chain: [209, 220, 22, 18, 26, 222, 219, 19, 21, 27]
+ 	 timed out 
+293; trying with Chain: [26, 222, 19, 220, 209, 18, 22, 219, 21, 27]
+ 	 timed out 
+294; trying with Chain: [21, 18, 22, 19, 27, 219, 209, 222, 220, 26]
+ 	1       592,683,234 timed out 
+295; trying with Chain: [21, 19, 27, 220, 26, 18, 222, 219, 209, 22]
+ 	 timed out 
+296; trying with Chain: [220, 19, 219, 22, 18, 26, 209, 21, 222, 27]
+ 	 timed out 
+297; trying with Chain: [220, 19, 27, 209, 22, 18, 26, 222, 219, 21]
+ 	 timed out 
+298; trying with Chain: [219, 209, 18, 19, 220, 27, 26, 222, 22, 21]
+ 	 timed out 
+299; trying with Chain: [219, 27, 21, 18, 222, 19, 26, 209, 220, 22]
+ 	1       415,628,443 timed out 
+300; trying with Chain: [220, 209, 18, 19, 26, 222, 21, 22, 219, 27]
+ 	 timed out 
+301; trying with Chain: [19, 219, 220, 27, 18, 222, 22, 26, 209, 21]
+ 	 timed out 
+302; trying with Chain: [18, 22, 26, 19, 220, 27, 219, 21, 222, 209]
+ 	 timed out 
+303; trying with Chain: [27, 222, 219, 26, 19, 18, 209, 22, 220, 21]
+ 	1       412,865,198 timed out 
+304; trying with Chain: [18, 22, 209, 220, 27, 219, 222, 21, 26, 19]
+ 	 timed out 
+305; trying with Chain: [18, 222, 219, 22, 26, 220, 19, 27, 209, 21]
+ 	 timed out 
+306; trying with Chain: [18, 220, 22, 27, 219, 19, 209, 222, 26, 21]
+ 	 timed out 
+307; trying with Chain: [21, 19, 209, 27, 220, 22, 18, 219, 222, 26]
+ 	 timed out 
+308; trying with Chain: [220, 27, 222, 209, 21, 22, 19, 219, 26, 18]
+ 	 timed out 
+309; trying with Chain: [19, 27, 21, 219, 220, 22, 26, 209, 222, 18]
+ 	 timed out 
+310; trying with Chain: [209, 219, 27, 19, 22, 222, 18, 26, 21, 220]
+ 	1       590,372,235 timed out 
+311; trying with Chain: [26, 220, 19, 209, 222, 21, 18, 22, 27, 219]
+ 	 timed out 
+312; trying with Chain: [22, 27, 19, 18, 219, 209, 26, 220, 222, 21]
+ 	1       1,586,722,967 timed out 
+313; trying with Chain: [22, 19, 27, 26, 21, 18, 209, 219, 222, 220]
+ 	1       395,923,674 timed out 
+314; trying with Chain: [19, 209, 22, 220, 21, 26, 222, 219, 27, 18]
+ 	 timed out 
+315; trying with Chain: [220, 219, 21, 222, 26, 22, 19, 27, 18, 209]
+ 	 timed out 
+316; trying with Chain: [19, 222, 21, 22, 18, 27, 209, 26, 219, 220]
+ 	1       405,605,782 timed out 
+317; trying with Chain: [18, 220, 21, 222, 209, 27, 219, 22, 19, 26]
+ 	 timed out 
+318; trying with Chain: [220, 219, 222, 27, 26, 22, 21, 18, 19, 209]
+ 	 timed out 
+319; trying with Chain: [26, 22, 209, 19, 27, 18, 219, 21, 222, 220]
+ 	1       594,333,675 timed out 
+320; trying with Chain: [222, 27, 219, 22, 19, 18, 209, 220, 21, 26]
+ 	1       594,055,133 timed out 
+321; trying with Chain: [21, 18, 26, 19, 222, 209, 22, 220, 219, 27]
+ 	1       410,641,829 timed out 
+322; trying with Chain: [222, 19, 209, 27, 18, 219, 26, 220, 22, 21]
+ 	1       1,415,286,820 timed out 
+323; trying with Chain: [222, 26, 209, 22, 220, 19, 219, 27, 18, 21]
+ 	 timed out 
+324; trying with Chain: [220, 209, 26, 27, 21, 219, 19, 222, 22, 18]
+ 	 timed out 
+325; trying with Chain: [22, 209, 219, 21, 27, 19, 220, 18, 222, 26]
+ 	 timed out 
+326; trying with Chain: [19, 26, 18, 222, 27, 220, 21, 219, 209, 22]
+ 	1       1,602,364,849 timed out 
+327; trying with Chain: [222, 19, 22, 27, 220, 209, 26, 219, 21, 18]
+ 	1       4,601,620,954 timed out 
+328; trying with Chain: [220, 26, 209, 222, 19, 27, 21, 22, 18, 219]
+ 	 timed out 
+329; trying with Chain: [26, 209, 18, 22, 27, 219, 21, 19, 220, 222]
+ 	1       413,638,268 timed out 
+330; trying with Chain: [22, 26, 222, 209, 21, 219, 220, 19, 27, 18]
+ 	 timed out 
+331; trying with Chain: [209, 219, 22, 18, 19, 222, 27, 220, 21, 26]
+ 	1       410,325,409 timed out 
+332; trying with Chain: [219, 222, 21, 27, 19, 26, 220, 18, 22, 209]
+ 	 timed out 
+333; trying with Chain: [26, 22, 219, 209, 222, 19, 21, 220, 27, 18]
+ 	 timed out 
+334; trying with Chain: [220, 27, 222, 19, 209, 18, 26, 21, 22, 219]
+ 	

@@ -33,6 +33,5 @@ def formatNum(digits):
             digits.insert(index,",")
             counter = 0
     return ''.join(digits)
-print formatNum(1000000)
-        
+
     
