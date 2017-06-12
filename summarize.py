@@ -3,7 +3,7 @@
 #PROBLEM: ../booleforce-1.2/traces/aim200no4; longest chain length: 14; average chain length: 3.72916666667; timeout: 7 
 #line in output file will look like this: 0	1       36,612,079. index, success, number.
 # also need to deal with lines that look like [index timeout]
-
+import sys
 
 def getBest(bestN,lines):
     bests = []
@@ -80,12 +80,14 @@ def writeSummary(inF,outF,bestN):
     timeout = infoString.split()[-1] #this will be a string while nontimeouts will be values. it will thus be sorted last
     pd =  getPerformanceDict(lines,timeout)
     pdsort =  sorted(pd.items(), key=lambda x: x[1])
-    outString = infoString + "\n best {0} chain permutations and time: {1}\n".format(str(bestN),str(pdsort[:bestN]))
+    outString = infoString + "\nbest {0} chain permutations and time: {1}\n".format(str(bestN),str(pdsort[:bestN]))
     outString += "worst {0} chain permutations and time: {1}\n".format(str(bestN),str(pdsort[len(pdsort)-bestN:]))
-    print outString
-    #outFile.write(outString)
+    outFile.write(outString)
+    inFile.close()
+    outFile.close()
     
-writeSummary('performance/aim200no4.txt','newInforme',7)
+#writeSummary('performance/aim200no4.txt','newInforme',7)
+writeSummary(sys.argv[1],sys.argv[2],sys.argv[3])
 
     
     
