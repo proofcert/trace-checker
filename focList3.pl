@@ -43,7 +43,18 @@ check(certLeft(DL),store(SL,NL),unfk([Formula|Gamma])) :-
     isPositive(Formula), 
     check(certLeft(DL),store([(-1,Formula)|SL],NL),   unfk(Gamma)).
     
+ %start separation experiment   
+check(Cert,store(SL,NL),unfk([not(x(P))|Gamma])) :- 
+    storee(Cert,Cert1,Index), %this isn't actually giving any information needed in this case?
+    check(Cert1,store(SL,[not(x(P))|NL]),Gamma).
     
+check(Cert,store(SL,NL),unfk([Formula|Gamma])) :- 
+    storee(Cert,Cert1,Index),
+    check(Cert1,store([(-1,Formula)|SL],NL),Gamma).
+    
+storee(certRight([I|rest],Chains),certRight(Rest,Chains),I).  
+storee(certLeft(DL),certLeft(DL),-1).
+%end separation experiment
     
 %and focused
 check(certLeft(DL),SL,foc(and(A,B))) :-

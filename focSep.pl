@@ -1,44 +1,77 @@
 % for format: wiki 
 
 %true focused
-check(_,_,foc(true)).
+check(_,_,foc(true)). 
 check(_,_,unfk([true|_])).
 
 %false
-check(Cert,SL,unfk([false|Gamma])) :- check(Cert,SL,unfk(Gamma)).
+check(Cert,Store,unfk([false|Gamma])) :- check(Cert,Store,unfk(Gamma)).
 
 %init naive
-check(_,Store,foc(x(P))) :- inite(Store,x(P)).
+check(_,Store,foc(x(P))) :- inite(Store,not(x(P))).
+
 
 %release N is a negative literal or formula
-check(certLeft(DL),SL,foc(Formula)) :- 
+check(Cert,SL,foc(Formula)) :- 
     isNegative(Formula),
-    check(certLeft(DL),SL,unfk([Formula])).
+    releasee(Cert,Cert1),
+    check(Cert1,SL,unfk([Formula])).
 
 %cut naive
 check(Cert,Store,unfk([])) :- 
-    cute(Cert,Cert1,Cert2,Formula,NFormula),
+    cute(Cert,Cert1,Cert2,Formula),
+    negate(Formula,NFormula),
     check(Cert1,Store,unfk([Formula])),
     check(Cert2,Store,unfk([NFormula])).
 
+
 %decide naive
-check(Cert,Store,unfk([])) :- 
-    decidee(Cert,Cert1,Store,Store1,Formula),
+check(Cert,store(SL,NL),unfk([])) :- 
+    decidee(Cert,Cert1,Index),
+    select((Index,Formula),SL,SL1), isPositive(Formula),
     check(Cert1,Store1,foc(Formula)).
 
-%store naive
-check(Cert,Store,unfk(Gamma)) :-
-    storee(Cert,Cert1,Store,Store1,Gamma,Gamma1),
-    check(Cert1,Store1,unfk(Gamma1)).
 
 %and focused
-check(certLeft(DL),SL,foc(and(A,B))) :-
-    check(certLeft(DL),SL,foc(A)), check(certLeft(DL),SL,foc(B)).
-        
+check(Cert,SL,foc(and(A,B))) :-
+    ande(Cert,Cert1,Cert2),
+    check(Cert1,SL,foc(A)), check(Cert2,SL,foc(B)).
+
 %or unfocused
 check(Cert,SL,unfk([or(A,B)|Gamma])) :- %here cert could be left or right
-    check(Cert,SL,unfk([A,B|Gamma])). 
+    ore(Cert,Cert1),
+    check(Cert1,SL,unfk([A,B|Gamma])). 
 
+  
+%store negative atom
+check(Cert,store(SL,NL),unfk([not(x(P))|Gamma])) :- 
+    storee(Cert,Cert1,not(x(P)),_), 
+    check(Cert1,store(SL,[not(x(P))|NL]),unfk(Gamma)).
+
+%store positive formula    
+check(Cert,store(SL,NL),unfk([C|Gamma])) :- 
+    isPositive(C),
+    storee(Cert,Cert1,C,Index),
+    check(Cert1,store([(Index,C)|SL],NL),unfk(Gamma)).
+
+    
+negate(x(P),not(x(P))).
+negate(not(x(P)),x(P)).
+negate(or(A,B), and(NA,NB)) :- negate(A,NA), negate(B,NB).  
+negate(and(A,B), or(NA,NB)) :- negate(A,NA), negate(B,NB).
+negate(true,false). 
+negate(false,true).
+    
+
+%BEGIN FPC FILE
+
+
+    
+    
+    
+
+isPositive(and(_,_)).
+isPositive(x(_)). 
 
 isNegative(not(x(_))).
 isNegative(or(_,_)).
