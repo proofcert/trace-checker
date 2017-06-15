@@ -1,5 +1,5 @@
 %init expert
-inite(store(SL,NL),not(x(P))) :- member(not(x(P)),NL).
+inite(_).
 
 releasee(certLeft(DL),certLeft(DL)).
 

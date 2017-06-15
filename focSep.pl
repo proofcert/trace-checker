@@ -1,5 +1,6 @@
 % for format: wiki 
 
+
 %true focused
 check(_,_,foc(true)). 
 check(_,_,unfk([true|_])).
@@ -8,7 +9,7 @@ check(_,_,unfk([true|_])).
 check(Cert,Store,unfk([false|Gamma])) :- check(Cert,Store,unfk(Gamma)).
 
 %init naive
-check(_,Store,foc(x(P))) :- inite(Store,not(x(P))).
+check(Cert,store(SL,NL),foc(x(P))) :- inite(Cert), member(not(x(P)),NL).
 
 
 %release N is a negative literal or formula
