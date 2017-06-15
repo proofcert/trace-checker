@@ -1,6 +1,7 @@
 % for format: wiki 
 
 
+
 %true focused
 check(_,_,foc(true)). 
 check(_,_,unfk([true|_])).
@@ -46,13 +47,13 @@ check(Cert,SL,unfk([or(A,B)|Gamma])) :- %here cert could be left or right
   
 %store negative atom
 check(Cert,store(SL,NL),unfk([not(x(P))|Gamma])) :- 
-    storee(Cert,Cert1,not(x(P)),_), 
+    storee(Cert,Cert1,_), 
     check(Cert1,store(SL,[not(x(P))|NL]),unfk(Gamma)).
 
 %store positive formula    
 check(Cert,store(SL,NL),unfk([C|Gamma])) :- 
     isPositive(C),
-    storee(Cert,Cert1,C,Index),
+    storee(Cert,Cert1,Index),
     check(Cert1,store([(Index,C)|SL],NL),unfk(Gamma)).
 
     

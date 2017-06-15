@@ -15,5 +15,5 @@ ande(certLeft(DL),certLeft(DL),certLeft(DL)).
 ore(Cert,Cert).
 
 %store expert
-storee(certRight([I|Rest],Chains),certRight(Rest,Chains),C,I).  
-storee(certLeft(DL),certLeft(DL),C,-1).
+storee(certRight([I|Rest],Chains),certRight(Rest,Chains),I).  
+storee(certLeft(DL),certLeft(DL),-1).
