@@ -1,1 +1,13 @@
 
+#PROBLEM: ../booleforce-1.2/traces/aim100-2no4; longest chain length: 10; average chain length: 3.78947368421; timeout: 20 
+
+best 3 chain permutations and time: [(3, 46701749), (14, 47606976), (1, 48257078)]
+worst 3 chain permutations and time: [(10, '20'), (11, '20'), (15, '20')]
+#PROBLEM: ../booleforce-1.2/traces/aim100-2no4; longest chain length: 10; average chain length: 3.78947368421; timeout: 20 
+
+best 3 chain permutations and time: [(3, 0.046701749), (14, 0.047606976), (1, 0.048257078)]
+worst 3 chain permutations and time: [(10, '20+'), (11, '20+'), (15, '20+')]
+ #PROBLEM: ../booleforce-1.2/traces/aim100-2no4; longest chain length: 10; average chain length: 3.78947368421; timeout: 20 
+
+best 3 chain permutations and time: [(3, 0.0467), (14, 0.04761), (1, 0.04826)]
+worst 3 chain permutations and time: [(10, '20+'), (11, '20+'), (15, '20+')]

@@ -51,9 +51,9 @@ def getPerformanceDict(lines,timeout):
             continue
         line = line.split()
         if line[1] == "Timeout":
-            performances[int(line[0])] = timeout
+            performances[int(line[0])] = timeout+"+"
         else:
-            performances[int(line[0])] = int(line[2])
+            performances[int(line[0])] = round(int(line[2])/1000000000.0,5)
     return performances
     
 
@@ -80,6 +80,8 @@ def writeSummary(inF,outF,bestN):
     timeout = infoString.split()[-1] #this will be a string while nontimeouts will be values. it will thus be sorted last
     pd =  getPerformanceDict(lines,timeout)
     pdsort =  sorted(pd.items(), key=lambda x: x[1])
+    print "best "+str(bestN)
+    print "chain permu and time: "+str(pdsort[:bestN])
     outString = infoString + "\nbest {0} chain permutations and time: {1}\n".format(str(bestN),str(pdsort[:bestN]))
     outString += "worst {0} chain permutations and time: {1}\n".format(str(bestN),str(pdsort[len(pdsort)-bestN:]))
     outFile.write(outString)
@@ -87,7 +89,7 @@ def writeSummary(inF,outF,bestN):
     outFile.close()
     
 #writeSummary('performance/aim200no4.txt','newInforme',7)
-writeSummary(sys.argv[1],sys.argv[2],sys.argv[3])
+writeSummary(sys.argv[1],sys.argv[2],int(sys.argv[3]))
 
     
     

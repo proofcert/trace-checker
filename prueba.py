@@ -1,6 +1,8 @@
 import random
 # -*- coding: UTF-8 -*-
 import sys
+import pickle 
+
 from time import sleep
 def uselessExponent(a,x):
     useless, n, count = [1], 1, 0
@@ -23,7 +25,6 @@ def uselessExponent(a,x):
 def do():
     result, useList = uselessExponent(int(sys.argv[1]),int(sys.argv[2]))
     print "数：{0}, 他の数：{1}".format(result,useList)
-do()
 
 def formatNum(digits):
     counter = 0
@@ -36,4 +37,18 @@ def formatNum(digits):
             counter = 0
     return ''.join(digits)
 
+def storePickle(n,f): 
+    dicty = {"hihi":"x",2:'z',3:'y'}
     
+    with open(f,'wb') as filee:
+        pickle.dump(dicty,filee,protocol=pickle.HIGHEST_PROTOCOL)
+        pickle.dump({1:"kagami",2:"aomine"},filee,protocol = pickle.HIGHEST_PROTOCOL)
+
+def getPickle(f):
+    with open(f,'rb') as filee:
+        print len(filee)
+        
+    
+
+storePickle(3,'TEMP.pickle')
+getPickle('TEMP.pickle')
