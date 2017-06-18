@@ -17,3 +17,6 @@ ore(Cert,Cert).
 %store expert
 storee(certRight([I|Rest],Chains),certRight(Rest,Chains),I).  
 storee(certLeft(DL),certLeft(DL),-1).
+
+%!!!END OF FPC CODE!!!
+

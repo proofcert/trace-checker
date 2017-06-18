@@ -1,0 +1,56 @@
+
+
+#PROBLEM: booleforce-1.2/traces/madeup2trace & longest chain length: |  2  6  10  11  12   & average chain length: 3.3333 & median chain length: 3'    'timeout: rands 
+#original chain with index 7: [2, 6, 10, 11, 12] 
+#trying: [11, 2, 6, 12, 10]
+0	#trying: [10, 12, 6, 11, 2]
+1	#trying: [2, 12, 10, 6, 11]
+2	#trying: [2, 10, 11, 12, 6]
+3	#trying: [2, 6, 10, 11, 12]
+4	#trying: [12, 10, 6, 11, 2]
+5	#trying: [6, 2, 12, 11, 10]
+6	#trying: [6, 11, 12, 10, 2]
+7	#trying: [2, 10, 6, 11, 12]
+8	#trying: [2, 6, 12, 10, 11]
+9	
+
+#PROBLEM: booleforce-1.2/traces/madeup2trace & longest chain length: |  2  6  10  11  12   & average chain length: 3.3333 & median chain length: 3'    'timeout: 10s 
+#original chain with index 7: [2, 6, 10, 11, 12] 
+#trying: [2, 11, 10, 6, 12]
+0	#trying: [11, 12, 6, 10, 2]
+1	#trying: [6, 11, 10, 12, 2]
+2	#trying: [12, 6, 11, 10, 2]
+3	#trying: [10, 2, 6, 11, 12]
+4	#trying: [11, 12, 6, 2, 10]
+5	#trying: [2, 12, 6, 11, 10]
+6	#trying: [10, 12, 11, 2, 6]
+7	#trying: [12, 2, 10, 6, 11]
+8	#trying: [2, 6, 10, 11, 12]
+9	
+
+#PROBLEM: booleforce-1.2/traces/madeup2trace & longest chain length: |  2  6  10  11  12   & average chain length: 3.3333 & median chain length: 3'    'timeout: 10s 
+#original chain with index 7: [2, 6, 10, 11, 12] 
+#trying: [12, 6, 11, 10, 2]
+0	
+
+#PROBLEM: booleforce-1.2/traces/madeup2trace & longest chain length: |  2  6  10  11  12   & average chain length: 3.3333 & median chain length: 3'    'timeout: 10s 
+#original chain with index 7: [2, 6, 10, 11, 12] 
+#trying: [12, 11, 2, 6, 10]
+0	
+
+#PROBLEM: booleforce-1.2/traces/madeup2trace & longest chain length: |  2  6  10  11  12   & average chain length: 3.3333 & median chain length: 3'    'timeout: 10s 
+#original chain with index 7: [2, 6, 10, 11, 12] 
+#trying: [10, 2, 12, 11, 6]
+0	1       36917019
+
+
+#PROBLEM: booleforce-1.2/traces/madeup2trace & longest chain length: |  2  6  10  11  12   & average chain length: 3.3333 & median chain length: 3'    'timeout: 10s 
+#original chain with index 7: [2, 6, 10, 11, 12] 
+#trying: [10, 6, 11, 2, 12]
+0	1       37284065
+
+
+#PROBLEM: booleforce-1.2/traces/madeup2trace & longest chain length: 5 & average chain length: 3.3333 & median chain length: 3'    'timeout: 10s 
+#original chain with index 7: [2, 6, 10, 11, 12] 
+#trying: [2, 11, 6, 10, 12]
+0	1       112253765

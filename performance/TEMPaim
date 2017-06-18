@@ -1,0 +1,158 @@
+
+
+#PROBLEM: aim-100-2_0-no-2 & longest chain length: 12 & average chain length: 4.72972972973 & timeout: 7s 
+#original chain with index 64: [16, 9, 225, 224, 223, 8, 15, 14, 211, 22, 201, 219] 
+#trying: [14, 224, 15, 225, 219, 8, 223, 211, 22, 201, 9, 16]
+0	
+
+#PROBLEM: aim-100-2_0-no-2 & longest chain length: 12 & average chain length: 4.72972972973 & timeout: 7s 
+#original chain with index 64: [16, 9, 225, 224, 223, 8, 15, 14, 211, 22, 201, 219] 
+#trying: [22, 15, 16, 211, 224, 219, 14, 223, 201, 8, 9, 225]
+0	Timeout 
+#trying: [14, 211, 9, 15, 201, 223, 22, 225, 219, 16, 224, 8]
+1	Timeout 
+#trying: [15, 219, 14, 16, 22, 211, 8, 201, 223, 225, 9, 224]
+2	Timeout 
+
+
+#PROBLEM: aim-100-2_0-no-2 & longest chain length: 12 & average chain length: 4.72972972973 & timeout: 7s 
+#original chain with index 64: [16, 9, 225, 224, 223, 8, 15, 14, 211, 22, 201, 219] 
+#trying: [16, 224, 14, 8, 211, 201, 219, 225, 9, 22, 223, 15]
+0	Timeout 
+#trying: [9, 201, 223, 224, 8, 14, 211, 16, 225, 22, 219, 15]
+1	Timeout 
+#trying: [211, 15, 223, 14, 22, 8, 225, 224, 201, 9, 16, 219]
+2	Timeout 
+
+
+#PROBLEM: aim-100-2_0-no-2 & longest chain length: 12 & average chain length: 4.72972972973 & timeout: 7s 
+#original chain with index 64: [16, 9, 225, 224, 223, 8, 15, 14, 211, 22, 201, 219] 
+#trying: [14, 201, 15, 211, 16, 8, 9, 22, 224, 219, 225, 223]
+0	1       39438058
+#trying: [16, 8, 14, 223, 219, 201, 22, 15, 224, 211, 9, 225]
+1	1       37569254
+#trying: [14, 211, 22, 224, 201, 9, 223, 219, 225, 8, 16, 15]
+2	1       42037072
+
+
+#PROBLEM: aim-100-2_0-no-2 & longest chain length: 12 & average chain length: 4.72972972973 & timeout: 7s 
+#original chain with index 64: [16, 9, 225, 224, 223, 8, 15, 14, 211, 22, 201, 219] 
+#trying: [16, 15, 211, 8, 201, 224, 9, 14, 225, 219, 223, 22]
+0	1       37507326
+#trying: [201, 224, 14, 8, 211, 16, 225, 9, 22, 219, 223, 15]
+1	1       40730514
+#trying: [201, 225, 15, 8, 22, 16, 219, 9, 223, 211, 224, 14]
+2	1       40467995
+
+
+#PROBLEM: aim-100-2_0-no-2 & longest chain length: 12 & average chain length: 4.72972972973 & timeout: 7s 
+#original chain with index 64: [16, 9, 225, 224, 223, 8, 15, 14, 211, 22, 201, 219] 
+#trying: [211, 201, 225, 223, 9, 8, 22, 16, 15, 224, 219, 14]
+0	
+
+#PROBLEM: aim-100-2_0-no-2 & longest chain length: 12 & average chain length: 4.72972972973 & timeout: 7s 
+#original chain with index 64: [16, 9, 225, 224, 223, 8, 15, 14, 211, 22, 201, 219] 
+#trying: [15, 219, 223, 224, 211, 201, 16, 225, 8, 14, 9, 22]
+0	Timeout 
+#trying: [225, 15, 219, 201, 223, 8, 22, 9, 224, 14, 16, 211]
+1	Timeout 
+#trying: [8, 224, 14, 225, 223, 9, 219, 22, 201, 211, 15, 16]
+2	Timeout 
+
+
+#PROBLEM: aim-100-2_0-no-2 & longest chain length: 12 & average chain length: 4.72972972973 & timeout: 10s 
+#original chain with index 64: [16, 9, 225, 224, 223, 8, 15, 14, 211, 22, 201, 219] 
+#trying: [22, 9, 8, 15, 219, 211, 14, 16, 223, 224, 225, 201]
+0	Timeout 
+#trying: [8, 9, 201, 219, 224, 22, 223, 16, 211, 225, 15, 14]
+1	Timeout 
+#trying: [15, 22, 8, 219, 201, 223, 14, 9, 16, 224, 225, 211]
+2	Timeout 
+
+
+#PROBLEM: aim-100-2_0-no-2 & longest chain length: 12 & average chain length: 4.72972972973 & timeout: 10s 
+#original chain with index 64: [16, 9, 225, 224, 223, 8, 15, 14, 211, 22, 201, 219] 
+#trying: [8, 14, 9, 22, 15, 16, 201, 211, 219, 223, 224, 225]
+0	Timeout 
+#trying: [8, 14, 9, 22, 15, 16, 201, 211, 219, 223, 225, 224]
+1	Timeout 
+#trying: [8, 14, 9, 22, 15, 16, 201, 211, 219, 224, 223, 225]
+2	Timeout 
+
+
+#PROBLEM: booleforce-1.2/traces/comp & longest chain length: 4 & average chain length: 2.66666666667 & timeout: 10s 
+#original chain with index 9: [3, 9, 8, 1] 
+#trying: [1, 3, 8, 9]
+0	1       77840523
+#trying: [1, 3, 9, 8]
+1	1       51509408
+#trying: [1, 8, 3, 9]
+2	1       40766223
+
+
+#PROBLEM: booleforce-1.2/traces/comp & longest chain length: 4 & average chain length: 2.66666666667 & timeout: 10s 
+#original chain with index 9: [3, 9, 8, 1] 
+#trying: [1, 3, 8, 9]
+0	1       41753503
+#trying: [1, 3, 9, 8]
+1	1       49179276
+#trying: [1, 8, 3, 9]
+2	1       40011723
+
+
+#PROBLEM: booleforce-1.2/traces/comp & longest chain length: 4 & average chain length: 2.66666666667 & timeout: 10s 
+#original chain with index 9: [3, 9, 8, 1] 
+#trying: [1, 3, 8, 9]
+0	1       44284655
+#trying: [1, 3, 9, 8]
+1	1       33279764
+#trying: [1, 8, 3, 9]
+2	1       38081049
+
+
+#PROBLEM: booleforce-1.2/traces/comp & longest chain length: 4 & average chain length: 2.66666666667 & timeout: 10s 
+#original chain with index 9: [3, 9, 8, 1] 
+#trying: [1, 3, 8, 9]
+0	1       96003710
+#trying: [1, 3, 9, 8]
+1	1       40392523
+#trying: [1, 8, 3, 9]
+2	1       35960974
+#trying: [1, 8, 9, 3]
+3	1       35147198
+#trying: [1, 9, 3, 8]
+4	1       34127306
+#trying: [1, 9, 8, 3]
+5	1       33668677
+#trying: [3, 1, 8, 9]
+6	1       34583486
+#trying: [3, 1, 9, 8]
+7	1       35459286
+#trying: [3, 8, 1, 9]
+8	1       36132440
+#trying: [3, 8, 9, 1]
+9	1       38401736
+
+
+#PROBLEM: booleforce-1.2/traces/comp & longest chain length: 4 & average chain length: 2.66666666667 & timeout: 10s 
+#original chain with index 9: [3, 9, 8, 1] 
+#trying: [1, 3, 8, 9]
+0	1       63172117
+#trying: [1, 3, 9, 8]
+1	1       41501184
+#trying: [1, 8, 3, 9]
+2	1       48346767
+#trying: [1, 8, 9, 3]
+3	1       38194581
+#trying: [1, 9, 3, 8]
+4	1       48756985
+#trying: [1, 9, 8, 3]
+5	1       43527823
+#trying: [3, 1, 8, 9]
+6	1       44356467
+#trying: [3, 1, 9, 8]
+7	1       34866924
+#trying: [3, 8, 1, 9]
+8	1       37787854
+#trying: [3, 8, 9, 1]
+9	1       44576386

@@ -38,7 +38,7 @@ def formatNum(digits):
     return ''.join(digits)
 
 def storePickle(n,f): 
-    dicty = {"hihi":"x",2:'z',3:'y'}
+    dicty = {1:"x",2:'z',3:'y'}
     
     with open(f,'wb') as filee:
         pickle.dump(dicty,filee,protocol=pickle.HIGHEST_PROTOCOL)
@@ -46,7 +46,12 @@ def storePickle(n,f):
 
 def getPickle(f):
     with open(f,'rb') as filee:
-        print len(filee)
+        d = pickle.load(filee)
+        print d.items()
+        d = pickle.load(filee)
+        print d.items()
+        d = pickle.load(filee)
+        print d.items()
         
     
 

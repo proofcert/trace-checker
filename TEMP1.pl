@@ -8,7 +8,7 @@ check(_,_,unfk([true|_])).
 check(Cert,SL,unfk([false|Gamma])) :- check(Cert,SL,unfk(Gamma)).
 
 %init... P should be a positive atom
-check(_,store(SL,NL),foc(x(P))) :-    member(not(x(P)),NL).
+check(_,store(_,NL),foc(x(P))) :-    member(not(x(P)),NL).
 
 %release N is a negative literal or formula
 check(certLeft(DL),SL,foc(Formula)) :- 
@@ -28,7 +28,7 @@ check(certLeft(DL),store(SL,NL),unfk([])) :- %only can decide on -1 once each br
     check(certLeft(DL1),store(SL1,NL),foc(F)).
 
 %store.. works if C is either a positive formula or negative atom. this is negative atom case
-check(certRight([I|Rest],Chains),store(SL,NL),unfk([not(x(P))|Gamma])) :-
+check(certRight([_|Rest],Chains),store(SL,NL),unfk([not(x(P))|Gamma])) :-
     check(certRight(Rest,Chains),store(SL,[not(x(P))|NL]),unfk(Gamma)). 
     
 %this is positive formula case
@@ -82,3 +82,11 @@ negate(false,true).
 %!!!end of checker code !!!
 
 
+%Trace from file: booleforce-1.2/traces/madeup2trace
+main :- check(certRight([10, 8, 6, 1, 2], 
+ chains([chain(11,[8,10],not(x(1))),
+chain(12,[1,11,10],x(3)),
+chain(13,[2,11,6,10,12],false)])), 
+ store([],[]), 
+  unfk([or(x(2),or(and(x(1),not(x(2))),or(not(x(4)),or(and(not(x(3)),not(x(1))),and(x(3),not(x(1)))))))])), print(1), nl ;  
+ print(0),nl, fail. 
