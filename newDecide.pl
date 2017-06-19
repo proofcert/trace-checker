@@ -35,7 +35,6 @@ check(certLeft(DL),store(SL,NL),unfk([])) :- %only can decide on -1 once each br
 %store.. works if C is either a positive formula or negative atom. this is negative atom case
 check(certRight([_|Rest],Chains),store(SL,NL),unfk([not(x(P))|Gamma])) :-
     check(certRight(Rest,Chains),store(SL,[not(x(P))|NL]),unfk(Gamma)). 
-    
 %this is positive formula case
 check(certRight([I|Rest],Chains), store(SL,NL), unfk([Formula|Gamma])) :-
     isPositive(Formula), 
@@ -46,7 +45,7 @@ check(certLeft(DL),store(SL,NL),unfk([not(x(P))|Gamma])) :-
     check(certLeft(DL),store(SL,[not(x(P))|NL]),  unfk(Gamma)). 
 check(certLeft(DL),store(SL,NL),unfk([Formula|Gamma])) :-
     isPositive(Formula), 
-    check(certLeft(DL),store([(-1,Formula)|SL],NL),   unfk(Gamma)).
+    check(certLeft([-1|DL]),store([(-1,Formula)|SL],NL),   unfk(Gamma)).
     
     
     
@@ -97,13 +96,6 @@ chain(6,[5,4,2],false)])),
  
      
 
-testComp :- check(certLeft([-1]),[],unfk([or(and(not(x(1)),not(x(2))),or(and(x(4),and(not(x(1)),x(2))),or(and(not(x(4)),
-and(x(1),not(x(2)))),or(and(x(4),and(x(1),x(3))),or(and(not(x(4)),and(not(x(1)),not(x(3)))),or(and(not(x(4)),and(x(2),x(3))),
-or(and(x(4),and(not(x(2)),not(x(3)))),or(and(x(3),and(not(x(1)),not(x(2)))),and(not(x(3)),and(x(1),x(2)))))))))))])).
-%true. NONTERMINATING
-testCompN :- check(certLeft([-1]),[],unfk([or(and((x(1),x(2)),or(and(x(4),and(not(x(1)),x(2))),or(and(not(x(4)),
-and(x(1),not(x(2)))),or(and(x(4),and(x(1),x(3))),or(and(not(x(4)),and(not(x(1)),not(x(3)))),or(and(not(x(4)),and(x(2),x(3))),
-or(and(x(4),and(not(x(2)),not(x(3)))),or(and(x(3),and(x(1),not(x(2)))),and(x(3),and(x(1),x(2))))))))))))])). %probably false. RIGHT
 
 testCompCut :- check(certRight([8, 7, 6, 5, 4, 3, 1, 2],  chains([chain(9,[5,1,3],or(x(1),x(2))),chain(10,[9,4,5,8],x(1)),chain(11,[9,3,6,7],x(2)),chain(12,[10,11,2,4,6],false)])),  
 store([],[]), 
@@ -117,7 +109,7 @@ and(not(x(1)),not(x(2)))),and(not(x(3)),and(x(1),x(2))))))))))])).
 
 
 
-testComp1not :- check(certLeft([-1]),store([],[]),unfk([or(or(or(and(x(3),and(not(x(1)),not(x(2)))),
+testComp1not :- check(certRight([-1]),store([],[]),unfk([or(or(or(and(x(3),and(not(x(1)),not(x(2)))),
 and(not(x(2)),and(not(x(3)),x(4)))),
 and(not(x(1)),and(not(x(3)),not(x(4))))),
 or(x(1),not(x(2))))])). %changed a thing that should make it false (1or2 -> 1or-2). RIGHT.
