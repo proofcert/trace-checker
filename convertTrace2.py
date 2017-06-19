@@ -52,7 +52,9 @@ class Trace(object):
         
     def medianChain(self):
         if len(self.derivedClauses)%2 == 0:
-            return (self.derivedClauses[len(self.derivedClauses)/2].chainLength() + self.derivedClauses[1+len(self.derivedClauses)/2].chainLength())/2.0
+            dex1 = (len(self.derivedClauses)-1)/2
+            dex2 = len(self.derivedClauses)/2
+            return (self.derivedClauses[dex1].chainLength() + self.derivedClauses[dex2].chainLength())/2.0
         else:
             return self.derivedClauses[len(self.derivedClauses)/2].chainLength()
     
@@ -308,10 +310,11 @@ def main():
         kernel.close()
 
 #main()  commented out because this is now imported and code is used directly
-'''test = Trace("booleforce-1.2/traces/madeup2trace")
+'''test = Trace("booleforce-1.2/traces/test1")
 
 for clause in test.clauseByChainLen:
     print clause
+print [str(clause) for clause in test.derivedClauses]
 chain, index =  test.longestChain()
 print chain
 print index
