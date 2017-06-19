@@ -320,3 +320,5 @@ print chain
 print index
 print test.avgChain()
 print test.medianChain()'''
+test = Trace("booleforce-1.2/traces/simpleTrace")
+test.writeProlog2("TEMP3.pl")

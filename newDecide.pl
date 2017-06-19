@@ -5,68 +5,80 @@ check(_,_,foc(true)).
 check(_,_,unfk([true|_])).
 
 %false
-check(Cert,SL,unfk([false|Gamma])) :- check(Cert,SL,unfk(Gamma)).
+check(Cert,SL,unfk([false|Gamma]),Next) :- check(Cert,SL,unfk(Gamma),Next).
 
 %init... P should be a positive atom
-check(_,store(_,NL),foc(x(P))) :-    member(not(x(P)),NL).
+check(_,store(_,NL),foc(x(P)),_) :-   member(not(x(P)),NL).
 
 %release N is a negative literal or formula
-check(certLeft(DL),SL,foc(Formula)) :- 
+check(certLeft(DL),SL,foc(Formula),Next) :- 
+print('!!!!&$*#in release'), nl,
     isNegative(Formula),
-    check(certLeft(DL),SL,unfk([Formula])).
+    check(certLeft(DL),SL,unfk([Formula]),Next).
 
 %cut rule
 check(certRight([],chains([chain(StoreDex, DL, Cut)|RestChains])),  SL,  unfk([])) :-  %called when nothing unfk, all storable formulas have been stored
     negate(Cut,NCut),   %this ensures cut rule fails on left branch, as an integer in DL can't be negated. however it will not match at all now if I wrap the Chainlist in chains(...)
-    check(certLeft([-1|DL]),SL,unfk([Cut])), 
+    check(certLeft(DL),SL,unfk([Cut]),0), 
     check(certRight([StoreDex],chains(RestChains)),SL,unfk([NCut])). 
 
 %decide. P is positive atom or formula
-check(certLeft(DL),store(SL,NL),unfk([])) :- 
-    select(-1,DL,DL1),
-    select((-1,F),SL,SL1), isPositive(F),
-    check(certLeft(DL1),store(SL1,NL),foc(F)).
+%check(certLeft([-1|DL]),store(SL,NL),unfk([]),Next) :- 
+%    append(DL,[-1],DL1), 
+%    member((-1,F),SL), isPositive(F),
+%    check(certLeft(DL1),store(SL,NL),foc(F),Next).
 
-check(certLeft(DL),store(SL,NL),unfk([])) :- %only can decide on -1 once each branch. 
+check(certLeft(DL),store(SL,NL),unfk([]),Next) :- 
+    print('!!!!&$*#in decide'),nl,
     select(I,DL,DL1),
-    select((I,F),SL,SL1), isPositive(F), 
-    check(certLeft(DL1),store(SL1,NL),foc(F)).
+    append(DL1,[I],DL2),
+    member((I,F),SL), isPositive(F), 
+    check(certLeft(DL2),store(SL,NL),foc(F),Next).
 
 %store.. works if C is either a positive formula or negative atom. this is negative atom case
 check(certRight([_|Rest],Chains),store(SL,NL),unfk([not(x(P))|Gamma])) :-
+    print('!!!!&$*#in store on certRight'),nl,
     check(certRight(Rest,Chains),store(SL,[not(x(P))|NL]),unfk(Gamma)). 
 %this is positive formula case
 check(certRight([I|Rest],Chains), store(SL,NL), unfk([Formula|Gamma])) :-
+print('!!!!&$*#in store on certRight'),nl,
     isPositive(Formula), 
     check(certRight(Rest,Chains), store([(I,Formula)|SL],NL), unfk(Gamma)).
     
 % store but case where formulas should be stored at -1
-check(certLeft(DL),store(SL,NL),unfk([not(x(P))|Gamma])) :-
-    check(certLeft(DL),store(SL,[not(x(P))|NL]),  unfk(Gamma)). 
-check(certLeft(DL),store(SL,NL),unfk([Formula|Gamma])) :-
+check(certLeft(DL),store(SL,NL),unfk([not(x(P))|Gamma]),Next) :-
+print('!!!!&$*#in store certLeft'), nl,
+    check(certLeft(DL),store(SL,[not(x(P))|NL]),  unfk(Gamma), Next). 
+check(certLeft(DL),store(SL,NL),unfk([Formula|Gamma]),Next) :-
+print('!!!!&$*#in store certLeft'), nl,
     isPositive(Formula), 
-    check(certLeft([-1|DL]),store([(-1,Formula)|SL],NL),   unfk(Gamma)).
+    Next1 is Next - 1,
+    check(certLeft([Next|DL]),store([(Next,Formula)|SL],NL),   unfk(Gamma), Next1).
     
     
     
 %and focused
-check(certLeft(DL),SL,foc(and(A,B))) :-
-    check(certLeft(DL),SL,foc(A)), check(certLeft(DL),SL,foc(B)).
+check(certLeft(DL),SL,foc(and(A,B)),Next) :-
+print('!!!!&$*#in and'), nl,
+    check(certLeft(DL),SL,foc(A),Next), check(certLeft(DL),SL,foc(B),Next).
         
     
 %and unfocused
-%check(certLeft(DL),SL,unfk([and(A,B)|Gamma])) :- 
-%    check(certLeft(DL),SL,unfk([A|Gamma])),
-%    check(certLeft(DL),SL,unfk([B|Gamma])).
+%check(certLeft(DL),SL,unfk([and(A,B)|Gamma]),Next) :- 
+%    check(certLeft(DL),SL,unfk([A|Gamma]),Next),
+%    check(certLeft(DL),SL,unfk([B|Gamma]),Next).
     
 %or focused
 %check(Cert,SL,foc(or(A,B))) :- check(DL,SL,foc(A)).
 %check(certLeft(DL),SL,foc(or(A,B))) :- check(DL,SL,foc(B)).
     
 %or unfocused
-check(Cert,SL,unfk([or(A,B)|Gamma])) :- %here cert could be left or right
+check(Cert,SL,unfk([or(A,B)|Gamma]),Next) :- %this would be certLeft because of the presence of Next 
+print('!!!!&$*#in or certLeft'), nl,
+    check(Cert,SL,unfk([A,B|Gamma]),Next). 
+check(Cert,SL,unfk([or(A,B)|Gamma])) :- %this would be certRight
+print('!!!!&$*#in or certRight'), nl,
     check(Cert,SL,unfk([A,B|Gamma])). 
-
 
 
 isPositive(and(_,_)).
@@ -87,7 +99,7 @@ negate(false,true).
 
 
 %Trace from file: booleforce-1.2/traces/test1
-main :- check(certRight([4, 3, 1, 2], 
+readme :- check(certRight([4, 3, 1, 2], 
  chains([chain(5,[3,1],x(1)),
 chain(6,[5,4,2],false)])), 
  store([],[]), 
@@ -298,3 +310,9 @@ check(certRight([263, 50, 49, 48, 47, 46, 45, 44, 43, 42, 40, 39, 38, 36, 35, 34
  chains([chain(321,[7,5],or(not(x(160)),x(33))),chain(322,[4,321,2,1,3],x(33)),chain(323,[8,322],or(x(78),x(92))),chain(324,[9,322],or(x(78),not(x(92)))),chain(326,[16,10],or(x(144),or(x(153),x(168)))),chain(327,[18,17,326],or(x(67),or(x(144),x(153)))),chain(329,[324,323],x(78)),chain(330,[25,329],or(not(x(96)),not(x(9)))),chain(331,[30,329],or(x(131),not(x(170)))),chain(333,[24,330],or(not(x(9)),not(x(67)))),chain(334,[19,21],or(x(9),or(x(66),x(115)))),chain(335,[23,22,333],or(not(x(115)),not(x(67)))),chain(336,[20,334,21,335,333],not(x(67))),chain(337,[11,336],or(x(104),x(139))),chain(338,[17,336],or(x(70),not(x(168)))),chain(339,[36,336],or(x(26),not(x(178)))),chain(340,[327,336],or(x(144),x(153))),chain(341,[35,34,33,339],or(x(26),not(x(131)))),chain(342,[50,49,341,31,45,331,263,44],or(not(x(170)),or(x(92),x(194)))),chain(343,[45,44,47,49,46,39,50,341,38,31,27,28,26,342],or(not(x(153)),or(x(194),or(x(106),or(x(46),x(92)))))),chain(344,[27,28,26,331],or(x(131),or(x(106),not(x(153))))),chain(345,[45,44,47,49,46,42,40,343,50,341,31,344],or(not(x(153)),or(x(106),or(x(92),x(194))))),chain(346,[39,38],or(not(x(200)),or(x(46),x(12)))),chain(347,[42,40,346],or(not(x(200)),or(x(12),x(100)))),chain(348,[45,44,47,49,46,347,50,32,341,345,344],or(not(x(153)),or(x(92),x(106)))),chain(349,[27,29,31,26,342,348,32],or(not(x(153)),or(x(92),x(200)))),chain(350,[27,29,26,331],or(x(131),or(not(x(106)),not(x(153))))),chain(351,[45,44,47,49,46,347,50,349,341,350,348],or(x(92),not(x(153)))),chain(352,[350,344],or(x(131),not(x(153)))),chain(353,[31,32,352],or(x(200),not(x(153)))),chain(354,[48,351,340,347,353,50,341,352,43,49],x(144)),chain(355,[13,354],or(not(x(43)),not(x(104)))),chain(356,[15,354],or(not(x(139)),x(35))),chain(357,[12,355,337],x(139)),chain(358,[356,357],x(35)),chain(359,[16,358],or(x(153),x(168))),chain(362,[338,18,352,359],x(131)),chain(363,[341,362],x(26)),chain(365,[49,363],or(not(x(161)),x(100))),chain(366,[50,363],or(not(x(100)),not(x(200)))),chain(367,[18,359,338],x(153)),chain(368,[351,367],x(92)),chain(369,[353,367],x(200)),chain(370,[366,369],not(x(100))),chain(371,[365,370],not(x(161))),chain(372,[347,370,369],x(12)),chain(373,[43,371,370],x(4)),chain(374,[48,368,372,373],false)])),  store([],[]), 
   unfk([or(and(x(164),not(x(194))),or(and(x(100),x(200)),or(and(x(161),not(x(100))),or(and(x(4),x(12)),or(and(x(64),x(164)),or(and(not(x(64)),not(x(92))),or(and(x(111),not(x(164))),or(and(not(x(111)),not(x(164))),or(and(not(x(4)),not(x(161))),or(and(x(80),x(46)),or(and(not(x(80)),x(46)),or(and(not(x(46)),x(108)),or(and(not(x(46)),not(x(108))),or(and(not(x(26)),x(178)),or(and(x(68),x(122)),or(and(not(x(26)),not(x(122))),or(and(not(x(26)),not(x(68))),or(and(x(194),not(x(200))),or(and(not(x(194)),not(x(200))),or(and(x(170),not(x(131))),or(and(x(130),x(106)),or(and(x(130),x(132)),or(and(not(x(130)),x(132)),or(and(not(x(132)),not(x(170))),or(and(x(9),x(96)),or(and(x(9),not(x(96))),or(and(x(71),x(115)),or(and(not(x(71)),x(115)),or(and(x(2),not(x(115))),or(and(x(66),not(x(2))),or(and(not(x(2)),not(x(66))),or(and(x(70),x(168)),or(and(not(x(70)),x(168)),or(and(not(x(168)),not(x(153))),or(and(not(x(35)),x(139)),or(and(x(43),x(104)),or(and(not(x(43)),x(104)),or(and(not(x(104)),not(x(139))),or(and(not(x(35)),not(x(168))),or(and(not(x(78)),x(92)),or(and(not(x(78)),not(x(92))),or(and(x(61),x(160)),or(and(not(x(61)),x(160)),or(and(x(53),x(79)),or(and(not(x(53)),x(60)),or(and(not(x(60)),not(x(160))),and(x(60),not(x(79)))))))))))))))))))))))))))))))))))))))))))))))))])). 
  
+simple :- check(certRight([3, 1, 2], 
+ chains([chain(4,[1,3],x(2)),
+chain(5,[4,2],false)])), 
+ store([],[]), 
+  unfk([or(x(1),or(and(not(x(1)),not(x(2))),x(2)))])), print(1), nl ;  
+ print(0),nl, fail. 
