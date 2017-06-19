@@ -28,12 +28,14 @@ check(certRight([],chains([chain(StoreDex, DL, Cut)|RestChains])),  SL,  unfk([]
 %    member((-1,F),SL), isPositive(F),
 %    check(certLeft(DL1),store(SL,NL),foc(F),Next).
 
-check(certLeft(DL),store(SL,NL),unfk([]),Next) :- 
+check(certLeft([I|DL]),store(SL,NL),unfk([]),Next) :- 
     print('!!!!&$*#in decide'),nl,
-    select(I,DL,DL1),
-    append(DL1,[I],DL2),
+    append(DL,[I],DL1),
     member((I,F),SL), isPositive(F), 
-    check(certLeft(DL2),store(SL,NL),foc(F),Next).
+    check(certLeft(DL1),store(SL,NL),foc(F),Next) ; 
+    %if fail we still need the new order
+    print('REACHED THIS PART'), nl,
+    append(DL,[I],DL1), check(certLeft(DL1),store(SL,NL),unfk([]),Next).
 
 %store.. works if C is either a positive formula or negative atom. this is negative atom case
 check(certRight([_|Rest],Chains),store(SL,NL),unfk([not(x(P))|Gamma])) :-
