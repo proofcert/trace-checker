@@ -6,13 +6,14 @@ from shutil import copyfile
 from math import factorial
 KERNEL = "focSep.pl"
 FPC = "fpc.pl"
-TEMPLATE = "template.pl"
+#TEMPLATE = "template.pl"
+TEMPLATE = "all1.pl"
 
 
 
 #root = "../booleforce-1.2/traces/"
 if len(sys.argv) == 1: #default test case with booleforce-1.2/traces/madeup2
-    traceName, prologName, numPermString, timeOut, methodString, informeFileName = 'booleforce-1.2/traces/madeup2trace', "TEMP1.pl", "1", "10", "rand", "performance/madeup2.txt"
+    traceName, prologName, numPermString, timeOut, methodString, informeFileName = 'booleforce-1.2/traces/readme', "TEMP1.pl", "all", "10", "lex", "performance/readme.txt"
 else:
     traceName, prologName, numPermString, timeOut, methodString, informeFileName = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5], sys.argv[6]
 #assume timeOut to be an integer in seconds

@@ -1,75 +1,77 @@
-% for format: wiki 
+:- discontiguous check/3.
 
 %true focused
-check(_,_,foc(true)).
+check(_,_,foc(true)). 
 check(_,_,unfk([true|_])).
 
 %false
-check(Cert,SL,unfk([false|Gamma])) :- check(Cert,SL,unfk(Gamma)).
+check(Cert,Store,unfk([false|Gamma])) :- check(Cert,Store,unfk(Gamma)).
 
-%init... P should be a positive atom
-check(_,store(_,NL),foc(x(P))) :-    member(not(x(P)),NL).
+%init naive
+check(Cert,store(_,NL),foc(x(P))) :- inite(Cert), member(not(x(P)),NL).
+inite(_).
+
+
 
 %release N is a negative literal or formula
-check(certLeft(DL),SL,foc(Formula)) :- 
+check(Cert,SL,foc(Formula)) :- 
     isNegative(Formula),
-    check(certLeft(DL),SL,unfk([Formula])).
+    releasee(Cert,Cert1),
+    check(Cert1,SL,unfk([Formula])).
+releasee(certLeft(X,DL),certLeft(X,DL)).
 
-%cut rule
-check(certRight([],chains([chain(StoreDex, DL, Cut)|RestChains])),  SL,  unfk([])) :-  %called when nothing unfk, all storable formulas have been stored
-    negate(Cut,NCut),   %this ensures cut rule fails on left branch, as an integer in DL can't be negated. however it will not match at all now if I wrap the Chainlist in chains(...)
-    check(certLeft([-1|DL]),SL,unfk([Cut])), 
-    check(certRight([StoreDex],chains(RestChains)),SL,unfk([NCut])). 
 
-%decide. P is positive atom or formula
-check(certLeft(DL),store(SL,NL),unfk([])) :- %only can decide on -1 once each branch. 
-    select(I,DL,DL1),
-    select((I,F),SL,SL1), isPositive(F), 
-    check(certLeft(DL1),store(SL1,NL),foc(F)).
+%cut naive
+check(Cert,Store,unfk([])) :- 
+    cute(Cert,Cert1,Cert2,Formula),
+    negate(Formula,NFormula),
+    check(Cert1,Store,unfk([Formula])),
+    check(Cert2,Store,unfk([NFormula])).
+cute(certRight([],chains([chain(StoreDex, DL, Formula)|RestChains])),certLeft(1,DL),
+certRight([StoreDex],chains(RestChains)),Formula).
 
-%store.. works if C is either a positive formula or negative atom. this is negative atom case
-check(certRight([_|Rest],Chains),store(SL,NL),unfk([not(x(P))|Gamma])) :-
-    check(certRight(Rest,Chains),store(SL,[not(x(P))|NL]),unfk(Gamma)). 
-    
-%this is positive formula case
-check(certRight([I|Rest],Chains), store(SL,NL), unfk([Formula|Gamma])) :-
-    isPositive(Formula), 
-    check(certRight(Rest,Chains), store([(I,Formula)|SL],NL), unfk(Gamma)).
-    
-% store but case where formulas should be stored at -1
-check(certLeft(DL),store(SL,NL),unfk([not(x(P))|Gamma])) :-
-    check(certLeft(DL),store(SL,[not(x(P))|NL]),  unfk(Gamma)). 
-check(certLeft(DL),store(SL,NL),unfk([Formula|Gamma])) :-
-    isPositive(Formula), 
-    check(certLeft(DL),store([(-1,Formula)|SL],NL),   unfk(Gamma)).
-    
-    
-    
+
+%decide naive
+check(Cert,store(SL,NL),unfk([])) :- 
+    decidee(Cert,Cert1,Index),
+    member((Index,Formula),SL), isPositive(Formula),
+    check(Cert1,store(SL,NL),foc(Formula)).
+decidee(certLeft(1,DL), certLeft(0,DL), -1). %the one chance to decide on -1
+decidee(certLeft(1,[I|Rest]), certLeft(1,Rest), I). 
+decidee(certLeft(0,[I|Rest]),certLeft(0,Rest), I).
+%added an additional case because we won't necessarily always be able to decide on -1 before deciding on any ofthe DL things
+
 %and focused
-check(certLeft(DL),SL,foc(and(A,B))) :-
-    check(certLeft(DL),SL,foc(A)), check(certLeft(DL),SL,foc(B)).
-        
-    
-%and unfocused
-%check(certLeft(DL),SL,unfk([and(A,B)|Gamma])) :- 
-%    check(certLeft(DL),SL,unfk([A|Gamma])),
-%    check(certLeft(DL),SL,unfk([B|Gamma])).
-    
-%or focused
-%check(Cert,SL,foc(or(A,B))) :- check(DL,SL,foc(A)).
-%check(certLeft(DL),SL,foc(or(A,B))) :- check(DL,SL,foc(B)).
-    
+check(Cert,SL,foc(and(A,B))) :-
+    ande(Cert,Cert1,Cert2),
+    check(Cert1,SL,foc(A)), check(Cert2,SL,foc(B)).
+ande(certLeft(X,DL),certLeft(X,DL),certLeft(X,DL)).
+
+
 %or unfocused
 check(Cert,SL,unfk([or(A,B)|Gamma])) :- %here cert could be left or right
-    check(Cert,SL,unfk([A,B|Gamma])). 
+    ore(Cert,Cert1),
+    check(Cert1,SL,unfk([A,B|Gamma])). 
+ore(Cert,Cert).
 
 
+  
+%store negative atom
+check(Cert,store(SL,NL),unfk([not(x(P))|Gamma])) :- 
+    storee(Cert,Cert1,_), 
+    check(Cert1,store(SL,[not(x(P))|NL]),unfk(Gamma)).
 
-isPositive(and(_,_)).
-isPositive(x(_)). 
+%store positive formula    
+check(Cert,store(SL,NL),unfk([C|Gamma])) :- 
+    isPositive(C),
+    storee(Cert,Cert1,Index),
+    check(Cert1,store([(Index,C)|SL],NL),unfk(Gamma)).
+storee(certRight([I|Rest],Chains),certRight(Rest,Chains),I).  
+storee(certLeft(X,DL),certLeft(X,DL),-1).
 
-isNegative(not(x(_))).
-isNegative(or(_,_)).
+  
+  
+%helper predicates
 
 negate(x(P),not(x(P))).
 negate(not(x(P)),x(P)).
@@ -78,15 +80,18 @@ negate(and(A,B), or(NA,NB)) :- negate(A,NA), negate(B,NB).
 negate(true,false). 
 negate(false,true).
 
+isPositive(and(_,_)).
+isPositive(x(_)). 
 
-%!!!end of checker code !!!
+isNegative(not(x(_))).
+isNegative(or(_,_)).
 
+%!!!!!!END OF CHECKER CODE!!!!!
 
-%Trace from file: booleforce-1.2/traces/madeup2trace
-main :- check(certRight([10, 8, 6, 1, 2], 
- chains([chain(11,[8,10],not(x(1))),
-chain(12,[1,11,10],x(3)),
-chain(13,[2,11,6,10,12],false)])), 
+%Trace from file: booleforce-1.2/traces/readme
+main :- check(certRight([4, 3, 1, 2], 
+ chains([chain(5,[3,1],x(1)),
+chain(6,[5,4,2],false)])), 
  store([],[]), 
-  unfk([or(x(2),or(and(x(1),not(x(2))),or(not(x(4)),or(and(not(x(3)),not(x(1))),and(x(3),not(x(1)))))))])), print(1), nl ;  
+  unfk([or(and(x(1),x(2)),or(and(not(x(1)),x(2)),or(and(not(x(1)),not(x(2))),and(x(1),not(x(2))))))])), print(1), nl ;  
  print(0),nl, fail. 
