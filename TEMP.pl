@@ -89,17 +89,11 @@ isNegative(or(_,_)).
 
 %!!!!!!END OF CHECKER CODE!!!!!
 
-%Trace from file: booleforce-1.2/traces/comp
-main :- check(certRight([8, 7, 6, 5, 4, 3, 1, 2], 
- chains([chain(9,[5,4,1],or(x(4),x(1))),
-chain(10,[9,8,3,1],x(1)),
-chain(11,[10,2],or(not(x(2)),x(3))),
-chain(12,[10,6],or(not(x(3)),not(x(4)))),
-chain(13,[10,7],or(x(2),x(4))),
-chain(14,[13,12,4],not(x(3))),
-chain(15,[14,11],not(x(2))),
-chain(16,[15,13],x(4)),
-chain(17,[16,15,14,3],false)])), 
+%Trace from file: booleforce-1.2/traces/madeup2trace
+main :- check(certRight([10, 8, 6, 1, 2], 
+ chains([chain(11,[10,8],not(x(1))),
+chain(12,[11,10,1],x(3)),
+chain(13,[12,11,10,6,2],false)])), 
  store([],[]), 
-  unfk([or(and(x(2),x(4)),or(and(not(x(2)),not(x(4))),or(and(x(3),x(4)),or(and(not(x(3)),not(x(4))),or(and(x(2),x(3)),or(and(x(4),not(x(2))),or(and(x(3),not(x(2))),and(x(2),not(x(3))))))))))])), print(1), nl ;  
+  unfk([or(x(2),or(and(x(1),not(x(2))),or(not(x(4)),or(and(not(x(3)),not(x(1))),and(x(3),not(x(1)))))))])), print(1), nl ;  
  print(0),nl, fail. 

@@ -1,0 +1,7 @@
+
+
+#PROBLEM: booleforce-1.2/traces/simpleTrace & longest chain length: 2 & average chain length: 2.0 & median chain length: 2.0 & timeout: 7s 
+3.0!4.0		1       34385812
+3.0!4.1		0       37631579
+3.1!4.0		0       34242604
+3.1!4.1		0       39593653
