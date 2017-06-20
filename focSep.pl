@@ -27,7 +27,7 @@ check(Cert,Store,unfk([])) :-
 check(Cert,store(SL,NL),unfk([])) :- 
     decidee(Cert,Cert1,Index),
     select((Index,Formula),SL,SL1), isPositive(Formula),
-    check(Cert1,Store1,foc(Formula)).
+    check(Cert1,store(SL1,NL),foc(Formula)).
 
 
 %and focused
