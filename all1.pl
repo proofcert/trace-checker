@@ -36,9 +36,10 @@ check(Cert,store(SL,NL),unfk([])) :-
     decidee(Cert,Cert1,Index),
     member((Index,Formula),SL), isPositive(Formula),
     check(Cert1,store(SL,NL),foc(Formula)).
-decidee(certLeft(1,DL), certLeft(0,DL), -1). %the one chance to decide on -1
 decidee(certLeft(1,[I|Rest]), certLeft(1,Rest), I). 
 decidee(certLeft(0,[I|Rest]),certLeft(0,Rest), I).
+decidee(certLeft(1,DL), certLeft(0,DL), -1). %the one chance to decide on -1
+
 %added an additional case because we won't necessarily always be able to decide on -1 before deciding on any ofthe DL things
 
 %and focused

@@ -18,6 +18,7 @@ class Trace(object):
         self.theorem = self.theorem()
         self.derivedClauses = self.derivedClauses()
         self.clauseByChainLen = self.sortByChain()
+
     
 #in the following basic stat-getting functions I'm recounting things unnecessarily. could easily be fixed
     def longestChain(self):
@@ -32,6 +33,9 @@ class Trace(object):
         for n in range(len(self.clauseList)):
             if not self.clauseList[n].original():
                 return self.clauseList[n:]
+    
+    def derivedStartDex(self):
+        return len(self.clauseList) - len(self.derivedClauses)
         
     def getChain(self,dex):
         return self.clauseList[dex].getAntecedents()
@@ -60,7 +64,8 @@ class Trace(object):
     
     def getClauseList(self):
         return self.clauseList
-        
+   
+    
     def __str__(self):
         toPrint = "Parsed clause list: \n"
         for element in self.clauseList:
