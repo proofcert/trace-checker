@@ -12,7 +12,7 @@ cute(certRight([],chains([chain(StoreDex, DL, Formula)|RestChains])),
 decidee(certLeft(DL,1),certLeft(DL,0),-1).
 decidee(certLeft(DL,A),certLeft(DL1,A),I) :- select(I,DL,DL1).
 
-ande(certLeft(,A),certLeft(DL,A),certLeft(DL,A)).
+ande(certLeft(DL,A),certLeft(DL,A),certLeft(DL,A)).
 
 ore(Cert,Cert).
 
@@ -108,7 +108,7 @@ chain(13,[7,10],or(x(2),x(4))),
 chain(14,[13,12,4],not(x(3))),
 chain(15,[11,14],not(x(2))),
 chain(16,[13,15],x(4)),
-chain(17,[3,15,14,16],false)])), 
+chain(17,[16,15,14,3],false)])), 
  store([],[]), 
   unfk([or(and(x(2),x(4)),or(and(not(x(2)),not(x(4))),or(and(x(3),x(4)),or(and(not(x(3)),not(x(4))),or(and(x(2),x(3)),or(and(x(4),not(x(2))),or(and(x(3),not(x(2))),and(x(2),not(x(3))))))))))])), print(1), nl ;  
  print(0),nl, fail. 

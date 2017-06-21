@@ -675,3 +675,17 @@ chain(4,[3,2],false)])),
  store([],[]), 
   unfk([or(and(not(x(1)),not(x(2))),and(x(3),not(x(2))))])), print(1), nl ;  
  print(0),nl, fail. 
+%Trace from file: booleforce-1.2/traces/invalid
+main :- check(certRight([1, 2], 
+ chains([chain(3,[1,2],or(x(1),x(2))),
+chain(4,[3,2],false)])), 
+ store([],[]), 
+  unfk([or(and(not(x(1)),not(x(2))),and(x(3),not(x(2))))])), print(1), nl ;  
+ print(0),nl, fail. 
+%Trace from file: booleforce-1.2/traces/invalid
+main :- check(certRight([1, 2], 
+ chains([chain(3,[1,2],or(x(1),x(2))),
+chain(4,[3,2],false)])), 
+ store([],[]), 
+  unfk([or(and(not(x(1)),not(x(2))),and(x(3),not(x(2))))])), print(1), nl ;  
+ print(0),nl, fail. 

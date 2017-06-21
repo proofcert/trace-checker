@@ -120,3 +120,111 @@
 1	Timeout 
 #trying: [3, 15, 14, 16]
 2	
+
+#PROBLEM: booleforce-1.2/traces/comp & longest chain length: 4 & average chain length: 2.6667 & median chain length: 2 & varNum: None & clauseNum: None & chains: 9 & timeout: 7s 
+#original chain with index 16: [3, 14, 15, 16] 
+#trying: [3, 14, 15, 16]
+0	1       68470615
+#trying: [3, 14, 16, 15]
+1	1       33305164
+#trying: [3, 15, 14, 16]
+2	1       35794070
+#trying: [3, 15, 16, 14]
+3	1       36484348
+#trying: [3, 16, 14, 15]
+4	1       48995430
+#trying: [3, 16, 15, 14]
+5	1       31821399
+#trying: [14, 3, 15, 16]
+6	1       33687431
+#trying: [14, 3, 16, 15]
+7	1       34069975
+#trying: [14, 15, 3, 16]
+8	1       33512199
+#trying: [14, 15, 16, 3]
+9	1       32800768
+#trying: [14, 16, 3, 15]
+10	1       31999102
+#trying: [14, 16, 15, 3]
+11	1       32940027
+#trying: [15, 3, 14, 16]
+12	1       37091779
+#trying: [15, 3, 16, 14]
+13	1       32857717
+#trying: [15, 14, 3, 16]
+14	1       34213396
+#trying: [15, 14, 16, 3]
+15	1       34229633
+#trying: [15, 16, 3, 14]
+16	1       32506020
+#trying: [15, 16, 14, 3]
+17	1       32310533
+#trying: [16, 3, 14, 15]
+18	1       38594608
+#trying: [16, 3, 15, 14]
+19	1       35263520
+#trying: [16, 14, 3, 15]
+20	1       36733570
+#trying: [16, 14, 15, 3]
+21	1       36236160
+#trying: [16, 15, 3, 14]
+22	1       51233231
+#trying: [16, 15, 14, 3]
+23	1       39016554
+
+
+#the following is now using kernel and fpc separated version
+
+
+
+
+#PROBLEM: booleforce-1.2/traces/comp & longest chain length: 4 & average chain length: 2.6667 & median chain length: 2 & varNum: None & clauseNum: None & chains: 9 & timeout: 7s 
+#original chain with index 16: [3, 14, 15, 16] 
+#trying: [3, 14, 15, 16]
+0	1       36788110
+#trying: [3, 14, 16, 15]
+1	1       34248648
+#trying: [3, 15, 14, 16]
+2	1       37973404
+#trying: [3, 15, 16, 14]
+3	1       33670240
+#trying: [3, 16, 14, 15]
+4	1       35381868
+#trying: [3, 16, 15, 14]
+5	1       37190329
+#trying: [14, 3, 15, 16]
+6	1       34753142
+#trying: [14, 3, 16, 15]
+7	1       35226625
+#trying: [14, 15, 3, 16]
+8	1       38586079
+#trying: [14, 15, 16, 3]
+9	1       43005936
+#trying: [14, 16, 3, 15]
+10	1       48399457
+#trying: [14, 16, 15, 3]
+11	1       36194415
+#trying: [15, 3, 14, 16]
+12	1       44028677
+#trying: [15, 3, 16, 14]
+13	1       40208821
+#trying: [15, 14, 3, 16]
+14	1       35159190
+#trying: [15, 14, 16, 3]
+15	1       36724497
+#trying: [15, 16, 3, 14]
+16	1       38976777
+#trying: [15, 16, 14, 3]
+17	1       33747675
+#trying: [16, 3, 14, 15]
+18	1       33322074
+#trying: [16, 3, 15, 14]
+19	1       36407666
+#trying: [16, 14, 3, 15]
+20	1       35553740
+#trying: [16, 14, 15, 3]
+21	1       37562912
+#trying: [16, 15, 3, 14]
+22	1       36011117
+#trying: [16, 15, 14, 3]
+23	1       32651911
