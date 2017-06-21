@@ -34,6 +34,8 @@ version -- manages the version of prolog code used in the tests.
 For all permutations of a problem you can call the following, changing just the part in all caps: 
 python chainOrder.py TRACENAME TEMP.pl all 30 lex performance/TRACENAME false none none fpc
 
+For all combinations of all permutations of all chains, an example that currently doesn't work on any combination, run the following:
+python chainOrder.py comp TEMP.pl all 30 lex performanceNew/comp true none none order
 
 
 list1.sh takes the path of a folder of cnf problems, converts them to trace, and runs chainOrder.py on all of them.
