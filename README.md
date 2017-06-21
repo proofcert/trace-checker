@@ -12,10 +12,30 @@ trace_checker.sh: takes an already created Trace file, translates it to prolog, 
 
 
 testing with different chain lengths: 
-chainOrder.py takes arguments trace_name, prolog_name, number of permutations to try, and timeout. 
-    It writes results to informeCadena. There's currently an issue where it's not writing things in the right order, 
-    but you can still figure out the results. 
-    
+chainOrder.py: 
+parameters: traceName prologName numPermString timeOut methodString informeFileName allChainsString varNum clauseNum version
+traceName -- path to a valid Trace file
+prologName -- I usually use TEMP.pl or a variation, so I know to delete it after (the script that calls chainOrder would delete it automatically)
+numPermString -- either an integer, number of permutations to be tested, or the string "all" for all permutations
+timeOut -- timeout in seconds for each chain order tested
+methodString -- "lex" for lexicographic permutation generation, or any other string will result in random shuffle generation.
+informeFileName -- again, this parameter is usually managed by a method that calls chainOrder.py. 
+    When running chainOrder.py manually, if using the regular, non-fixed order prolog version, please set this to performance/traceName. otherwise set to 
+    performanceNew/traceName
+allChainsString -- enter "true" or "false"; when this is true, python will test all combinations of all permutations for all chains.
+    when false, it will test only permutations of the longest chain.
+varNum and clauseNum -- these are only for use when chainOrder is called by another method. you can set them both as None
+version -- manages the version of prolog code used in the tests.
+    can be "fpc", "order", or "template."
+    fpc means the combination of the most recent focSep.pl and fpc.pl files. 
+    "order" means all1.pl, the current latest file that tests with fixed order chains.
+    "template" refers to the original, non-separated prolog file. I've kept it as an option mainly for debugging, as 
+    it works reliably and can be used to figure out what's wrong with the other files. 
+For all permutations of a problem you can call the following, changing just the part in all caps: 
+python chainOrder.py TRACENAME TEMP.pl all 30 lex performance/TRACENAME false none none fpc
+
+
+
 list1.sh takes the path of a folder of cnf problems, converts them to trace, and runs chainOrder.py on all of them.
 Currently it does this with hardwired 10 permutations and 500 seconds before timeout, I can change this. 
 

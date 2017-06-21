@@ -10,7 +10,6 @@ def getInfo(line):
     si = line.split()
     varNum = si[2]
     clauseNum = si[3]
-    #I could also try to get clauseNum but that could be more compliated if not constant
     return (varNum,clauseNum)
 
 def findLine(file):
@@ -31,4 +30,4 @@ def main1(doc):
     
 
 
-
+print main1(sys.argv[1])

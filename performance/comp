@@ -1,0 +1,122 @@
+
+
+#PROBLEM: comp & longest chain length: 4 & average chain length: 2.6667 & median chain length: 2 & varNum: ('4', & clauseNum: '8') & chains: 9 & timeout: 7s 
+#original chain with index 16: [3, 14, 15, 16] 
+#trying: [3, 14, 15, 16]
+0	0       93248796
+#trying: [3, 14, 16, 15]
+1	0       35276740
+#trying: [3, 15, 14, 16]
+2	0       31631114
+#trying: [3, 15, 16, 14]
+3	0       31781282
+#trying: [3, 16, 14, 15]
+4	0       33283752
+#trying: [3, 16, 15, 14]
+5	0       32218275
+#trying: [14, 3, 15, 16]
+6	0       34056703
+#trying: [14, 3, 16, 15]
+7	0       33260912
+#trying: [14, 15, 3, 16]
+8	0       36213197
+#trying: [14, 15, 16, 3]
+9	0       33703980
+#trying: [14, 16, 3, 15]
+10	0       35934956
+#trying: [14, 16, 15, 3]
+11	0       34272656
+#trying: [15, 3, 14, 16]
+12	0       34048872
+#trying: [15, 3, 16, 14]
+13	0       42164463
+#trying: [15, 14, 3, 16]
+14	0       33561138
+#trying: [15, 14, 16, 3]
+15	0       34412112
+#trying: [15, 16, 3, 14]
+16	0       37365461
+#trying: [15, 16, 14, 3]
+17	0       34313560
+#trying: [16, 3, 14, 15]
+18	0       34102857
+#trying: [16, 3, 15, 14]
+19	0       35359280
+#trying: [16, 14, 3, 15]
+20	0       32549539
+#trying: [16, 14, 15, 3]
+21	0       38603337
+#trying: [16, 15, 3, 14]
+22	0       32621405
+#trying: [16, 15, 14, 3]
+23	0       34991699
+
+
+#PROBLEM: comp & longest chain length: 4 & average chain length: 2.6667 & median chain length: 2 & varNum: ('4', & clauseNum: '8') & chains: 9 & timeout: 7s 
+#original chain with index 16: [3, 14, 15, 16] 
+#trying: [3, 14, 15, 16]
+0	0       54785408
+#trying: [3, 14, 16, 15]
+1	0       37542844
+#trying: [3, 15, 14, 16]
+2	0       48525438
+#trying: [3, 15, 16, 14]
+3	0       47484371
+#trying: [3, 16, 14, 15]
+4	0       42252078
+#trying: [3, 16, 15, 14]
+5	0       46703963
+#trying: [14, 3, 15, 16]
+6	0       37131267
+#trying: [14, 3, 16, 15]
+7	0       44207217
+#trying: [14, 15, 3, 16]
+8	0       48452061
+#trying: [14, 15, 16, 3]
+9	0       43255233
+#trying: [14, 16, 3, 15]
+10	0       42581597
+#trying: [14, 16, 15, 3]
+11	0       41005406
+#trying: [15, 3, 14, 16]
+12	0       43906415
+#trying: [15, 3, 16, 14]
+13	0       46326915
+#trying: [15, 14, 3, 16]
+14	0       44975799
+#trying: [15, 14, 16, 3]
+15	0       38864677
+#trying: [15, 16, 3, 14]
+16	0       37392579
+#trying: [15, 16, 14, 3]
+17	0       48026996
+#trying: [16, 3, 14, 15]
+18	0       43813966
+#trying: [16, 3, 15, 14]
+19	0       36971869
+#trying: [16, 14, 3, 15]
+20	0       40346834
+#trying: [16, 14, 15, 3]
+21	0       35047480
+#trying: [16, 15, 3, 14]
+22	0       35519666
+#trying: [16, 15, 14, 3]
+23	0       34346885
+
+
+#PROBLEM: booleforce-1.2/traces/comp & longest chain length: 4 & average chain length: 2.6667 & median chain length: 2 & varNum: None & clauseNum: None & chains: 9 & timeout: 7s 
+
+
+#PROBLEM: booleforce-1.2/traces/comp & longest chain length: 4 & average chain length: 2.6667 & median chain length: 2 & varNum: None & clauseNum: None & chains: 9 & timeout: 7s 
+#original chain with index 16: [3, 14, 15, 16] 
+#trying: [3, 14, 15, 16]
+0	
+
+#PROBLEM: booleforce-1.2/traces/comp & longest chain length: 4 & average chain length: 2.6667 & median chain length: 2 & varNum: None & clauseNum: None & chains: 9 & timeout: 7s 
+#original chain with index 16: [3, 14, 15, 16] 
+#trying: [3, 14, 15, 16]
+0	Timeout 
+#trying: [3, 14, 16, 15]
+1	Timeout 
+#trying: [3, 15, 14, 16]
+2	
