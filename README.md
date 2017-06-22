@@ -39,7 +39,10 @@ python chainOrder.py comp TEMP.pl all 30 lex performanceNew/comp true none none 
 
 
 list1.sh takes the path of a folder of cnf problems, converts them to trace, and runs chainOrder.py on all of them.
-Currently it does this with hardwired 10 permutations and 500 seconds before timeout, I can change this. 
+To run overnight: 
+bash list1.sh problems/report/notSmall 400 300 rand false fpc
+
+
 
 Update: now chainOrder.py and list1.sh take an additional argument (added in last place after the rest), that is either the 
 a string beginning with "lex" (non caps sensitive, of course) or something else.
