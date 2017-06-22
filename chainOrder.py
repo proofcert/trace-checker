@@ -12,6 +12,16 @@ FPC = "fpc.pl"
 
 
 #root = "../booleforce-1.2/traces/"
+        
+def bashOutput(string): #this shouldn't really be necessary in the first place, but bash is running code that gets a tuple from a 
+    dame = ["'", "(", ")", ","] #a python program. the tuple is treated by a string by bash, so this is to get it back
+    stringList = [char for char in string]
+    backString = ""
+    for char in stringList:
+        if char not in dame:
+            backString += char
+    return backString
+    
 if len(sys.argv) == 1: #default test case with booleforce-1.2/traces/madeup2
     traceName, prologName, numPermString, timeOut, methodString, informeFileName, allChains = 'booleforce-1.2/traces/readme', "TEMP1.pl", "all", "10", "lex", "performance/readme.txt", False
     varNum, clauseNum = None, None
@@ -19,7 +29,7 @@ if len(sys.argv) == 1: #default test case with booleforce-1.2/traces/madeup2
 else:
     try: 
         traceName, prologName, numPermString, timeOut, methodString, informeFileName, allChainsString = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5], sys.argv[6], sys.argv[7].lower().strip()
-        varNum, clauseNum = sys.argv[8], sys.argv[9]
+        varNum, clauseNum = bashOutput(sys.argv[8]), bashOutput(sys.argv[9])
         version = sys.argv[10]
     except IndexError as ie:
         print "something's wrong with the parameters. your arguments were: "+str(sys.argv), ie
@@ -72,7 +82,7 @@ def getPermNum(iostring,antecedents): #iostring can be either "all" or an intege
     if iostring == "all":
         return factorial(len(antecedents))
     else:
-        return int(iostring)
+        return min(int(iostring),factorial(len(antecedents)))
     
 method_is_lex = Lexicographic(methodString)
 '''print "LEX IS "+str(method_is_lex)
@@ -91,7 +101,7 @@ longestChain, chainDex = trace.longestChain()
 averageChain = trace.avgChain() 
 medChain = trace.medianChain()
 chainNum = len(trace.derivedClauses)
-infoString = "\n\n#PROBLEM: {0} & longest chain length: {1} & average chain length: {2} & median chain length: {4} "\
+infoString = "#PROBLEM: {0} & longest chain length: {1} & average chain length: {2} & median chain length: {4} "\
 "& varNum: {5} & clauseNum: {6} & chains: {7} & timeout: {3}s \n".format(traceName,longestChain,averageChain,str(timeOut),medChain, varNum, clauseNum, chainNum )
 #NOTE: if adding other info to infoString, keep timeout last. its position is use in summarize.py
 #keep & signs so can later do split('&') where necessary
@@ -148,6 +158,8 @@ else: #I'll assume method_is_lex for this for now
                     #pq no te lo pensaste tu misma entonces? cabroooon 
                     #this could literally be two method calls and boom 
                     #aint nobody got time for that?? tf
+                    #nope
+                    
                     trace.replaceChain(testC1,n1)
                     traceProblem(trace, TEMPLATE, prologName) #takes care of copying the checker code to file and writes the trace
                     informeFile.write("{0}.{2}!{1}.{3}\t\t".format(n,n1,p,p1))

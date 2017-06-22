@@ -1,7 +1,0 @@
-
-
-#PROBLEM: aim-100-2_0-no-2 & longest chain length: 54  |  16  9  225  224  223  8  15  14  211  22  201  219   & average chain length: 4.8056 & median chain length: 2.0'    'timeout: 40s 
-#original chain with index 64: [16, 9, 225, 224, 223, 8, 15, 14, 211, 22, 201, 219] 
-#trying: [14, 219, 201, 15, 16, 22, 211, 224, 8, 223, 225, 9]
-0	#trying: [9, 223, 22, 225, 14, 219, 16, 201, 211, 224, 8, 15]
-1	

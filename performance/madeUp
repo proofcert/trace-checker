@@ -1,0 +1,14 @@
+#PROBLEM: madeUp & longest chain length: 3 & average chain length: 2.6667 & median chain length: 2 & varNum: ('4', & clauseNum: '5') & chains: 3 & timeout: 30s 
+#original chain with index 7: [2, 7, 6] 
+#trying: [2, 6, 7]
+0	1       162221538
+#trying: [2, 7, 6]
+1	1       160732497
+#trying: [6, 2, 7]
+2	1       41367048
+#trying: [6, 7, 2]
+3	1       38114255
+#trying: [7, 2, 6]
+4	1       33725651
+#trying: [7, 6, 2]
+5	1       157913701

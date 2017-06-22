@@ -47,13 +47,19 @@ def getWorst(N,lines,timeout):
 def getPerformanceDict(lines,timeout):
     performances = {}
     for line in lines:
+        
         if line[0] == "#":
             continue
         line = line.split()
-        if line[1] == "Timeout":
-            performances[int(line[0])] = timeout+"+"
+        #print line
+        if not line: #end of file
+            return performances
+        elif len(line) == 1: #must've run out of time or CPU to continue. effectively end of file
+            return performances
+        elif line[1] == "Timeout":
+            performances[int(line[0])] = int(timeout[:-1]) #converting the timeout to just a regular number. needs to be note
         else:
-            performances[int(line[0])] = round(int(line[2])/1000000000.0,5)
+            performances[int(line[0])] = round(int(line[2])/1000000000.0,5) #conversion from nanoseconds to seconds
     return performances
     
 
@@ -72,24 +78,59 @@ def formatNum(digits):
     
 
     
-def writeSummary(inF,outF,bestN):
+def getBestWorst(sortedList):  #assumes sorted already
+    best = sortedList[0]
+    worst = sortedList[-1]
+    return best[1], worst[1]
+
+def medTime(pdsort):
+    length = len(pdsort)
+    if length%2==0:
+        med1 = pdsort[length/2][1]
+        med2 = pdsort[(length/2)-1][1]
+        return round(float(med1+med2)/2,5)
+    else:
+        return pdsort[length/2][1]
+        
+
+def avgTime(di):
+    total = sum(di.values()) 
+    return round(float(total)/len(di),5)
+
+def writeSummary(inF,outF):
     inFile = open(inF)
     outFile = open(outF,'a')
     lines = inFile.readlines()
-    infoString = lines[0]
-    timeout = infoString.split()[-1] #this will be a string while nontimeouts will be values. it will thus be sorted last
+    infoString = lines[0] #this is an assumption. just make sure it is always the first line
+    infoList = infoString.split('&')
+    
+    timeout = infoList[-1].split()[-1] #this will be a string while nontimeouts will be values. it will thus be sorted last
+    problemName = infoList[0].split()[-1]
+    longestChain = infoList[1].split()[-1]
+    avgChain = infoList[2].split()[-1]
+    medChain = infoList[3].split()[-1]
+    
+    
     pd =  getPerformanceDict(lines,timeout)
     pdsort =  sorted(pd.items(), key=lambda x: x[1])
-    print "best "+str(bestN)
-    print "chain permu and time: "+str(pdsort[:bestN])
-    outString = infoString + "\nbest {0} chain permutations and time: {1}\n".format(str(bestN),str(pdsort[:bestN]))
-    outString += "worst {0} chain permutations and time: {1}\n".format(str(bestN),str(pdsort[len(pdsort)-bestN:]))
+    best, worst = getBestWorst(pdsort)
+    avg = avgTime(pd)
+    med = medTime(pdsort)
+    
+    outString = "{0} \t{1} \t{2} \t{3} \t{4} \t{5} \t{6} \t{7}\n".format(problemName, longestChain, avgChain, medChain, best, worst, avg, med)
+    print outString
+#PROBLEM: comp & longest chain length: 4 & average chain length: 2.6667 & median chain length: 2 & varNum: ('4', & clauseNum: '8') & chains: 9 & timeout: 30s 
+
+    
+    
+    
+    
     outFile.write(outString)
     inFile.close()
     outFile.close()
     
 #writeSummary('performance/aim200no4.txt','newInforme',7)
-writeSummary(sys.argv[1],sys.argv[2],int(sys.argv[3]))
+writeSummary(sys.argv[1],sys.argv[2])
 
     
     
