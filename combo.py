@@ -49,16 +49,7 @@ def combinations(setSets,results=[]):
              results.append([e,combinations(setSets[1:],results)])
         return results
 
-def comb(thisSet,results=[[]]):
-    if len(thisSet) == 1:
-        for e in thisSet[0]:
-            for r in results:
-                r.append(e)
-        return results
-    else:
-        for e in thisSet[0]:
-            for r in results:
-                r.extend([e,comb(thisSet[1:],results)])
+
             
 print comb([[1,2,3],[6,7],[9]])
 

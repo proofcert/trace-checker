@@ -14,6 +14,7 @@ for f in $FILES/*
 do
   echo "doing $f"
   read traceFile plFile <<<$(python getName.py $f)
+  echo "setting plFile to "$plFile
   booleforce-1.2/booleforce -T $traceFile <$f
   read varNum clauseNum <<<$(python getInfo1.py $f)
   if [["$version" == "order"]] ; then
