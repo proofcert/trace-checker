@@ -29,7 +29,7 @@ if len(sys.argv) == 1: #default test case with booleforce-1.2/traces/madeup2
 else:
     try: 
         traceName, prologName, numPermString, timeOut, methodString, informeFileName, allChainsString = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5], sys.argv[6], sys.argv[7].lower().strip()
-        varNum, clauseNum = bashOutput(sys.argv[8]), bashOutput(sys.argv[9])
+        varNum, clauseNum = bashOutput(sys.argv[8]), bashOutput(sys.argv[9]) 
         version = sys.argv[10]
     except IndexError as ie:
         print "something's wrong with the parameters. your arguments were: "+str(sys.argv), ie
