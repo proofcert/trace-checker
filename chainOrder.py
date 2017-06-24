@@ -139,7 +139,23 @@ if not allChains:
     print "not doing all chains"
     testPermutations(chainDex,trace,informeFile,method_is_lex,numPermString,TEMPLATE,prologName)
 else: #I'll assume method_is_lex for this for now
-    for n in range(trace.derivedStartDex(),len(trace.clauseList)):
+    startDex = trace.derivedStartDex()
+    chains = trace.derivedClauses
+    antecedents = trace.allAntecedents()
+    sortedAntecedents = [permu.mergeSort(one) for one in antecedents]
+    toTest = permu.allComboAllChain(sortedAntecedents)
+    x = 0
+    for test in toTest:
+        for n in range(len(test)):
+            trace.replaceChain(test[n],n+startDex)
+        traceProblem(trace, TEMPLATE, prologName) #takes care of copying the checker code to file and writes the trace
+        informeFile.write("#test {0}\t\t".format(x))
+        informeFile.flush()
+        os.system(command)
+        x += 1
+    
+    
+    '''for n in range(trace.derivedStartDex(),len(trace.clauseList)):
         print "first chain: "+str(trace.getChain(n))
         chains = trace.getChain(n) #naming this chains really makes no sense, it should be antecedents. but at this point I'd have to change too many things. 
         sortedChain = permu.mergeSort(chains)
@@ -164,7 +180,7 @@ else: #I'll assume method_is_lex for this for now
                     traceProblem(trace, TEMPLATE, prologName) #takes care of copying the checker code to file and writes the trace
                     informeFile.write("{0}.{2}!{1}.{3}\t\t".format(n,n1,p,p1))
                     informeFile.flush()
-                    os.system(command)
+                    os.system(command)'''
 informeFile.close()
 #shellcommand = "swipl -q -s init.pl -f "+logicprogram
 #os.system(shellcommand)

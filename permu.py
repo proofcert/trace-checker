@@ -96,7 +96,8 @@ def genEach(L):
     permList = [] 
     perms = genPerm(L)
     for i in range(ma.factorial(len(L))):
-        permList.append(tuple(next(perms)))
+        toAdd = tuple(next(perms))
+        permList.append(toAdd)
     return permList
         
 def shuffleUnique(L,prevPermu=[]):
@@ -122,3 +123,37 @@ perms = genPerm(mergeSort(chains))
 for i in range(10): 
     print next(perms)'''
     
+def flatten(deepList):
+    result = []
+    for n in deepList:
+        if type(n) is list:
+            result.extend(flatten(n))
+        else:
+            result.append(n)
+    return result
+
+def allOnce(sets):
+    if len(sets) == 1:
+        return sets[0]
+    elif len(sets) == 2:
+        paths = []
+        for n0 in sets[0]:
+            for n1 in sets[1]:
+                paths.append([n0,n1]) #different cases for if n0 and n1 are elements or lists themselves?
+        return paths
+    else:
+        paths = allOnce(sets[:2])
+        rest = allOnce(sets[2:])
+        return allOnce([paths,rest])
+
+
+def allComboAllChain(allChains):
+    chainsPerms = [genEach(chain) for chain in allChains]
+    result = allOnce(chainsPerms)
+    result1 = [flatten(n) for n in result]
+    return result1
+
+'''sets = [[1, 4, 5], [3, 9, 8, 1], [2, 10], [6, 10], [7, 10], [13, 12, 4], [11, 14], [13, 15], [3, 14, 15, 16]]
+result = [genEach(chain) for chain in sets]
+print result'''
+

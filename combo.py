@@ -1,56 +1,68 @@
 from math import factorial as fact
 import permu 
 
-def complexity(setSets):
+def complexity(setSets): #what is this for though? with the permutations
     r = len(setSets)
     n = 1
     for element in setSets: 
         n *= fact(len(element))
     return n
 
-
-print complexity([[1,2,3],[1,2],[2],[3]])
-
-def makeOptions(setSets,options=[]):
-    if len(setSets) == 1: 
-        permNum = fact(len(setSets[0]))
-        perms = permu.genPerm(permu.mergeSort(setSets[0]))
-        for n in range(permNum):
-            option = next(perms)
-            options.append(option)
-        return options
-    else:
-        thisSetPermNum = fact(len(setSets[-1]))
-        thisSetPerms = permu.genPerm(permu.mergeSort(setSets[-1]))
-        makeOptions(setSets[:-1],options)
-        for n in range(thisSetPermNum):
-            setOption = next(thisSetPerms)
-            options.append(setOption)
-        return options
-#ok, this is actually returning a list of all permutations of each sublist, but alltogether. not combinations thereof.
-
-#result = [o for o in makeOptions([[1,2,3],[1,2],[2],[3]])]
-#print result, len(result)
-
-def permsEach(setSets):
-    permSet = []
-    for sets in setSets:
-        permSet.append(permu.genEach(sets))
-    return permSet
-
-def combinations(setSets,results=[]):
-    if len(setSets)==2:
-        for e in setSets[0]:
-            for e1 in setSets[1]:
-                results.append([e,e1])
-        return results
-    else:
-        for e in setSets[0]:
-             results.append([e,combinations(setSets[1:],results)])
-        return results
-
+def combinationsComplexity(sets):
+    n = 1
+    for element in sets:
+        n *= len(element)
+    return n
 
             
-print comb([[1,2,3],[6,7],[9]])
+def onePath(path,matrix, mdex=0, ldex=0):
+    while True:
+        path.append(matrix[mdex][ldex])
+        if mdex == len(matrix) - 1: #reached a leaf
+            yield path
+            
+            if ldex == len(matrix[mdex]) - 1: #last thingy in this set 
+                del path[-2:]
+                addPath(path, matrix, mdex-1)
+            else: #just recreate path with next element in this set 
+                del path[-1]
+                addPath(path,matrix,mdex,ldex + 1)
+            
+def allOnce(sets):
+    if len(sets) == 1:
+        return sets[0]
+    elif len(sets) == 2:
+        paths = []
+        for n0 in sets[0]:
+            for n1 in sets[1]:
+                paths.append([n0,n1]) #different cases for if n0 and n1 are elements or lists themselves?
+        return paths
+    else:
+        paths = allOnce(sets[:2])
+        rest = allOnce(sets[2:])
+        return allOnce([paths,rest])
 
-    
+        
+
+
+def flatten(deepList):
+    result = []
+    for n in deepList:
+        if type(n) is list:
+            result.extend(flatten(n))
+        else:
+            result.append(n)
+    return result
+
+sets = [[1,2,3],[7,8,9],[5,6]]
+setsPerms = [permu.genEach(oneSet) for oneSet in sets]
+print "SETS PERMS: "
+print setsPerms
+result = allOnce(setsPerms)
+print flatten(result[0])
+print "ALL OF COMBINATIONS OF PERMUTATIONS??!?"
+for r in result:
+    print flatten(r)
+print len(result)
+print complexity(sets)
+

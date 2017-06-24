@@ -1,29 +1,18 @@
 class Node(object):
-    def __init__(self,name, children = [], parent = None):
+    def __init__(self,name):
         self.name = name
-        if not children:
-            self.children = children
-        else:
-            self.children = []
-        if not parent:
-            self.parent = parent #can only have one parent
-        else:
-            self.parent = None
+        self.children = []
+        self.parent = None
         self.flag = False
+    
     
     def addChild(self,child):
         self.children.append(child)
+        child.setParent(self)
     
     
-    
-    def addParent(self,newParent):
-        if self.parent != None:
-            print "warning, overriding parent from "+str(self.parent)+" to "+str(newParent)
-            self.parent = newParent
-            newParent.addChild(self)
-        else:
-            self.parent = newParent
-            newParent.addChild(self)
+    def setParent(self,newParent):
+        self.parent = newParent
     
     def firstUnflaggedChild(self):
         if self.children == []:
@@ -75,15 +64,30 @@ def traverse(root, leaves = []):
             if not child.flagged():
                 child.flag()
                 traverse(child,leaves)
+                
+def createTree(setSet,root,originalRoot):
+    if len(setSet) == 1:
+        for ses in setSet[0]:
+            root.addChild(Node(ses))
+        return 
+        
 
 n1 = Node(1)
 
-for x in [7,8]:
-    n1.addChild(Node(x))
+print str(n1)+" is leaf: "+str(n1.isLeaf())
+print str(n1)+" is root : "+str(n1.isRoot())
 
-print [str(n) for n in n1.getChildren()]
+
+m2 = Node(7) 
+n1.addChild(m2)
+n2 = Node(2)
+n2.addChild(m2)
+print m2.getChildren()
+print n2.getChildren()
+print m2.getChildren()
+print n1.getParent()
+print m2.getParent()
 print n1.isLeaf()
-print n1.firstUnflaggedChild()
-print n1.getChildren()[0].getChildren()[1]
-    
-    
+print m2.isLeaf()
+print m2.isRoot()
+print n1.isRoot()

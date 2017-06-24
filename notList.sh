@@ -1,6 +1,6 @@
 #!/bin/sh 
 #takes longest chain, tries with permutations initially sorted and increasing in lexicographic order. 
-#command for doing all small problems: bash list1.sh problems/report/small all 30 lex false fpc
+#command for doing all small problems: bash list1.sh problems/report/small.cnf all 30 lex false fpc
 f=$1
 
 
@@ -14,7 +14,7 @@ echo "doing $f"
 read traceFile plFile <<<$(python getName.py $f)
 booleforce-1.2/booleforce -T $traceFile <$f
 read varNum clauseNum <<<$(python getInfo1.py $f)
-if [["$version" == "order"]] ; then
+if [[ "$version" == "order" ]] ; then
 informe="performanceNew/$traceFile"
 else 
 informe="performance/$traceFile"

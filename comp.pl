@@ -91,3 +91,17 @@ isNegative(or(_,_)).
 
 %!!!!!!END OF CHECKER CODE!!!!!
 
+%Trace from file: comp
+main :- check(certRight([8, 7, 6, 5, 4, 3, 1, 2], 
+ chains([chain(9,[1,4,5],or(x(4),x(1))),
+chain(10,[1,3,9,8],x(1)),
+chain(11,[10,2],or(not(x(2)),x(3))),
+chain(12,[10,6],or(not(x(3)),not(x(4)))),
+chain(13,[10,7],or(x(2),x(4))),
+chain(14,[4,13,12],not(x(3))),
+chain(15,[11,14],not(x(2))),
+chain(16,[13,15],x(4)),
+chain(17,[15,16,3,14],false)])), 
+ store([],[]), 
+  unfk([or(and(x(2),x(4)),or(and(not(x(2)),not(x(4))),or(and(x(3),x(4)),or(and(not(x(3)),not(x(4))),or(and(x(2),x(3)),or(and(x(4),not(x(2))),or(and(x(3),not(x(2))),and(x(2),not(x(3))))))))))])), print(1), nl ;  
+ print(0),nl, fail. 

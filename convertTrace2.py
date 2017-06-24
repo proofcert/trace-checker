@@ -39,6 +39,12 @@ class Trace(object):
         
     def getChain(self,dex):
         return self.clauseList[dex].getAntecedents()
+    
+    def allAntecedents(self):
+        results = []
+        for d in self.derivedClauses:
+            results.append(d.getAntecedents())
+        return results
         
     def avgChain(self):
         suma = sum(x.chainLength() for x in self.derivedClauses)
@@ -53,6 +59,8 @@ class Trace(object):
                 clauseList.append(clause)
         file.close()        
         return clauseList
+        
+    
         
     def medianChain(self):
         if len(self.derivedClauses)%2 == 0:
@@ -101,7 +109,10 @@ class Trace(object):
                 return restString
                 
     def replaceChain(self,newChain,newChainDex):
-        self.clauseList[newChainDex].setAntecedents(newChain)
+        if self.clauseList[newChainDex].original(): 
+            raise TypeError("setting antecedents to an original clause?? tsk tsk")
+        else: 
+            self.clauseList[newChainDex].setAntecedents(newChain)
         #note this uses the index of the python Trace object's list, not the index given in trace file. 
         #this might be confusing for users, except this will be handled interally as Trace 
         #is also the one to decide what chain to replace
@@ -325,5 +336,3 @@ print chain
 print index
 print test.avgChain()
 print test.medianChain()'''
-test = Trace("booleforce-1.2/traces/invalid")
-test.writeProlog2("all.pl")
