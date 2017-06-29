@@ -1,6 +1,6 @@
 import random as ra
 import math as ma
-import convertTrace1 as cvT
+import convertTrace2 as cvT
 
 
 root = "../booleforce-1.2/traces/"
@@ -10,6 +10,7 @@ problemDict = {0: 'rksat7', 1: 'dubois20', 2: 'pigeonhole6.txt', 3: 'pret6025', 
     21: 'aim50-2no2', 22:'aim50-2no3', 23:'aim50-2no4', 24:'aim100no1', 25:'aim100-2no1', 26:'aim100-2no2', 27:'aim100-2no3',
     28:'aim100-2no4', 29:'aim200no1', 30:'aim200no2', 31:'aim200no3', 32:'aim200no4'
 }
+
 
 def mergeSort(L): #ASCENDING
     if len(L) == 1:
@@ -73,18 +74,8 @@ def genPerm(L):
         yield new
         new = onePerm(new)
 
-'''def shuffleEach(L,n,pL=[]):
-    if n == 0:
-        print "returning pL "+str(pL)
-        return pL
-    else:
-        L1 = shuffle(L)
-        pL.append(L1)
-        print "adding {0} to pl. pL is now {1}".format(L1,pL)
-        shuffleEach(L,n-1,pL)
-#this is so weird! returns none. also when I have a list [[1,2],[1,2]], adding [2,1] changes all the elements in the list to match??  
-print shuffleEach([1,2],20)
-ok there is something about it reordering the sublists. if theyre tuples then this doesnt happen'''
+
+
 
 def shuffleEach(L,n):
     pL = []
@@ -109,21 +100,21 @@ def shuffleUnique(L,prevPermu=[]):
             #could just make everything a tuple from the start, but at this point there
             #are a bunch of dependencies in other files so I'd rather do this for now. 
  
-
-
-# SYNTAX; ESO FUNCIONA
-'''pruebaChain = cvT.Trace(root+problemDict[4])
-print pruebaChain.avgChain()
-longestChain, chainDex = pruebaChain.longestChain()
-print "longest Chain: "+str(longestChain)+"; index: "+str(chainDex)
-chains = pruebaChain.getChain(chainDex)
-print "chain: "+str(chains)
-
-perms = genPerm(mergeSort(chains))
-for i in range(10): 
-    print next(perms)'''
     
-def flatten(deepList):
+def combComplexity(sets,r): #for testing. takes 2D array, returns number of ways we can choose r elements from each set in "sets"
+    res = 1
+    for serie in sets:
+        res *= comb(len(serie),r)
+    return res
+    
+def comb(n,r): #this is probably a part of math package already but whatever
+    if r > n: 
+        raise ValueError("{0} > {1}, that's a nope".format(str(r),str(n)))
+    else:
+        return float(ma.factorial(n))/(ma.factorial(r)*ma.factorial(n-r))
+        #does't need float because the result of the division should be an integer anyway, but for potential bug catching
+
+def flatten(deepList): #having to write this function hurts my soul but here we go
     result = []
     for n in deepList:
         if type(n) is list:
@@ -132,8 +123,8 @@ def flatten(deepList):
             result.append(n)
     return result
 
-def allOnce(sets):
-    if len(sets) == 1:
+def allOnce(sets): #returns all possible ways to choose 1 element from each list in sets. we then need to flatten the result
+    if len(sets) == 1: #because I was too lazy to make this return a 2D list directly :( 
         return sets[0]
     elif len(sets) == 2:
         paths = []
@@ -147,13 +138,14 @@ def allOnce(sets):
         return allOnce([paths,rest])
 
 
-def allComboAllChain(allChains):
-    chainsPerms = [genEach(chain) for chain in allChains]
-    result = allOnce(chainsPerms)
-    result1 = [flatten(n) for n in result]
+def allComboAllChain(allChains): #takes list of lists. 
+    chainsPerms = [genEach(chain) for chain in allChains] #new list. for each element in old list, new list has a list of all permutations of that element
+    result = allOnce(chainsPerms) #get all possible results choosing one permuation from all permutations of each element
+    result1 = [flatten(n) for n in result] # because I was lazy 
     return result1
 
-'''sets = [[1, 4, 5], [3, 9, 8, 1], [2, 10], [6, 10], [7, 10], [13, 12, 4], [11, 14], [13, 15], [3, 14, 15, 16]]
-result = [genEach(chain) for chain in sets]
-print result'''
-
+sets = [[1, 4, 5], [3, 9, 8, 1], [2, 10], [6, 10], [7, 10], [13, 12, 4], [11, 14], [13, 15]]
+result = [flatten(r) for r in allOnce(sets)]
+print result
+print len(result)
+print combComplexity(sets,1) #right number of results? sip

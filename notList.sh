@@ -17,7 +17,7 @@ read varNum clauseNum <<<$(python getInfo1.py $f)
 if [[ "$version" == "order" ]] ; then
 informe="performanceNew/$traceFile"
 else 
-informe="performance/$traceFile"
+informe="performanceLessSmall/$traceFile"
 fi
 # if method is order: use newPerformance/$traceFile for dest
 # else: use performance/$traceFile 

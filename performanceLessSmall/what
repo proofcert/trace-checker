@@ -1,0 +1,14 @@
+#PROBLEM: what & longest chain length: 3 & average chain length: 3.0 & median chain length: 3 & varNum: 4 & clauseNum: 6 & chains: 1 & timeout: 10s 
+#original chain with index 3: [4, 6, 5] 
+#trying: [4, 5, 6]
+0	1       210581431
+#trying: [4, 6, 5]
+1	1       207571653
+#trying: [5, 4, 6]
+2	1       389289759
+#trying: [5, 6, 4]
+3	1       36066190
+#trying: [6, 4, 5]
+4	1       208543064
+#trying: [6, 5, 4]
+5	1       216090035
