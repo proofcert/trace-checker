@@ -3,6 +3,7 @@ a certifier for the trace SAT format
 
 
 ## Main components
+
 * Prolog theorem proover code: "regular" version can be found in either fpc.pl and foclist.pl
 (here the kernel is separated from the portion dealing with the proof evidence from the Trace) or in 
 template.pl (here both parts are together). The "ordered" version, that only succeeds when the antecedent list of 
@@ -20,6 +21,7 @@ It prints 1 if the checker confirmed the Trace to be a valid proof for unsatisfi
 
 
 ##Test Files
+
 There are several files that can be run to test the efficiency of the checker under different conditions.
 * notList.sh takes a problem in CNF form, uses the Booleforce SAT solver to generate a Trace, 
 creates the appropriate Prolog code using convertTrace2, and outputs some information about the problem to an output file. 
@@ -56,6 +58,7 @@ the name of a directory with more than 1 cnf file in it, and the program repeats
 for each cnf file in that directory. 
 
 ##Summarizing test results
+
 * Because the tests above give a lot of output for medium and large problems, I've added summary files. 
 run the following:
 python summarize.py $ReportName $outFile
