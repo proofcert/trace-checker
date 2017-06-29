@@ -1,4 +1,4 @@
 #!/bin/sh
 
-python convertTrace.py $1 $2 
+python ctIndependent.py $1 $2 
 time prolog -t main $2

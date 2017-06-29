@@ -286,3 +286,33 @@ def addAntecedents(restList):
 
 
 
+problemlist = ["../booleforce-1.2/traces/rksat7","../booleforce-1.2/traces/dubois20", "../booleforce-1.2/traces/pigeonhole6.txt",
+"../booleforce-1.2/traces/pret6025", "../booleforce-1.2/traces/randomKsat", "../booleforce-1.2/traces/rKsat2", 
+"../booleforce-1.2/traces/rksat4", "../booleforce-1.2/traces/rksat5", "../booleforce-1.2/traces/rksat7", "../booleforce-1.2/traces/madeup2",
+"rksat9", "pret6040", "rksat10","rksat11", "rksat12", "rksat13", "aim50no1","aim50no2",'aim50no3','aim50no4',
+'aim50-2no1']
+root = "../booleforce-1.2/traces/"
+problemDict = {0: 'rksat7', 1: 'dubois20', 2: 'pigeonhole6.txt', 3: 'pret6025', 4: 'randomKsat', 5: 'rKsat2', 
+6: 'rksat4', 7: 'rksat5', 8: 'rksat7', 9: 'madeup2', 10: 'rksat9', 11: 'pret6040', 12: 'rksat10', 13: 'rksat11', 
+14: 'rksat12', 15: 'rksat13', 16: 'aim50no1', 17: 'aim50no2', 18: 'aim50no3', 19: 'aim50no4', 20: 'aim50-2no1',
+    21: 'aim50-2no2', 22:'aim50-2no3', 23:'aim50-2no4', 24:'aim100no1', 25:'aim100-2no1', 26:'aim100-2no2', 27:'aim100-2no3',
+    28:'aim100-2no4', 29:'aim200no1', 30:'aim200no2', 31:'aim200no3', 32:'aim200no4'
+}
+
+
+    
+def main():
+        traceFile = sys.argv[1]
+        toFile = sys.argv[2]
+        copyfile(FPC,toFile)
+        toFileNew = open(toFile,'a')
+        kernel = open(KERNEL,'r')
+        toFileNew.write(kernel.read())
+        toFileNew.flush()
+        
+        tra = Trace(traceFile)
+        tra.writeProlog2(toFile)
+        toFileNew.close()
+        kernel.close()
+
+main()  
