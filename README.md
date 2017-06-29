@@ -20,7 +20,7 @@ bash trace_checker.sh traceFileName prologFileName, and prints the runtime of th
 It prints 1 if the checker confirmed the Trace to be a valid proof for unsatisfiability, 0 otherwise.
 
 
-##Test Files
+## Test Files
 
 There are several files that can be run to test the efficiency of the checker under different conditions.
 * notList.sh takes a problem in CNF form, uses the Booleforce SAT solver to generate a Trace, 
@@ -57,7 +57,7 @@ For all three version of the command above, you can substitute notList.sh for li
 the name of a directory with more than 1 cnf file in it, and the program repeats the same processes described above 
 for each cnf file in that directory. 
 
-##Summarizing test results
+## Summarizing test results
 
 * Because the tests above give a lot of output for medium and large problems, I've added summary files. 
 run the following:
