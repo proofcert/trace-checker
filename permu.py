@@ -114,7 +114,7 @@ def comb(n,r): #this is probably a part of math package already but whatever
         return float(ma.factorial(n))/(ma.factorial(r)*ma.factorial(n-r))
         #does't need float because the result of the division should be an integer anyway, but for potential bug catching
 
-def flatten(deepList): #having to write this function hurts my soul but here we go
+def flatten(deepList): #having to write this method hurts my soul but here we go
     result = []
     for n in deepList:
         if type(n) is list:
